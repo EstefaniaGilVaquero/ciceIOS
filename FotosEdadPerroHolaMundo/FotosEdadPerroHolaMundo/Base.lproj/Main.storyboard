@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0nK-Ix-sNl">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Imagenes-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SYImagenesViewController" customModule="FotosEdadPerroHolaMundo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pdz-7G-PXD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tgz-R5-isk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B15-xq-fQx">
+                                <rect key="frame" x="0.0" y="57" width="320" height="456"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pxm-i2-JmH">
+                                        <rect key="frame" x="198" y="406" width="100" height="30"/>
+                                        <color key="backgroundColor" red="0.90784143518518523" green="0.2886121939937164" blue="0.13034083801123306" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Persona 2">
+                                            <color key="titleColor" red="1" green="1" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showPerson2ACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="14E-I2-gfE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPu-Tg-OSO">
+                                        <rect key="frame" x="20" y="406" width="100" height="30"/>
+                                        <color key="backgroundColor" red="0.90784143518518523" green="0.2886121939937164" blue="0.13034083801123306" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Persona 1">
+                                            <color key="titleColor" red="1" green="1" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showPerson1ACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jgf-kF-v2w"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gb3-eC-as4">
+                                        <rect key="frame" x="20" y="20" width="280" height="309"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre de la Persona" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mg3-d3-3OM">
+                                        <rect key="frame" x="20" y="344" width="280" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90784143520000005" green="0.64238149720000004" blue="0.50630977369999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90784143520000005" green="0.64238149720000004" blue="0.50630977369999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Imagenes" id="bkv-SS-wz0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="6gV-Db-t78">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="Ck0-fQ-h5Q" kind="push" id="neN-vb-U18"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myNamePeopleLBL" destination="mg3-d3-3OM" id="ZxV-3J-n4M"/>
+                        <outlet property="myShowPeople" destination="gb3-eC-as4" id="Nvf-56-dGd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="481"/>
+        </scene>
+        <!--Edad de mi Perro-->
+        <scene sceneID="Oak-ZX-FBa">
+            <objects>
+                <viewController id="Ck0-fQ-h5Q" customClass="SYEdadPerroViewController" customModule="FotosEdadPerroHolaMundo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dim-pz-AFP"/>
+                        <viewControllerLayoutGuide type="bottom" id="B0u-9Z-Qvd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7k4-yy-t9f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeA-my-bIJ">
+                                <rect key="frame" x="14" y="79" width="286" height="481"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNY-VT-jak">
+                                        <rect key="frame" x="0.0" y="0.0" width="286" height="481"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCB-Kq-HCe">
+                                                <rect key="frame" x="86" y="153" width="100" height="36"/>
+                                                <color key="backgroundColor" red="0.90784143518518523" green="0.2886121939937164" blue="0.13034083801123306" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="rB8-sq-0dZ"/>
+                                                    <constraint firstAttribute="width" constant="100" id="v8W-BQ-hRj"/>
+                                                    <constraint firstAttribute="height" constant="36" id="y5q-6X-ZYD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <state key="normal" title="Calcula">
+                                                    <color key="titleColor" red="1" green="1" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="myButtonCalculaEdad:" destination="Ck0-fQ-h5Q" eventType="touchUpInside" id="jzd-5U-M5U"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Años" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aCv-MA-ehM">
+                                                <rect key="frame" x="95" y="82" width="97" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="97" id="ESc-J2-PgN"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="97" id="PYm-8q-beF"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="97" id="TLX-uN-tcs"/>
+                                                    <constraint firstAttribute="height" constant="30" id="ufB-FR-7wG"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="97" id="yIn-Ql-zn0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hv2-ZK-4h6">
+                                                <rect key="frame" x="26" y="218" width="219" height="46"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="QEk-kN-rBv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.90784143520000005" green="0.28861219399999999" blue="0.13034083799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Introduce la edad de tu perro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDD-DN-dol">
+                                                <rect key="frame" x="15" y="15" width="256" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="AX5-V3-ZTO"/>
+                                                    <constraint firstAttribute="height" constant="36" id="KJz-H8-ja8"/>
+                                                    <constraint firstAttribute="width" constant="230" id="OnO-rT-vuw"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="36" id="ZQT-Or-7TZ"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="hiS-an-uCC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.8784313725490196" green="0.5725490196078431" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="sCB-Kq-HCe" firstAttribute="top" secondItem="aCv-MA-ehM" secondAttribute="bottom" constant="41" id="1HO-my-JiA"/>
+                                            <constraint firstItem="qDD-DN-dol" firstAttribute="leading" secondItem="vNY-VT-jak" secondAttribute="leading" constant="15" id="AUH-Me-Tjx"/>
+                                            <constraint firstItem="hv2-ZK-4h6" firstAttribute="leading" secondItem="vNY-VT-jak" secondAttribute="leading" constant="26" id="BhR-dS-SPc"/>
+                                            <constraint firstItem="aCv-MA-ehM" firstAttribute="centerX" secondItem="qDD-DN-dol" secondAttribute="centerX" id="DPX-ZZ-Wv3"/>
+                                            <constraint firstItem="sCB-Kq-HCe" firstAttribute="centerX" secondItem="hv2-ZK-4h6" secondAttribute="centerX" id="DcT-eg-NlS"/>
+                                            <constraint firstAttribute="trailing" secondItem="hv2-ZK-4h6" secondAttribute="trailing" constant="41" id="J3E-Jy-Wo8"/>
+                                            <constraint firstItem="aCv-MA-ehM" firstAttribute="centerX" secondItem="vNY-VT-jak" secondAttribute="centerX" id="JVE-r5-35i"/>
+                                            <constraint firstItem="hv2-ZK-4h6" firstAttribute="top" secondItem="sCB-Kq-HCe" secondAttribute="bottom" constant="29" id="UDP-il-Arm"/>
+                                            <constraint firstItem="aCv-MA-ehM" firstAttribute="top" secondItem="qDD-DN-dol" secondAttribute="bottom" constant="26" id="d37-il-45y"/>
+                                            <constraint firstItem="qDD-DN-dol" firstAttribute="top" secondItem="vNY-VT-jak" secondAttribute="top" constant="15" id="eaM-Pf-LmR"/>
+                                            <constraint firstItem="aCv-MA-ehM" firstAttribute="top" secondItem="vNY-VT-jak" secondAttribute="top" constant="82" id="f0a-Or-6YR"/>
+                                            <constraint firstAttribute="trailing" secondItem="qDD-DN-dol" secondAttribute="trailing" constant="15" id="pwe-h0-eLC"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="vNY-VT-jak" secondAttribute="bottom" id="Hhh-Rf-Isn"/>
+                                    <constraint firstAttribute="trailing" secondItem="vNY-VT-jak" secondAttribute="trailing" id="d4G-RH-cyr"/>
+                                    <constraint firstItem="vNY-VT-jak" firstAttribute="leading" secondItem="aeA-my-bIJ" secondAttribute="leading" id="kEE-1U-54x"/>
+                                    <constraint firstItem="vNY-VT-jak" firstAttribute="top" secondItem="aeA-my-bIJ" secondAttribute="top" id="qXz-Bz-kn3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84313725490196079" green="0.49803921568627452" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="B0u-9Z-Qvd" firstAttribute="top" secondItem="aeA-my-bIJ" secondAttribute="bottom" constant="8" symbolic="YES" id="3ZY-1R-0xf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aeA-my-bIJ" secondAttribute="trailing" constant="4" id="5ic-kg-IMn"/>
+                            <constraint firstItem="aeA-my-bIJ" firstAttribute="top" secondItem="dim-pz-AFP" secondAttribute="bottom" constant="15" id="8DB-ZZ-hip"/>
+                            <constraint firstItem="aeA-my-bIJ" firstAttribute="leading" secondItem="7k4-yy-t9f" secondAttribute="leadingMargin" constant="-2" id="L6z-yN-eyI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edad de mi Perro" id="4I6-af-9Fo">
+                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="CEQ-sO-wwF">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="Pwf-FD-olo" kind="push" id="kwS-2G-Bfg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myEdadPerroLBL" destination="hv2-ZK-4h6" id="Fhq-Av-bfD"/>
+                        <outlet property="myTxtInsertaEdad" destination="aCv-MA-ehM" id="HgA-aQ-f41"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z3q-OC-JEg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704" y="481"/>
+        </scene>
+        <!--Saluda View Controller-->
+        <scene sceneID="J6Y-yB-u6r">
+            <objects>
+                <viewController id="Pwf-FD-olo" customClass="SYSaludaViewController" customModule="FotosEdadPerroHolaMundo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K01-w4-XYd"/>
+                        <viewControllerLayoutGuide type="bottom" id="qyN-ei-OGN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bIN-Dt-VHi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHA-aV-XGX">
+                                <rect key="frame" x="64" y="135" width="178" height="30"/>
+                                <color key="backgroundColor" red="0.90784143520000005" green="0.28861219399999999" blue="0.13034083799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Joel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mySaluda1:" destination="Pwf-FD-olo" eventType="touchUpInside" id="vGi-96-V4E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGX-2S-KjJ">
+                                <rect key="frame" x="64" y="173" width="178" height="30"/>
+                                <color key="backgroundColor" red="0.90784143520000005" green="0.28861219399999999" blue="0.13034083799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Carlos">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mySaluda2:" destination="Pwf-FD-olo" eventType="touchUpInside" id="5CF-bn-P5f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjC-ES-bnw">
+                                <rect key="frame" x="64" y="215" width="178" height="33"/>
+                                <color key="backgroundColor" red="0.90784143520000005" green="0.28861219399999999" blue="0.13034083799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Ruben">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mySaluda3:" destination="Pwf-FD-olo" eventType="touchUpInside" id="7DP-mo-Bqi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kv-27-zuS">
+                                <rect key="frame" x="64" y="253" width="178" height="33"/>
+                                <color key="backgroundColor" red="0.90784143520000005" green="0.28861219399999999" blue="0.13034083799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Estefania">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="muSaluda4:" destination="Pwf-FD-olo" eventType="touchUpInside" id="yTN-IZ-TXq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evQ-4k-i2f">
+                                <rect key="frame" x="64" y="399" width="178" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saluda a quien quieras" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdb-Oj-Pkl">
+                                <rect key="frame" x="54" y="97" width="199" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90784143520000005" green="0.64238149720000004" blue="0.50630977369999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ssu-dh-aK9"/>
+                    <connections>
+                        <outlet property="mySaludaLBL" destination="evQ-4k-i2f" id="dPS-CZ-LHn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rgx-NW-bre" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077" y="481"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Bu-Pm-u0G">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0nK-Ix-sNl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zaU-cH-9xb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.90784143518518523" green="0.2886121939937164" blue="0.13034083801123306" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="e2i-Gx-UwW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kvQ-ft-sUt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="481"/>
+        </scene>
+    </scenes>
+</document>
