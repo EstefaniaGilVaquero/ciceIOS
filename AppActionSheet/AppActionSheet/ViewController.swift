@@ -17,6 +17,30 @@ class ViewController: UIViewController {
     
     //MARK: - IBACTION
     
+    @IBAction func showSocialNetworks(sender: AnyObject) {
+        
+        let alertAS = UIAlertController(title: "UIActionSheet", message: "Con que red social quieres conectar?", preferredStyle: .ActionSheet)
+        
+        let facebook = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        let linkedIn = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        let Twitter = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        let Tinder = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        let delete = UIAlertAction(title: "Delete", style: .Destructive, handler: nil)
+        
+        alertAS.addAction(facebook)
+        alertAS.addAction(linkedIn)
+        alertAS.addAction(Twitter)
+        alertAS.addAction(Tinder)
+        alertAS.addAction(cancelAction)
+        alertAS.addAction(delete)
+        
+        presentViewController(alertAS, animated: true, completion: nil)
+
+    }
+    
+    
+    
     @IBAction func alertControllACTION(sender: AnyObject) {
         
         if sender.tag == 0{
