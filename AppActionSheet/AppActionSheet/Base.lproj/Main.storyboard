@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppActionSheet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBc-t1-JDZ">
+                                <rect key="frame" x="77" y="51" width="166" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="1" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="UIAlertController Simple"/>
+                                <connections>
+                                    <action selector="alertControllACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f04-di-08c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Tb-PZ-ONF">
+                                <rect key="frame" x="44" y="118" width="232" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="1" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="UIAlertController con un TextField"/>
+                                <connections>
+                                    <action selector="alertControllACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nty-m0-jM1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHO-ql-gRM">
+                                <rect key="frame" x="47" y="186" width="226" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="1" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="UIAlertController con Login Form"/>
+                                <connections>
+                                    <action selector="alertControllACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q7p-1Y-CTa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOP-T6-FDB">
+                                <rect key="frame" x="39" y="247" width="242" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="1" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="UIAlertController Multiples Botones"/>
+                                <connections>
+                                    <action selector="alertControllACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OcX-QN-pGf"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btZ-JQ-SnS">
+                                <rect key="frame" x="-4" y="524" width="328" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="bookmarks" id="T3c-5k-nwW">
+                                        <connections>
+                                            <action selector="showSocialNetworks:" destination="BYZ-38-t0r" id="pvg-nF-MxP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="r6H-MF-obj"/>
+                                    <barButtonItem systemItem="camera" id="kxM-kv-INe">
+                                        <connections>
+                                            <action selector="showPicOptions:" destination="BYZ-38-t0r" id="Vqr-Pb-wqc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fkR-xn-lpm"/>
+                                    <barButtonItem systemItem="search" id="PNf-TI-7on"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="PIH-zk-Q4Q"/>
+                                    <barButtonItem systemItem="reply" id="f4b-gx-tuo"/>
+                                </items>
+                            </toolbar>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Quf-AE-yBY">
+                                <rect key="frame" x="58" y="320" width="205" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="1" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="UIActionSheetSheet Standard"/>
+                                <connections>
+                                    <action selector="alertControllACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wsG-dQ-TxH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="btZ-JQ-SnS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="798-nY-5nR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="btZ-JQ-SnS" secondAttribute="bottom" id="bFL-Qy-B3F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="btZ-JQ-SnS" secondAttribute="trailing" constant="-20" id="uHp-09-8X6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-431" y="371"/>
+        </scene>
+    </scenes>
+</document>
