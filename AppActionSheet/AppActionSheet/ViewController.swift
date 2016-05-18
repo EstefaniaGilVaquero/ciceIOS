@@ -19,6 +19,11 @@ class ViewController: UIViewController {
     
     @IBAction func showSocialNetworks(sender: AnyObject) {
         
+        let imageFacebook = UIImage(named: "facebook@2x.png")
+        let imageTwitter = UIImage(named: "icon.twitter@2x.png")
+        let imageLinkedIn = UIImage(named: "linkedin@2x.png")
+
+        
         let alertAS = UIAlertController(title: "UIActionSheet", message: "Con que red social quieres conectar?", preferredStyle: .ActionSheet)
         
         let facebook = UIAlertAction(title: "OK", style: .Default, handler: nil)
@@ -27,6 +32,10 @@ class ViewController: UIViewController {
         let Tinder = UIAlertAction(title: "OK", style: .Default, handler: nil)
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
         let delete = UIAlertAction(title: "Delete", style: .Destructive, handler: nil)
+        
+        facebook.setValue(imageFacebook, forKey: "facebook")
+        linkedIn.setValue(imageLinkedIn, forKey: "linkeIn")
+        Twitter.setValue(imageTwitter, forKey: "Twitter")
         
         alertAS.addAction(facebook)
         alertAS.addAction(linkedIn)
