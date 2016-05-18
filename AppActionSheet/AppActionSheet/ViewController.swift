@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    let imageFacebook = UIImage(named: "facebook@2x.png")
+    let imageTwitter = UIImage(named: "icon.twitter@2x.png")
+    let imageLinkedIn = UIImage(named: "linkedin@2x.png")
+    let imageCamera = UIImage(named: "iconCamera@2x.png")
+    
     //MARK: - VARIABLES LOCALES GLOBALES
     var logingTextField : UITextField?
     var passwordTextField : UITextField?
@@ -19,23 +25,21 @@ class ViewController: UIViewController {
     
     @IBAction func showSocialNetworks(sender: AnyObject) {
         
-        let imageFacebook = UIImage(named: "facebook@2x.png")
-        let imageTwitter = UIImage(named: "icon.twitter@2x.png")
-        let imageLinkedIn = UIImage(named: "linkedin@2x.png")
+        
 
         
         let alertAS = UIAlertController(title: "UIActionSheet", message: "Con que red social quieres conectar?", preferredStyle: .ActionSheet)
         
-        let facebook = UIAlertAction(title: "OK", style: .Default, handler: nil)
-        let linkedIn = UIAlertAction(title: "OK", style: .Default, handler: nil)
-        let Twitter = UIAlertAction(title: "OK", style: .Default, handler: nil)
-        let Tinder = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        let facebook = UIAlertAction(title: "Facebook", style: .Default, handler: nil)
+        let linkedIn = UIAlertAction(title: "linkedIn", style: .Default, handler: nil)
+        let Twitter = UIAlertAction(title: "Twitter", style: .Default, handler: nil)
+        let Tinder = UIAlertAction(title: "Tinder", style: .Default, handler: nil)
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
         let delete = UIAlertAction(title: "Delete", style: .Destructive, handler: nil)
         
-        facebook.setValue(imageFacebook, forKey: "facebook")
-        linkedIn.setValue(imageLinkedIn, forKey: "linkeIn")
-        Twitter.setValue(imageTwitter, forKey: "Twitter")
+        facebook.setValue(imageFacebook, forKey: "image")
+        linkedIn.setValue(imageLinkedIn, forKey: "image")
+        Twitter.setValue(imageTwitter, forKey: "image")
         
         alertAS.addAction(facebook)
         alertAS.addAction(linkedIn)
@@ -49,6 +53,29 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func showPicOptions(sender: AnyObject) {
+        let alertVC = UIAlertController(title: "Alert Controller Standard", message: "Opciones de Fotos", preferredStyle: .ActionSheet)
+        
+        let botonTakePhoto = UIAlertAction(title: "Take Pic", style: .Default, handler: { (alert) in
+            //print("Boton OK presionado")
+            self.takePhotoWithCamera()
+        })
+        let botonOpenGallery = UIAlertAction(title: "Open Gallery", style: .Default, handler: { (alert) in
+            //print("Hola")
+            self.choosePhotoFromLibrary()
+        })
+        
+        alertVC.addAction(botonTakePhoto)
+        alertVC.addAction(botonOpenGallery)
+        
+        botonTakePhoto.setValue(imageCamera, forKey: "image")
+        botonOpenGallery.setValue(imageCamera, forKey: "image")
+
+    
+        presentViewController(alertVC, animated: true, completion: nil)
+    
+    
+    }
     
     @IBAction func alertControllACTION(sender: AnyObject) {
         
@@ -204,7 +231,10 @@ extension ViewController : UIImagePickerControllerDelegate, UINavigationControll
         imagePC.delegate = self
         imagePC.allowsEditing = true
         presentViewController(imagePC, animated: true, completion: nil)
-   }
+        
+        //Guardar imagen
+
+    }
    
     func choosePhotoFromLibrary(){
         
@@ -214,7 +244,6 @@ extension ViewController : UIImagePickerControllerDelegate, UINavigationControll
         imagePC.allowsEditing = true
         presentViewController(imagePC, animated: true, completion: nil)
     }
-    
 }
 
 
