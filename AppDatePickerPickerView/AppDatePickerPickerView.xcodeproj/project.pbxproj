@@ -12,6 +12,11 @@
 		097BDA1C1CEEEE0F00FED605 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097BDA1A1CEEEE0F00FED605 /* Main.storyboard */; };
 		097BDA1E1CEEEE0F00FED605 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097BDA1D1CEEEE0F00FED605 /* Assets.xcassets */; };
 		097BDA211CEEEE0F00FED605 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097BDA1F1CEEEE0F00FED605 /* LaunchScreen.storyboard */; };
+		09F5A7CB1CEF076D00CA82FE /* CCPickerWithTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5A7CA1CEF076D00CA82FE /* CCPickerWithTextFieldViewController.swift */; };
+		09F5A7CD1CEF109200CA82FE /* GranVia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F5A7CC1CEF109200CA82FE /* GranVia.jpg */; };
+		09F5A7CF1CEF109E00CA82FE /* PlazaCastilla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F5A7CE1CEF109E00CA82FE /* PlazaCastilla.jpg */; };
+		09F5A7D21CEF139400CA82FE /* Cibeles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F5A7D01CEF139400CA82FE /* Cibeles.jpg */; };
+		09F5A7D31CEF139400CA82FE /* puertaAlcala.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F5A7D11CEF139400CA82FE /* puertaAlcala.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		097BDA1D1CEEEE0F00FED605 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		097BDA201CEEEE0F00FED605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		097BDA221CEEEE0F00FED605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09F5A7CA1CEF076D00CA82FE /* CCPickerWithTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCPickerWithTextFieldViewController.swift; sourceTree = "<group>"; };
+		09F5A7CC1CEF109200CA82FE /* GranVia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GranVia.jpg; sourceTree = "<group>"; };
+		09F5A7CE1CEF109E00CA82FE /* PlazaCastilla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PlazaCastilla.jpg; sourceTree = "<group>"; };
+		09F5A7D01CEF139400CA82FE /* Cibeles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cibeles.jpg; sourceTree = "<group>"; };
+		09F5A7D11CEF139400CA82FE /* puertaAlcala.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puertaAlcala.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +64,13 @@
 		097BDA151CEEEE0F00FED605 /* AppDatePickerPickerView */ = {
 			isa = PBXGroup;
 			children = (
+				09F5A7D01CEF139400CA82FE /* Cibeles.jpg */,
+				09F5A7D11CEF139400CA82FE /* puertaAlcala.jpg */,
+				09F5A7CE1CEF109E00CA82FE /* PlazaCastilla.jpg */,
+				09F5A7CC1CEF109200CA82FE /* GranVia.jpg */,
 				097BDA161CEEEE0F00FED605 /* AppDelegate.swift */,
 				097BDA181CEEEE0F00FED605 /* ViewController.swift */,
+				09F5A7CA1CEF076D00CA82FE /* CCPickerWithTextFieldViewController.swift */,
 				097BDA1A1CEEEE0F00FED605 /* Main.storyboard */,
 				097BDA1D1CEEEE0F00FED605 /* Assets.xcassets */,
 				097BDA1F1CEEEE0F00FED605 /* LaunchScreen.storyboard */,
@@ -124,6 +139,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				097BDA211CEEEE0F00FED605 /* LaunchScreen.storyboard in Resources */,
+				09F5A7D21CEF139400CA82FE /* Cibeles.jpg in Resources */,
+				09F5A7CF1CEF109E00CA82FE /* PlazaCastilla.jpg in Resources */,
+				09F5A7CD1CEF109200CA82FE /* GranVia.jpg in Resources */,
+				09F5A7D31CEF139400CA82FE /* puertaAlcala.jpg in Resources */,
 				097BDA1E1CEEEE0F00FED605 /* Assets.xcassets in Resources */,
 				097BDA1C1CEEEE0F00FED605 /* Main.storyboard in Resources */,
 			);
@@ -137,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				097BDA191CEEEE0F00FED605 /* ViewController.swift in Sources */,
+				09F5A7CB1CEF076D00CA82FE /* CCPickerWithTextFieldViewController.swift in Sources */,
 				097BDA171CEEEE0F00FED605 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

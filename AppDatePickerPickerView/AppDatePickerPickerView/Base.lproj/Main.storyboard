@@ -17,23 +17,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n8c-5n-0m3">
-                                <rect key="frame" x="23" y="145" width="275" height="180"/>
+                                <rect key="frame" x="23" y="112" width="275" height="244"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o1o-uX-aCq">
-                                <rect key="frame" x="0.0" y="344" width="320" height="216"/>
-                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo de Alimento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7q-x6-PvM">
-                                <rect key="frame" x="34" y="73" width="252" height="40"/>
+                                <rect key="frame" x="34" y="64" width="252" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o1o-uX-aCq">
+                                <rect key="frame" x="0.0" y="441" width="320" height="127"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="o1o-uX-aCq" secondAttribute="bottom" id="NVr-bi-lMG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9nc-Gy-VaK">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="xcN-9l-rnV">
@@ -50,12 +53,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="755" y="386"/>
+            <point key="canvasLocation" x="674" y="386"/>
         </scene>
-        <!--View Controller-->
+        <!--Picker With Text Field View Controller-->
         <scene sceneID="Oe1-hZ-UbC">
             <objects>
-                <viewController id="afu-C6-A1E" sceneMemberID="viewController">
+                <viewController id="afu-C6-A1E" customClass="CCPickerWithTextFieldViewController" customModule="AppDatePickerPickerView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tEc-YY-OPj"/>
                         <viewControllerLayoutGuide type="bottom" id="LoD-Ly-l5w"/>
@@ -63,13 +66,39 @@
                     <view key="view" contentMode="scaleToFill" id="2ma-2K-YOi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="codigo postal de tu zona" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LbD-ck-LBu">
+                                <rect key="frame" x="28" y="125" width="265" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="prioridad de trabajo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="USg-Z5-Y98">
+                                <rect key="frame" x="28" y="169" width="265" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m8e-4o-TG4">
+                                <rect key="frame" x="20" y="214" width="273" height="174"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="localidad de madrid" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="USf-dA-KrQ">
+                                <rect key="frame" x="28" y="80" width="265" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="I4I-2H-U5G"/>
+                    <connections>
+                        <outlet property="myCodigoPostalDeTuZona" destination="LbD-ck-LBu" id="GyC-Y5-0im"/>
+                        <outlet property="myImageCointainer" destination="m8e-4o-TG4" id="BU6-A6-LkZ"/>
+                        <outlet property="myLocalidadMadrid" destination="USf-dA-KrQ" id="Dco-Q2-sxW"/>
+                        <outlet property="myPrioridadTrabajo" destination="USg-Z5-Y98" id="XmI-De-Azm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m21-8t-ceu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1145" y="386"/>
+            <point key="canvasLocation" x="1052" y="386"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="67H-55-dwL">
