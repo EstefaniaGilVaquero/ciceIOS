@@ -13,7 +13,6 @@ class CCPickerWithTextFieldViewController: UIViewController {
     
     //MARK: - IBOUTLET
     
-    
     //MARK: - VARIABLES LOCALES GLOBALES
     
     var localidadesArrayData = ["Salamanca", "La Latina", "Centro", "Fuencarral", "PepitoPerez"]
@@ -27,6 +26,10 @@ class CCPickerWithTextFieldViewController: UIViewController {
         UIImage(named: "puertaAlcala.jpg")!
         
     ]
+    
+   // var imageArray: [UIImage] = [UIImage(named: "facebook@2x.jpg")!,
+    //                             UIImage(named: "icon.twitter@2x.jpg")!,
+    //                             UIImage(named: "linkedin@2x.jpg")!]
     
     
     
@@ -90,6 +93,8 @@ class CCPickerWithTextFieldViewController: UIViewController {
 //MARK: - DELEGADO PICKER VIEW
 extension CCPickerWithTextFieldViewController : UIPickerViewDelegate, UIPickerViewDataSource{
     
+    
+    
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -132,18 +137,39 @@ extension CCPickerWithTextFieldViewController : UIPickerViewDelegate, UIPickerVi
         }
     }
     
+    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
+        
+        let myView = UIView(frame: CGRectMake(0, 0, pickerView.bounds.width - 30, 60))
+        var myImageView = UIImageView(frame: CGRectMake(0, 0, 50, 50))
+        var rowString = String()
+        
+        if pickerView.tag == 3{
+            
+            switch row {
+            case 0:
+                rowString = prioridadArrayData[0]
+                myImageView = UIImageView(image: UIImage(named:"facebook@2x.png"))
+            case 1:
+                rowString = prioridadArrayData[1]
+                myImageView = UIImageView(image: UIImage(named:"facebook@2x.png"))
+            case 2:
+                rowString = prioridadArrayData[2]
+                myImageView = UIImageView(image: UIImage(named:"facebook@2x.png"))
+            default:
+                myImageView = UIImageView(image: UIImage(named:"facebook@2x.png"))
+            }
+        
+            let myLabel = UILabel(frame: CGRectMake(60, 0, pickerView.bounds.width - 90, 60 ))
+           // myLabel.font = UIFont(name:some font, size: 18)
+           // myLabel.text = rowString
+            
+            myView.addSubview(myLabel)
+            myView.addSubview(myImageView)
+            
+
+        }
+        return myView
+    }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
 

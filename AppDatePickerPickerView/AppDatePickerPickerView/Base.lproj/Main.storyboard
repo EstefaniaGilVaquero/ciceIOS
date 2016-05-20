@@ -17,21 +17,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n8c-5n-0m3">
-                                <rect key="frame" x="23" y="112" width="275" height="244"/>
+                                <rect key="frame" x="21" y="99" width="277" height="88"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o1o-uX-aCq">
+                                <rect key="frame" x="0.0" y="441" width="320" height="127"/>
+                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo de Alimento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7q-x6-PvM">
                                 <rect key="frame" x="34" y="64" width="252" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o1o-uX-aCq">
-                                <rect key="frame" x="0.0" y="441" width="320" height="127"/>
-                            </pickerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mozarella.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="asm-3F-7u1">
+                                <rect key="frame" x="20" y="211" width="280" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -47,6 +50,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="MyTituloAlimentoLBL" destination="T7q-x6-PvM" id="kbI-Kw-fGg"/>
+                        <outlet property="myCheesImage" destination="asm-3F-7u1" id="8La-05-YEO"/>
                         <outlet property="myPickerViewSeleccionaAlimento" destination="o1o-uX-aCq" id="mS0-ee-NTx"/>
                         <outlet property="myTextViewDetalleAlimentoTV" destination="n8c-5n-0m3" id="Xn2-HI-baD"/>
                     </connections>
@@ -119,4 +123,7 @@
             <point key="canvasLocation" x="291" y="386"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mozarella.jpg" width="259" height="194"/>
+    </resources>
 </document>
