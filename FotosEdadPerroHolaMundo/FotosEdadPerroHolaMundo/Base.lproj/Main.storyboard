@@ -17,45 +17,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B15-xq-fQx">
-                                <rect key="frame" x="0.0" y="57" width="320" height="456"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pxm-i2-JmH">
-                                        <rect key="frame" x="198" y="406" width="100" height="30"/>
-                                        <color key="backgroundColor" red="0.90784143518518523" green="0.2886121939937164" blue="0.13034083801123306" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <state key="normal" title="Persona 2">
-                                            <color key="titleColor" red="1" green="1" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="showPerson2ACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="14E-I2-gfE"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPu-Tg-OSO">
-                                        <rect key="frame" x="20" y="406" width="100" height="30"/>
-                                        <color key="backgroundColor" red="0.90784143518518523" green="0.2886121939937164" blue="0.13034083801123306" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <state key="normal" title="Persona 1">
-                                            <color key="titleColor" red="1" green="1" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="showPerson1ACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jgf-kF-v2w"/>
-                                        </connections>
-                                    </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gb3-eC-as4">
-                                        <rect key="frame" x="20" y="20" width="280" height="309"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre de la Persona" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mg3-d3-3OM">
-                                        <rect key="frame" x="20" y="344" width="280" height="39"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.90784143520000005" green="0.64238149720000004" blue="0.50630977369999997" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nombre de la Persona" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mg3-d3-3OM">
+                                <rect key="frame" x="20" y="415" width="280" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPu-Tg-OSO">
+                                <rect key="frame" x="20" y="473" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.90784143518518523" green="0.2886121939937164" blue="0.13034083801123306" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Persona 1">
+                                    <color key="titleColor" red="1" green="1" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPerson1ACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jgf-kF-v2w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pxm-i2-JmH">
+                                <rect key="frame" x="200" y="473" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.90784143518518523" green="0.2886121939937164" blue="0.13034083801123306" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Persona 2">
+                                    <color key="titleColor" red="1" green="1" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPerson2ACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="14E-I2-gfE"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gb3-eC-as4">
+                                <rect key="frame" x="20" y="87" width="280" height="309"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.90784143520000005" green="0.64238149720000004" blue="0.50630977369999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gb3-eC-as4" firstAttribute="top" secondItem="Pdz-7G-PXD" secondAttribute="bottom" constant="23" id="0I0-n6-kP3"/>
+                            <constraint firstItem="mg3-d3-3OM" firstAttribute="centerX" secondItem="gb3-eC-as4" secondAttribute="centerX" id="VSB-gz-X2L"/>
+                            <constraint firstItem="gb3-eC-as4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VaC-FW-Rif"/>
+                            <constraint firstItem="gb3-eC-as4" firstAttribute="top" secondItem="Pdz-7G-PXD" secondAttribute="bottom" constant="23" id="dcG-cb-80A"/>
+                            <constraint firstItem="mg3-d3-3OM" firstAttribute="centerX" secondItem="gb3-eC-as4" secondAttribute="centerX" id="ePP-TJ-J0S"/>
+                            <constraint firstItem="mg3-d3-3OM" firstAttribute="top" secondItem="gb3-eC-as4" secondAttribute="bottom" constant="19" id="fpB-Bf-bhE"/>
+                            <constraint firstItem="mg3-d3-3OM" firstAttribute="top" secondItem="gb3-eC-as4" secondAttribute="bottom" constant="19" id="mHI-cV-Z22"/>
+                            <constraint firstItem="mg3-d3-3OM" firstAttribute="height" secondItem="gb3-eC-as4" secondAttribute="height" id="nTO-bJ-Nqq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Imagenes" id="bkv-SS-wz0">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="6gV-Db-t78">
