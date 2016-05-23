@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         myPickerViewSeleccionaAlimento.dataSource = self
         
         //MyTituloAlimentoLBL.text = pickerArrayData[0]
-        self.title = pickerArrayData[0]
+        //self.title = pickerArrayData[0]
         //myTextViewDetalleAlimentoTV.text = pickerArrayData[0]
         myTextViewDetalleAlimentoTV.text = "La mozzarella1 (del italiano antiguo mozzare ‘cortar’) es un tipo de queso originario de la cocina italiana. Existe una variante de este queso en Dinamarca, pero la tradición italiana es más antigua. La ciudad de origen de este queso fue Aversa (Caserta). La denominación de origen con protección europea es la Mozzarella di Bufala Campana, sin que haya solicitado Italia la protección del nombre mozzarella. El queso DOP se produce en las provincias de Caserta y Salerno y en algunos municipios de las provincias de Nápoles, Benevento, Latina y Foggia con leche de búfala. En la misma Italia y en otros países, como Argentina, Colombia, España, Paraguay, Perú, República Dominicana, Uruguay, se preparan mozzarellas con leche de vaca."
 
@@ -98,7 +98,7 @@ extension ViewController : UIPickerViewDelegate, UIPickerViewDataSource{
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        MyTituloAlimentoLBL.text = pickerArrayData[row]
+        self.title = pickerArrayData[row]
         
         switch row {
         case 0:
