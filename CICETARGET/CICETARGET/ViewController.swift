@@ -9,6 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    
+    //MARK: - IBACTION
+    
+    @IBAction func showAlertACTION(sender: AnyObject) {
+        
+        let alertVC = UIAlertController(title: "Hola mundo", message: "Bienvenido a Target", preferredStyle: .Alert)
+        alertVC.addAction(UIAlertAction(title: "Asombroso", style: .Default, handler: nil))
+        presentViewController(alertVC, animated: true, completion: nil)
+        
+        
+        
+    }
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
