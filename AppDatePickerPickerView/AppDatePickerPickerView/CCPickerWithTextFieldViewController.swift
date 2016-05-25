@@ -18,6 +18,7 @@ class CCPickerWithTextFieldViewController: UIViewController {
     var localidadesArrayData = ["Salamanca", "La Latina", "Centro", "Fuencarral", "PepitoPerez"]
     var codigoPostalArrayData = ["28001","28006","28010","28026"]
     var prioridadArrayData = ["ALTA","MEDIA","BAJA"]
+    var logoImage: [UIImage] = [
    /* var logoImage: [UIImage] = [
         UIImage(named: "PlazaCastilla.jpg")!,
         UIImage(named: "GranVia.jpg")!,
@@ -47,21 +48,17 @@ class CCPickerWithTextFieldViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        myImageCointainer.image = UIImage(named: fotoArray[0])
-        
-        //Forma larga
-        
         //Aqui construyo los distintos pickers Viwes
-        //Picker 1
-        /*let pickerViewLocalidadData = UIPickerView()
+        let pickerViewLocalidadData = UIPickerView()
         pickerViewLocalidadData.delegate = self
         pickerViewLocalidadData.dataSource = self
         pickerViewLocalidadData.tag = 1
         
         myLocalidadMadrid.inputView = pickerViewLocalidadData
         myLocalidadMadrid.text = localidadesArrayData[0]
+        myImageCointainer.image = logoImage[0]
         
-        //Picker 2
+        
         let pickerViewCodigoPostal = UIPickerView()
         pickerViewCodigoPostal.delegate = self
         pickerViewCodigoPostal.dataSource = self
