@@ -28,6 +28,7 @@ class CCPickerWithTextFieldViewController: UIViewController {
         
     ]*/
     
+<<<<<<< HEAD
    // var imageArray: [UIImage] = [UIImage(named: "facebook@2x.jpg")!,
     //                             UIImage(named: "icon.twitter@2x.jpg")!,
     //                             UIImage(named: "linkedin@2x.jpg")!]
@@ -35,6 +36,8 @@ class CCPickerWithTextFieldViewController: UIViewController {
     var fotoArray = ["facebook@2x.jpg","icon.twitter@2x.jpg","linkedin@2x.jpg"]
     
     
+=======
+>>>>>>> d1f91874e0b4328ba77d652fb668c2af1781f424
     
     @IBOutlet weak var myLocalidadMadrid: UITextField!
     
@@ -48,8 +51,8 @@ class CCPickerWithTextFieldViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Aqui construyo los distintos pickers Viwes
-        let pickerViewLocalidadData = UIPickerView()
+        //Aqui construyo los distintos pickers Viwes de la forma mas larga
+       /* let pickerViewLocalidadData = UIPickerView()
         pickerViewLocalidadData.delegate = self
         pickerViewLocalidadData.dataSource = self
         pickerViewLocalidadData.tag = 1
@@ -75,24 +78,42 @@ class CCPickerWithTextFieldViewController: UIViewController {
         
         myPrioridadTrabajo.inputView = pickerViewPrioridadTrabajo
         myPrioridadTrabajo.text = prioridadArrayData[0]*/
+<<<<<<< HEAD
         
      //   myImageCointainer.image = UIImage(named: fotoArray[0])
+=======
+        
+        //Forma mas ordenada de crear los pickerView
+        
+>>>>>>> d1f91874e0b4328ba77d652fb668c2af1781f424
         createPickerView(1, myTextFieldCustom: myLocalidadMadrid, myArray: localidadesArrayData)
         createPickerView(2, myTextFieldCustom: myCodigoPostalDeTuZona, myArray: codigoPostalArrayData)
         createPickerView(3, myTextFieldCustom: myPrioridadTrabajo, myArray: prioridadArrayData)
         
+<<<<<<< HEAD
     }
     
     //MARK: - UTILS
     func createPickerView(myTag : Int, myTextFieldCustom : UITextField, myArray : [String]){
     
+=======
+  
+    }
+    
+    //MARK: - UTILS
+    
+    func createPickerView(myTag : Int, myTextFieldCustom : UITextField, myArray : [String]){
+>>>>>>> d1f91874e0b4328ba77d652fb668c2af1781f424
         let pickerView = UIPickerView()
         pickerView.delegate = self
         pickerView.dataSource = self
         pickerView.tag = myTag
         myTextFieldCustom.inputView = pickerView
         myTextFieldCustom.text = myArray[0]
+<<<<<<< HEAD
     
+=======
+>>>>>>> d1f91874e0b4328ba77d652fb668c2af1781f424
     }
 
     override func didReceiveMemoryWarning() {

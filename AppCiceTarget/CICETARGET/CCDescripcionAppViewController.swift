@@ -14,6 +14,11 @@ class CCDescripcionAppViewController: UIViewController {
     
     //MARK: - IBACTION
     
+    @IBOutlet weak var myWebView: UIWebView!
+    
+    
+    //MARK: - IBACTION
+    
     @IBAction func volverACTION(sender: AnyObject) {
         
         dismissViewControllerAnimated(true, completion: nil)
@@ -51,7 +56,12 @@ class CCDescripcionAppViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+        if let htmlFile = NSBundle.mainBundle().pathForResource("target", ofType: "html"){
+            let fileHtml = NSData(contentsOfFile: htmlFile)
+            let baseURL = NSURL.fileURLWithPath(NSBundle.mainBundle().bundlePath)
+            myWebView.loadData(fileHtml!, MIMEType: "text/html", textEncodingName: "UTF-8", baseURL: baseURL)
+        }
     }
 
     override func didReceiveMemoryWarning() {

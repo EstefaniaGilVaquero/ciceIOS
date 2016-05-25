@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //MARK: - IBOUTLET
+    
+    
+    
+    
+    
     //MARK: - VARIABLES LOCALES GLOBALES
     var currentValue = 50
     var targetValue = 0
