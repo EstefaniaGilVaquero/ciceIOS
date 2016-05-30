@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "631EE2811CF4B94B00DA482F"
-               BuildableName = "CICETARGET.app"
-               BlueprintName = "CICETARGET"
-               ReferencedContainer = "container:CICETARGET.xcodeproj">
+               BlueprintIdentifier = "0946E0121CF2F06A007F5CED"
+               BuildableName = "SYBCICETARGET.app"
+               BlueprintName = "SYBCICETARGET"
+               ReferencedContainer = "container:SYBCICETARGET.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "631EE2811CF4B94B00DA482F"
-            BuildableName = "CICETARGET.app"
-            BlueprintName = "CICETARGET"
-            ReferencedContainer = "container:CICETARGET.xcodeproj">
+            BlueprintIdentifier = "0946E0121CF2F06A007F5CED"
+            BuildableName = "SYBCICETARGET.app"
+            BlueprintName = "SYBCICETARGET"
+            ReferencedContainer = "container:SYBCICETARGET.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "631EE2811CF4B94B00DA482F"
-            BuildableName = "CICETARGET.app"
-            BlueprintName = "CICETARGET"
-            ReferencedContainer = "container:CICETARGET.xcodeproj">
+            BlueprintIdentifier = "0946E0121CF2F06A007F5CED"
+            BuildableName = "SYBCICETARGET.app"
+            BlueprintName = "SYBCICETARGET"
+            ReferencedContainer = "container:SYBCICETARGET.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "631EE2811CF4B94B00DA482F"
-            BuildableName = "CICETARGET.app"
-            BlueprintName = "CICETARGET"
-            ReferencedContainer = "container:CICETARGET.xcodeproj">
+            BlueprintIdentifier = "0946E0121CF2F06A007F5CED"
+            BuildableName = "SYBCICETARGET.app"
+            BlueprintName = "SYBCICETARGET"
+            ReferencedContainer = "container:SYBCICETARGET.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -85,7 +85,8 @@
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Distribution"
+      customArchiveName = "SYBCICETARGET"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
