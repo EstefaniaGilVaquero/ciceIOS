@@ -155,11 +155,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ri-A6-Bbg">
                                 <rect key="frame" x="31" y="2" width="502" height="316"/>
                                 <subviews>
-                                    <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9jz-Dz-LdC">
-                                        <rect key="frame" x="27" y="58" width="455" height="200"/>
+                                    <webView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9jz-Dz-LdC">
+                                        <rect key="frame" x="8" y="58" width="404" height="200"/>
                                     </webView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndu-pz-yli">
-                                        <rect key="frame" x="416" y="20" width="66" height="30"/>
+                                        <rect key="frame" x="346" y="20" width="66" height="30"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="volver" backgroundImage="Button-Normal.png">
                                             <color key="titleColor" red="0.51565328050000003" green="0.19263879910000001" blue="0.080240645210000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -169,7 +169,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qo-jy-MBJ">
-                                        <rect key="frame" x="27" y="266" width="126" height="30"/>
+                                        <rect key="frame" x="8" y="266" width="126" height="30"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="enviar mail" backgroundImage="Button-Normal.png">
                                             <color key="titleColor" red="0.51565328050000003" green="0.19263879910000001" blue="0.080240645210000003" alpha="1" colorSpace="calibratedRGB"/>
