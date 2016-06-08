@@ -75,7 +75,7 @@ override func viewDidLoad() {
         if segue.identifier == "segueV3" {
             //Controlar si ha introducido todos los datos y calculado la edad del perro
             //Si no, mensaje de alerta
-            if myTelefonoMovilTF.text == "" || myDireccionTF.text == "" || myEdadPerroTF.text == "" || myEdadPerroLBL.text == ""{
+            if myTelefonoMovilTF.text == "" && myDireccionTF.text == "" || myEdadPerroTF.text == "" || myEdadPerroLBL.text == ""{
                 self.presentViewController(showDisplayAlertControllerSB("hey", messagePara: "Introduce todos los datos y calcula la edad de tu Perro!"), animated: true, completion: nil)
             }else{
                 //Si los ha introducido y calculado la edad del perro va a la ventana 3
