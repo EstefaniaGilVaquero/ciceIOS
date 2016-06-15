@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>nombre</key>
+		<string>Brad</string>
+		<key>apellido</key>
+		<string>Pitt</string>
+		<key>twitter</key>
+		<string>@Brad_Pitt</string>
+		<key>fecha</key>
+		<string>2 semanas</string>
+		<key>experiencia</key>
+		<string>mucha</string>
+		<key>seguidores</key>
+		<string>50000005555555555555555</string>
+		<key>abstracto</key>
+		<string>master del universo</string>
+		<key>descripcion</key>
+		<string>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
+		<key>imageProfile</key>
+		<string>brad_pitt.jpg</string>
+		<key>imagePost</key>
+		<string>brad_pitt.jpg</string>
+	</dict>
+	<dict>
+		<key>nombre</key>
+		<string>Jhony</string>
+		<key>apellido</key>
+		<string>Deep</string>
+		<key>twitter</key>
+		<string>@Jhony_Deep</string>
+		<key>fecha</key>
+		<string>2 semanas</string>
+		<key>experiencia</key>
+		<string>mucha</string>
+		<key>seguidores</key>
+		<string>50000005555555555555555</string>
+		<key>abstracto</key>
+		<string>master del universo</string>
+		<key>descripcion</key>
+		<string>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
+		<key>imageProfile</key>
+		<string>deep.jpg</string>
+		<key>imagePost</key>
+		<string>deep.jpg</string>
+	</dict>
+	<dict>
+		<key>nombre</key>
+		<string>Estefi</string>
+		<key>apellido</key>
+		<string>Gil</string>
+		<key>twitter</key>
+		<string>@stefy_gil</string>
+		<key>fecha</key>
+		<string>2 semanas</string>
+		<key>experiencia</key>
+		<string>mucha</string>
+		<key>seguidores</key>
+		<string>50000005555555555555555</string>
+		<key>abstracto</key>
+		<string>master del universo</string>
+		<key>descripcion</key>
+		<string>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
+		<key>imageProfile</key>
+		<string>estefi.jpg</string>
+		<key>imagePost</key>
+		<string>estefi.jpg</string>
+	</dict>
+</array>
+</plist>

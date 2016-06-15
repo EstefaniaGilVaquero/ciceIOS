@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0901CE8C1D11420900DC15E3 /* SYBCustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0901CE8B1D11420900DC15E3 /* SYBCustomTableViewController.swift */; };
+		0901CE8F1D11427D00DC15E3 /* SYBCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0901CE8D1D11427D00DC15E3 /* SYBCustomCell.swift */; };
+		0901CE921D11599900DC15E3 /* SYBDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0901CE911D11599900DC15E3 /* SYBDetalleViewController.swift */; };
+		0901CE941D116AAA00DC15E3 /* brad_pitt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0901CE931D116AAA00DC15E3 /* brad_pitt.jpg */; };
 		09ADF1941D113F5200759CCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ADF1931D113F5200759CCD /* AppDelegate.swift */; };
 		09ADF1991D113F5200759CCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09ADF1971D113F5200759CCD /* Main.storyboard */; };
 		09ADF19B1D113F5200759CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09ADF19A1D113F5200759CCD /* Assets.xcassets */; };
 		09ADF19E1D113F5200759CCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09ADF19C1D113F5200759CCD /* LaunchScreen.storyboard */; };
+		09ADF1A81D11412C00759CCD /* Contactos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09ADF1A71D11412C00759CCD /* Contactos.plist */; };
+		09ADF1AA1D11416300759CCD /* deep.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09ADF1A91D11416300759CCD /* deep.jpg */; };
+		09F21F231D116C3700C828F4 /* estefi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F21F221D116C3700C828F4 /* estefi.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0901CE8B1D11420900DC15E3 /* SYBCustomTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYBCustomTableViewController.swift; sourceTree = "<group>"; };
+		0901CE8D1D11427D00DC15E3 /* SYBCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYBCustomCell.swift; sourceTree = "<group>"; };
+		0901CE911D11599900DC15E3 /* SYBDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYBDetalleViewController.swift; sourceTree = "<group>"; };
+		0901CE931D116AAA00DC15E3 /* brad_pitt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brad_pitt.jpg; sourceTree = "<group>"; };
 		09ADF1901D113F5200759CCD /* App_CustomCellDemo3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_CustomCellDemo3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09ADF1931D113F5200759CCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09ADF1981D113F5200759CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09ADF19A1D113F5200759CCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09ADF19D1D113F5200759CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09ADF19F1D113F5200759CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09ADF1A71D11412C00759CCD /* Contactos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Contactos.plist; sourceTree = "<group>"; };
+		09ADF1A91D11416300759CCD /* deep.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deep.jpg; sourceTree = "<group>"; };
+		09F21F221D116C3700C828F4 /* estefi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = estefi.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +66,44 @@
 		09ADF1921D113F5200759CCD /* App_CustomCellDemo3 */ = {
 			isa = PBXGroup;
 			children = (
+				09ADF1AB1D11416500759CCD /* IMAGES */,
+				09ADF1A61D11406F00759CCD /* CUSTOM CELL */,
+				09ADF1A51D11406800759CCD /* CLASS */,
 				09ADF1931D113F5200759CCD /* AppDelegate.swift */,
 				09ADF1971D113F5200759CCD /* Main.storyboard */,
 				09ADF19A1D113F5200759CCD /* Assets.xcassets */,
 				09ADF19C1D113F5200759CCD /* LaunchScreen.storyboard */,
 				09ADF19F1D113F5200759CCD /* Info.plist */,
+				09ADF1A71D11412C00759CCD /* Contactos.plist */,
 			);
 			path = App_CustomCellDemo3;
+			sourceTree = "<group>";
+		};
+		09ADF1A51D11406800759CCD /* CLASS */ = {
+			isa = PBXGroup;
+			children = (
+				0901CE8B1D11420900DC15E3 /* SYBCustomTableViewController.swift */,
+				0901CE911D11599900DC15E3 /* SYBDetalleViewController.swift */,
+			);
+			name = CLASS;
+			sourceTree = "<group>";
+		};
+		09ADF1A61D11406F00759CCD /* CUSTOM CELL */ = {
+			isa = PBXGroup;
+			children = (
+				0901CE8D1D11427D00DC15E3 /* SYBCustomCell.swift */,
+			);
+			name = "CUSTOM CELL";
+			sourceTree = "<group>";
+		};
+		09ADF1AB1D11416500759CCD /* IMAGES */ = {
+			isa = PBXGroup;
+			children = (
+				09F21F221D116C3700C828F4 /* estefi.jpg */,
+				0901CE931D116AAA00DC15E3 /* brad_pitt.jpg */,
+				09ADF1A91D11416300759CCD /* deep.jpg */,
+			);
+			name = IMAGES;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,8 +166,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				09ADF19E1D113F5200759CCD /* LaunchScreen.storyboard in Resources */,
+				09F21F231D116C3700C828F4 /* estefi.jpg in Resources */,
+				09ADF1AA1D11416300759CCD /* deep.jpg in Resources */,
 				09ADF19B1D113F5200759CCD /* Assets.xcassets in Resources */,
+				0901CE941D116AAA00DC15E3 /* brad_pitt.jpg in Resources */,
 				09ADF1991D113F5200759CCD /* Main.storyboard in Resources */,
+				09ADF1A81D11412C00759CCD /* Contactos.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +183,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				09ADF1941D113F5200759CCD /* AppDelegate.swift in Sources */,
+				0901CE921D11599900DC15E3 /* SYBDetalleViewController.swift in Sources */,
+				0901CE8C1D11420900DC15E3 /* SYBCustomTableViewController.swift in Sources */,
+				0901CE8F1D11427D00DC15E3 /* SYBCustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +337,7 @@
 				09ADF1A41D113F5200759CCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
