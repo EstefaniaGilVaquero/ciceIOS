@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>firstName</key>
+		<string>Estefi</string>
+		<key>lastName</key>
+		<string>Gil</string>
+		<key>twitter</key>
+		<string>@Brad_Pitt</string>
+		<key>createdPost</key>
+		<string>2 semanas</string>
+		<key>experienciaCV</key>
+		<string>mucha</string>
+		<key>numeroSeguidores</key>
+		<string>50000005555555555555555</string>
+		<key>abstractoCV</key>
+		<string>master del universo</string>
+		<key>descripcion</key>
+		<string>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
+		<key>imageProfile</key>
+		<string>estefi.jpg</string>
+		<key>imagePost</key>
+		<string>estefi.jpg</string>
+		<key>telefonoMovil</key>
+		<string></string>
+		<key>telefonoTrabajo</key>
+		<string></string>
+		<key>email</key>
+		<string></string>
+		<key>cuentaLinkedin</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Brad</string>
+		<key>lastName</key>
+		<string>Pitt</string>
+		<key>twitter</key>
+		<string>@Brad_Pitt</string>
+		<key>createdPost</key>
+		<string>2 semanas</string>
+		<key>experienciaCV</key>
+		<string>mucha</string>
+		<key>numeroSeguidores</key>
+		<string>50000005555555555555555</string>
+		<key>abstractoCV</key>
+		<string>master del universo</string>
+		<key>descripcion</key>
+		<string>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
+		<key>imageProfile</key>
+		<string>deep.jpg</string>
+		<key>imagePost</key>
+		<string>deep.jpg</string>
+		<key>telefonoMovil</key>
+		<string></string>
+		<key>telefonoTrabajo</key>
+		<string></string>
+		<key>email</key>
+		<string></string>
+		<key>cuentaLinkedin</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Jhony</string>
+		<key>lastName</key>
+		<string>Depp</string>
+		<key>twitter</key>
+		<string>@JhonyDepp</string>
+		<key>createdPost</key>
+		<string>2 semanas</string>
+		<key>experienciaCV</key>
+		<string>mucha</string>
+		<key>numeroSeguidores</key>
+		<string>50000005555555555555555</string>
+		<key>abstractoCV</key>
+		<string>master del universo</string>
+		<key>descripcion</key>
+		<string>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
+		<key>imageProfile</key>
+		<string>brad_pitt.jpg</string>
+		<key>imagePost</key>
+		<string>brad_pitt.jpg</string>
+		<key>telefonoMovil</key>
+		<string></string>
+		<key>telefonoTrabajo</key>
+		<string></string>
+		<key>email</key>
+		<string></string>
+		<key>cuentaLinkedin</key>
+		<string></string>
+	</dict>
+</array>
+</plist>

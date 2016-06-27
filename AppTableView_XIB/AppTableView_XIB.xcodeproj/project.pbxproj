@@ -329,6 +329,7 @@
 				098709C21D13DA0D00A75116 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

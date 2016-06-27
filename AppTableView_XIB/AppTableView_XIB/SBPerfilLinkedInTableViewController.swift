@@ -15,23 +15,26 @@ class SBPerfilLinkedInTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        -(void)viewWillAppear:(BOOL)animated
-//        {
-//            CGFloat tableBorderLeft = 20;
-//            CGFloat tableBorderRight = 20;
-//            
-//            CGRect tableRect = self.view.frame;
-//            tableRect.origin.x += tableBorderLeft; // make the table begin a few pixels right from its origin
-//            tableRect.size.width -= tableBorderLeft + tableBorderRight; // reduce the width of the table
-//            tableView.frame = tableRect;
-//        }
-//        
-        
         
         tableView.backgroundView = UIImageView(image: UIImage(named: "ubuntu.jpg" ))
         
         //Aqui registramos los XIB/NIB
         tableView.registerNib(UINib(nibName: "SYBPerfilCustomCell", bundle: nil), forCellReuseIdentifier: "PerfilCustomCell")
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        //Ajusto el ancho de la tabla
+        let tableBorderLeft : CGFloat = 8
+        let tableBorderRigth : CGFloat = 8
+        
+        var tableRect : CGRect = self.view.frame
+        tableRect.origin.x += tableBorderLeft //hace que la tabla comience a 8 puntos hacia la derecha desde el origen
+        tableRect.size.width -= tableBorderLeft + tableBorderRigth //Esto reduce el ancho de la tabla
+        tableView.frame = tableRect
+        
         
     }
 
