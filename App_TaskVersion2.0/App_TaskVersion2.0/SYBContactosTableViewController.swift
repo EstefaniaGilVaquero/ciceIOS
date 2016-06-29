@@ -67,6 +67,7 @@ class SYBContactosTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
         let detalleContactosVCController = self.storyboard?.instantiateViewControllerWithIdentifier("detalleContactosVC") as! SYBContactoViewController
         
         diccionarioContactos = arrayContactos[indexPath.row] as! NSDictionary

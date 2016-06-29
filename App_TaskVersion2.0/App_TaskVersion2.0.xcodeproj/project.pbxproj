@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09977D6B1D23B72E00DF5F9C /* SYBCategoriasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09977D6A1D23B72E00DF5F9C /* SYBCategoriasTableViewController.swift */; };
+		09977D6D1D23B74F00DF5F9C /* SYBNuevaTareaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09977D6C1D23B74F00DF5F9C /* SYBNuevaTareaViewController.swift */; };
+		09977D701D23BC1000DF5F9C /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09977D6F1D23BC1000DF5F9C /* placeholder.jpg */; };
 		099E7EC61D17EEA7009CD779 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099E7EC51D17EEA7009CD779 /* AppDelegate.swift */; };
 		099E7ECB1D17EEA7009CD779 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099E7EC91D17EEA7009CD779 /* Main.storyboard */; };
 		099E7ECD1D17EEA7009CD779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099E7ECC1D17EEA7009CD779 /* Assets.xcassets */; };
@@ -17,13 +20,15 @@
 		09D10F8E1D210DFA00FA5E72 /* SYBContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D10F8D1D210DFA00FA5E72 /* SYBContactoViewController.swift */; };
 		09D10FA11D211B5E00FA5E72 /* backPerfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D10F9C1D211B5E00FA5E72 /* backPerfil.png */; };
 		09D10FA21D211B5E00FA5E72 /* brad_pitt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09D10F9D1D211B5E00FA5E72 /* brad_pitt.jpg */; };
-		09D10FA31D211B5E00FA5E72 /* camara@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D10F9E1D211B5E00FA5E72 /* camara@2x.png */; };
 		09D10FA41D211B5E00FA5E72 /* deep.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09D10F9F1D211B5E00FA5E72 /* deep.jpg */; };
 		09D10FA51D211B5E00FA5E72 /* estefi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09D10FA01D211B5E00FA5E72 /* estefi.jpg */; };
 		09D10FA71D211DD400FA5E72 /* FondobackPerfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D10FA61D211DD400FA5E72 /* FondobackPerfil.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09977D6A1D23B72E00DF5F9C /* SYBCategoriasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYBCategoriasTableViewController.swift; sourceTree = "<group>"; };
+		09977D6C1D23B74F00DF5F9C /* SYBNuevaTareaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYBNuevaTareaViewController.swift; sourceTree = "<group>"; };
+		09977D6F1D23BC1000DF5F9C /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
 		099E7EC21D17EEA7009CD779 /* App_TaskVersion2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_TaskVersion2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		099E7EC51D17EEA7009CD779 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		099E7ECA1D17EEA7009CD779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,7 +41,6 @@
 		09D10F8D1D210DFA00FA5E72 /* SYBContactoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYBContactoViewController.swift; sourceTree = "<group>"; };
 		09D10F9C1D211B5E00FA5E72 /* backPerfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backPerfil.png; sourceTree = "<group>"; };
 		09D10F9D1D211B5E00FA5E72 /* brad_pitt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brad_pitt.jpg; sourceTree = "<group>"; };
-		09D10F9E1D211B5E00FA5E72 /* camara@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camara@2x.png"; sourceTree = "<group>"; };
 		09D10F9F1D211B5E00FA5E72 /* deep.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deep.jpg; sourceTree = "<group>"; };
 		09D10FA01D211B5E00FA5E72 /* estefi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = estefi.jpg; sourceTree = "<group>"; };
 		09D10FA61D211DD400FA5E72 /* FondobackPerfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FondobackPerfil.png; sourceTree = "<group>"; };
@@ -53,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09977D6E1D23B75600DF5F9C /* VC_NUEVASTAREAS */ = {
+			isa = PBXGroup;
+			children = (
+				09977D6A1D23B72E00DF5F9C /* SYBCategoriasTableViewController.swift */,
+				09977D6C1D23B74F00DF5F9C /* SYBNuevaTareaViewController.swift */,
+			);
+			name = VC_NUEVASTAREAS;
+			sourceTree = "<group>";
+		};
 		099E7EB91D17EEA7009CD779 = {
 			isa = PBXGroup;
 			children = (
@@ -72,10 +85,10 @@
 		099E7EC41D17EEA7009CD779 /* App_TaskVersion2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				09977D6F1D23BC1000DF5F9C /* placeholder.jpg */,
 				09D10FA61D211DD400FA5E72 /* FondobackPerfil.png */,
 				09D10F9C1D211B5E00FA5E72 /* backPerfil.png */,
 				09D10F9D1D211B5E00FA5E72 /* brad_pitt.jpg */,
-				09D10F9E1D211B5E00FA5E72 /* camara@2x.png */,
 				09D10F9F1D211B5E00FA5E72 /* deep.jpg */,
 				09D10FA01D211B5E00FA5E72 /* estefi.jpg */,
 				099E7EC51D17EEA7009CD779 /* AppDelegate.swift */,
@@ -84,6 +97,7 @@
 				099E7ECE1D17EEA7009CD779 /* LaunchScreen.storyboard */,
 				099E7ED11D17EEA7009CD779 /* Info.plist */,
 				09D10F8F1D210E0400FA5E72 /* VC_CONTACTOS */,
+				09977D6E1D23B75600DF5F9C /* VC_NUEVASTAREAS */,
 			);
 			path = App_TaskVersion2.0;
 			sourceTree = "<group>";
@@ -162,11 +176,11 @@
 				09D10FA11D211B5E00FA5E72 /* backPerfil.png in Resources */,
 				099E7ECD1D17EEA7009CD779 /* Assets.xcassets in Resources */,
 				09D10FA21D211B5E00FA5E72 /* brad_pitt.jpg in Resources */,
-				09D10FA31D211B5E00FA5E72 /* camara@2x.png in Resources */,
 				09D10FA41D211B5E00FA5E72 /* deep.jpg in Resources */,
 				099E7ECB1D17EEA7009CD779 /* Main.storyboard in Resources */,
 				09D10FA51D211B5E00FA5E72 /* estefi.jpg in Resources */,
 				09D10F821D210BC600FA5E72 /* Contactos.plist in Resources */,
+				09977D701D23BC1000DF5F9C /* placeholder.jpg in Resources */,
 				09D10FA71D211DD400FA5E72 /* FondobackPerfil.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,9 +193,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D10F8C1D210DD700FA5E72 /* SYBContactosCustomCell.swift in Sources */,
+				09977D6B1D23B72E00DF5F9C /* SYBCategoriasTableViewController.swift in Sources */,
 				099E7EC61D17EEA7009CD779 /* AppDelegate.swift in Sources */,
 				09D10F8E1D210DFA00FA5E72 /* SYBContactoViewController.swift in Sources */,
 				09D10F8A1D210D7200FA5E72 /* SYBContactosTableViewController.swift in Sources */,
+				09977D6D1D23B74F00DF5F9C /* SYBNuevaTareaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
