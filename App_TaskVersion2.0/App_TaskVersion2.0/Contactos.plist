@@ -4,93 +4,363 @@
 <array>
 	<dict>
 		<key>firstName</key>
-		<string>Estefi</string>
+		<string>Taylor</string>
 		<key>lastName</key>
-		<string>Gil</string>
-		<key>twitter</key>
-		<string>@Brad_Pitt</string>
+		<string>Swift</string>
+		<key>usernameTwitter</key>
+		<string>@swift_102315</string>
 		<key>createdPost</key>
 		<string>2 semanas</string>
 		<key>experienciaCV</key>
-		<string>mucha</string>
+		<string>Senior iOS Developer App RatonPerez / App iCoSpartan</string>
 		<key>numeroSeguidores</key>
-		<string>50000005555555555555555</string>
-		<key>abstractoCV</key>
-		<string>master del universo</string>
-		<key>descripcion</key>
+		<string>Andrés tienes mas de 500 seguidores</string>
+		<key>abstractoVC</key>
+		<string>Comment</string>
+		<key>description</key>
 		<string>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
 		<key>imageProfile</key>
-		<string>estefi.jpg</string>
+		<string>Taylor_Swift2.jpg</string>
 		<key>imagePost</key>
-		<string>estefi.jpg</string>
+		<string>brad-pitt.jpg</string>
 		<key>telefonoMovil</key>
-		<string></string>
+		<string>65 34 40 572</string>
 		<key>telefonoTrabajo</key>
-		<string></string>
+		<string>915 12 12 12 </string>
 		<key>email</key>
-		<string></string>
+		<string>mail@mail.com / email@email.es</string>
 		<key>cuentaLinkedin</key>
-		<string></string>
+		<string>phdafoe@gmail.linkedin.com</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Taylor</string>
+		<key>lastName</key>
+		<string>Swift</string>
+		<key>usernameTwitter</key>
+		<string>@swift_102315</string>
+		<key>createdPost</key>
+		<string>2 semanas</string>
+		<key>experienciaCV</key>
+		<string>Senior iOS Developer App RatonPerez / App iCoSpartan</string>
+		<key>numeroSeguidores</key>
+		<string>Andrés tienes mas de 500 seguidores</string>
+		<key>abstractoVC</key>
+		<string>Comment</string>
+		<key>description</key>
+		<string>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
+		<key>imageProfile</key>
+		<string>Taylor_Swift2.jpg</string>
+		<key>imagePost</key>
+		<string>brad-pitt.jpg</string>
+		<key>telefonoMovil</key>
+		<string>65 34 40 572</string>
+		<key>telefonoTrabajo</key>
+		<string>915 12 12 12 </string>
+		<key>email</key>
+		<string>mail@mail.com / email@email.es</string>
+		<key>cuentaLinkedin</key>
+		<string>phdafoe@gmail.linkedin.com</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Taylor</string>
+		<key>lastName</key>
+		<string>Swift</string>
+		<key>usernameTwitter</key>
+		<string>@swift_102315</string>
+		<key>createdPost</key>
+		<string>2 semanas</string>
+		<key>experienciaCV</key>
+		<string>Senior iOS Developer App RatonPerez / App iCoSpartan</string>
+		<key>numeroSeguidores</key>
+		<string>Andrés tienes mas de 500 seguidores</string>
+		<key>abstractoVC</key>
+		<string>Comment</string>
+		<key>description</key>
+		<string>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
+		<key>imageProfile</key>
+		<string>Taylor_Swift2.jpg</string>
+		<key>imagePost</key>
+		<string>brad-pitt.jpg</string>
+		<key>telefonoMovil</key>
+		<string>65 34 40 572</string>
+		<key>telefonoTrabajo</key>
+		<string>915 12 12 12 </string>
+		<key>email</key>
+		<string>mail@mail.com / email@email.es</string>
+		<key>cuentaLinkedin</key>
+		<string>phdafoe@gmail.linkedin.com</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Taylor</string>
+		<key>lastName</key>
+		<string>Swift</string>
+		<key>usernameTwitter</key>
+		<string>@swift_102315</string>
+		<key>createdPost</key>
+		<string>2 semanas</string>
+		<key>experienciaCV</key>
+		<string>Senior iOS Developer App RatonPerez / App iCoSpartan</string>
+		<key>numeroSeguidores</key>
+		<string>Andrés tienes mas de 500 seguidores</string>
+		<key>abstractoVC</key>
+		<string>Comment</string>
+		<key>description</key>
+		<string>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
+		<key>imageProfile</key>
+		<string>Taylor_Swift2.jpg</string>
+		<key>imagePost</key>
+		<string>brad-pitt.jpg</string>
+		<key>telefonoMovil</key>
+		<string>65 34 40 572</string>
+		<key>telefonoTrabajo</key>
+		<string>915 12 12 12 </string>
+		<key>email</key>
+		<string>mail@mail.com / email@email.es</string>
+		<key>cuentaLinkedin</key>
+		<string>phdafoe@gmail.linkedin.com</string>
 	</dict>
 	<dict>
 		<key>firstName</key>
 		<string>Brad</string>
 		<key>lastName</key>
 		<string>Pitt</string>
-		<key>twitter</key>
-		<string>@Brad_Pitt</string>
+		<key>usernameTwitter</key>
+		<string>@pitt_102315</string>
 		<key>createdPost</key>
 		<string>2 semanas</string>
 		<key>experienciaCV</key>
-		<string>mucha</string>
+		<string>Junior iOS Developer App RatonPerez / App iCoSpartan</string>
 		<key>numeroSeguidores</key>
-		<string>50000005555555555555555</string>
-		<key>abstractoCV</key>
-		<string>master del universo</string>
-		<key>descripcion</key>
+		<string>Brad tienes mas de 550 seguidores</string>
+		<key>abstractoVC</key>
+		<string>Comment</string>
+		<key>description</key>
 		<string>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
 		<key>imageProfile</key>
-		<string>deep.jpg</string>
+		<string>brad-pitt.jpg</string>
 		<key>imagePost</key>
-		<string>deep.jpg</string>
+		<string>steve_jobs.jpg</string>
 		<key>telefonoMovil</key>
-		<string></string>
+		<string>65 34 40 577</string>
 		<key>telefonoTrabajo</key>
-		<string></string>
+		<string>915 12 12 12 2</string>
 		<key>email</key>
-		<string></string>
+		<string>mail@mail.com / email@email.es</string>
 		<key>cuentaLinkedin</key>
-		<string></string>
+		<string>phdafoe@gmail.linkedin.com</string>
 	</dict>
 	<dict>
 		<key>firstName</key>
-		<string>Jhony</string>
+		<string>Brad</string>
 		<key>lastName</key>
-		<string>Depp</string>
-		<key>twitter</key>
-		<string>@JhonyDepp</string>
+		<string>Pitt</string>
+		<key>usernameTwitter</key>
+		<string>@pitt_102315</string>
 		<key>createdPost</key>
 		<string>2 semanas</string>
 		<key>experienciaCV</key>
-		<string>mucha</string>
+		<string>Junior iOS Developer App RatonPerez / App iCoSpartan</string>
 		<key>numeroSeguidores</key>
-		<string>50000005555555555555555</string>
-		<key>abstractoCV</key>
-		<string>master del universo</string>
-		<key>descripcion</key>
+		<string>Brad tienes mas de 550 seguidores</string>
+		<key>abstractoVC</key>
+		<string>Comment</string>
+		<key>description</key>
 		<string>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
 		<key>imageProfile</key>
-		<string>brad_pitt.jpg</string>
+		<string>brad-pitt.jpg</string>
 		<key>imagePost</key>
-		<string>brad_pitt.jpg</string>
+		<string>steve_jobs.jpg</string>
 		<key>telefonoMovil</key>
-		<string></string>
+		<string>65 34 40 577</string>
 		<key>telefonoTrabajo</key>
-		<string></string>
+		<string>915 12 12 12 2</string>
 		<key>email</key>
-		<string></string>
+		<string>mail@mail.com / email@email.es</string>
 		<key>cuentaLinkedin</key>
-		<string></string>
+		<string>phdafoe@gmail.linkedin.com</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Brad</string>
+		<key>lastName</key>
+		<string>Pitt</string>
+		<key>usernameTwitter</key>
+		<string>@pitt_102315</string>
+		<key>createdPost</key>
+		<string>2 semanas</string>
+		<key>experienciaCV</key>
+		<string>Junior iOS Developer App RatonPerez / App iCoSpartan</string>
+		<key>numeroSeguidores</key>
+		<string>Brad tienes mas de 550 seguidores</string>
+		<key>abstractoVC</key>
+		<string>Comment</string>
+		<key>description</key>
+		<string>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
+		<key>imageProfile</key>
+		<string>brad-pitt.jpg</string>
+		<key>imagePost</key>
+		<string>steve_jobs.jpg</string>
+		<key>telefonoMovil</key>
+		<string>65 34 40 577</string>
+		<key>telefonoTrabajo</key>
+		<string>915 12 12 12 2</string>
+		<key>email</key>
+		<string>mail@mail.com / email@email.es</string>
+		<key>cuentaLinkedin</key>
+		<string>phdafoe@gmail.linkedin.com</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Brad</string>
+		<key>lastName</key>
+		<string>Pitt</string>
+		<key>usernameTwitter</key>
+		<string>@pitt_102315</string>
+		<key>createdPost</key>
+		<string>2 semanas</string>
+		<key>experienciaCV</key>
+		<string>Junior iOS Developer App RatonPerez / App iCoSpartan</string>
+		<key>numeroSeguidores</key>
+		<string>Brad tienes mas de 550 seguidores</string>
+		<key>abstractoVC</key>
+		<string>Comment</string>
+		<key>description</key>
+		<string>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
+		<key>imageProfile</key>
+		<string>brad-pitt.jpg</string>
+		<key>imagePost</key>
+		<string>steve_jobs.jpg</string>
+		<key>telefonoMovil</key>
+		<string>65 34 40 577</string>
+		<key>telefonoTrabajo</key>
+		<string>915 12 12 12 2</string>
+		<key>email</key>
+		<string>mail@mail.com / email@email.es</string>
+		<key>cuentaLinkedin</key>
+		<string>phdafoe@gmail.linkedin.com</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>johnny</string>
+		<key>lastName</key>
+		<string>Depp</string>
+		<key>usernameTwitter</key>
+		<string>@depp_102315</string>
+		<key>createdPost</key>
+		<string>2 semanas</string>
+		<key>experienciaCV</key>
+		<string>Junior iOS Developer App RatonPerez / App iCoSpartan</string>
+		<key>numeroSeguidores</key>
+		<string>Depp tienes mas de 550 seguidores</string>
+		<key>abstractoVC</key>
+		<string>Comment</string>
+		<key>description</key>
+		<string>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
+		<key>imageProfile</key>
+		<string>depp.jpg</string>
+		<key>imagePost</key>
+		<string>thor.jpg</string>
+		<key>telefonoMovil</key>
+		<string>65 34 40 577</string>
+		<key>telefonoTrabajo</key>
+		<string>915 12 12 12 2</string>
+		<key>email</key>
+		<string>mail@mail.com / email@email.es</string>
+		<key>cuentaLinkedin</key>
+		<string>phdafoe@gmail.linkedin.com</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>johnny</string>
+		<key>lastName</key>
+		<string>Depp</string>
+		<key>usernameTwitter</key>
+		<string>@depp_102315</string>
+		<key>createdPost</key>
+		<string>2 semanas</string>
+		<key>experienciaCV</key>
+		<string>Junior iOS Developer App RatonPerez / App iCoSpartan</string>
+		<key>numeroSeguidores</key>
+		<string>Depp tienes mas de 550 seguidores</string>
+		<key>abstractoVC</key>
+		<string>Comment</string>
+		<key>description</key>
+		<string>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
+		<key>imageProfile</key>
+		<string>depp.jpg</string>
+		<key>imagePost</key>
+		<string>thor.jpg</string>
+		<key>telefonoMovil</key>
+		<string>65 34 40 577</string>
+		<key>telefonoTrabajo</key>
+		<string>915 12 12 12 2</string>
+		<key>email</key>
+		<string>mail@mail.com / email@email.es</string>
+		<key>cuentaLinkedin</key>
+		<string>phdafoe@gmail.linkedin.com</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>johnny</string>
+		<key>lastName</key>
+		<string>Depp</string>
+		<key>usernameTwitter</key>
+		<string>@depp_102315</string>
+		<key>createdPost</key>
+		<string>2 semanas</string>
+		<key>experienciaCV</key>
+		<string>Junior iOS Developer App RatonPerez / App iCoSpartan</string>
+		<key>numeroSeguidores</key>
+		<string>Depp tienes mas de 550 seguidores</string>
+		<key>abstractoVC</key>
+		<string>Comment</string>
+		<key>description</key>
+		<string>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
+		<key>imageProfile</key>
+		<string>depp.jpg</string>
+		<key>imagePost</key>
+		<string>thor.jpg</string>
+		<key>telefonoMovil</key>
+		<string>65 34 40 577</string>
+		<key>telefonoTrabajo</key>
+		<string>915 12 12 12 2</string>
+		<key>email</key>
+		<string>mail@mail.com / email@email.es</string>
+		<key>cuentaLinkedin</key>
+		<string>phdafoe@gmail.linkedin.com</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>johnny</string>
+		<key>lastName</key>
+		<string>Depp</string>
+		<key>usernameTwitter</key>
+		<string>@depp_102315</string>
+		<key>createdPost</key>
+		<string>2 semanas</string>
+		<key>experienciaCV</key>
+		<string>Junior iOS Developer App RatonPerez / App iCoSpartan</string>
+		<key>numeroSeguidores</key>
+		<string>Depp tienes mas de 550 seguidores</string>
+		<key>abstractoVC</key>
+		<string>Comment</string>
+		<key>description</key>
+		<string>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
+		<key>imageProfile</key>
+		<string>depp.jpg</string>
+		<key>imagePost</key>
+		<string>thor.jpg</string>
+		<key>telefonoMovil</key>
+		<string>65 34 40 577</string>
+		<key>telefonoTrabajo</key>
+		<string>915 12 12 12 2</string>
+		<key>email</key>
+		<string>mail@mail.com / email@email.es</string>
+		<key>cuentaLinkedin</key>
+		<string>phdafoe@gmail.linkedin.com</string>
 	</dict>
 </array>
 </plist>

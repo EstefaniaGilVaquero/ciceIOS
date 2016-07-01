@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "099E7EC11D17EEA7009CD779"
+               BlueprintIdentifier = "09ADA3F01D17EEA80041C84A"
                BuildableName = "App_TaskVersion2.0.app"
                BlueprintName = "App_TaskVersion2.0"
                ReferencedContainer = "container:App_TaskVersion2.0.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "099E7EC11D17EEA7009CD779"
+            BlueprintIdentifier = "09ADA3F01D17EEA80041C84A"
             BuildableName = "App_TaskVersion2.0.app"
             BlueprintName = "App_TaskVersion2.0"
             ReferencedContainer = "container:App_TaskVersion2.0.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "099E7EC11D17EEA7009CD779"
+            BlueprintIdentifier = "09ADA3F01D17EEA80041C84A"
             BuildableName = "App_TaskVersion2.0.app"
             BlueprintName = "App_TaskVersion2.0"
             ReferencedContainer = "container:App_TaskVersion2.0.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "099E7EC11D17EEA7009CD779"
+            BlueprintIdentifier = "09ADA3F01D17EEA80041C84A"
             BuildableName = "App_TaskVersion2.0.app"
             BlueprintName = "App_TaskVersion2.0"
             ReferencedContainer = "container:App_TaskVersion2.0.xcodeproj">

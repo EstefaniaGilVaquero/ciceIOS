@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  App_TaskVersion2.0
 //
-//  Created by cice on 20/6/16.
-//  Copyright © 2016 cice. All rights reserved.
+//  Created by formador on 20/6/16.
+//  Copyright © 2016 Cice. All rights reserved.
 //
 
 import UIKit
@@ -16,6 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //TODO: - Aqui personalizo la NavigationBar 
+        let navigationBarAppearance = UINavigationBar.appearance()
+        let colorNB = UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
+        
+        navigationBarAppearance.tintColor = UIColor.whiteColor()
+        navigationBarAppearance.barTintColor = colorNB
+        
+        //TODO: - Aqui coloco la status bar en blanco
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
         return true
     }
 
