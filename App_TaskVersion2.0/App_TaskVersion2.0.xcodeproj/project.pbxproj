@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09581E191D2CF34A006A14DA /* 58x58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09581E131D2CF34A006A14DA /* 58x58@2x.png */; };
+		09581E1A1D2CF34A006A14DA /* 80x80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09581E141D2CF34A006A14DA /* 80x80@2x.png */; };
+		09581E1B1D2CF34A006A14DA /* 87x87@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09581E151D2CF34A006A14DA /* 87x87@3x.png */; };
+		09581E1C1D2CF34A006A14DA /* 120x120@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09581E161D2CF34A006A14DA /* 120x120@2x.png */; };
+		09581E1D1D2CF34A006A14DA /* 120x120@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09581E171D2CF34A006A14DA /* 120x120@3x.png */; };
+		09581E1E1D2CF34A006A14DA /* 180x180@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09581E181D2CF34A006A14DA /* 180x180@3x.png */; };
+		09581E201D2CF3A1006A14DA /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 09581E1F1D2CF3A1006A14DA /* LaunchScreen.png */; };
 		095FA64F1D23B6E900BD42D6 /* ICONuevaTareaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095FA64E1D23B6E900BD42D6 /* ICONuevaTareaViewController.swift */; };
 		095FA6511D23B6FB00BD42D6 /* ICOCategoriasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095FA6501D23B6FB00BD42D6 /* ICOCategoriasTableViewController.swift */; };
 		099AE0E41D210AEF007B1E1D /* brad-pitt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 099AE0DC1D210AEF007B1E1D /* brad-pitt.jpg */; };
@@ -27,9 +34,19 @@
 		09ADA3FA1D17EEA80041C84A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09ADA3F81D17EEA80041C84A /* Main.storyboard */; };
 		09ADA3FC1D17EEA80041C84A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09ADA3FB1D17EEA80041C84A /* Assets.xcassets */; };
 		09ADA3FF1D17EEA80041C84A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09ADA3FD1D17EEA80041C84A /* LaunchScreen.storyboard */; };
+		09D275BE1D2A44CF00B4073D /* ICOListaTareasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D275BD1D2A44CF00B4073D /* ICOListaTareasTableViewController.swift */; };
+		09D275C11D2A461F00B4073D /* APIConstantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D275C01D2A461F00B4073D /* APIConstantes.swift */; };
+		09D275C41D2A5FF700B4073D /* ICOCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D275C31D2A5FF700B4073D /* ICOCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09581E131D2CF34A006A14DA /* 58x58@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "58x58@2x.png"; sourceTree = "<group>"; };
+		09581E141D2CF34A006A14DA /* 80x80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "80x80@2x.png"; sourceTree = "<group>"; };
+		09581E151D2CF34A006A14DA /* 87x87@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "87x87@3x.png"; sourceTree = "<group>"; };
+		09581E161D2CF34A006A14DA /* 120x120@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "120x120@2x.png"; sourceTree = "<group>"; };
+		09581E171D2CF34A006A14DA /* 120x120@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "120x120@3x.png"; sourceTree = "<group>"; };
+		09581E181D2CF34A006A14DA /* 180x180@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "180x180@3x.png"; sourceTree = "<group>"; };
+		09581E1F1D2CF3A1006A14DA /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreen.png; sourceTree = "<group>"; };
 		095FA64E1D23B6E900BD42D6 /* ICONuevaTareaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICONuevaTareaViewController.swift; sourceTree = "<group>"; };
 		095FA6501D23B6FB00BD42D6 /* ICOCategoriasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOCategoriasTableViewController.swift; sourceTree = "<group>"; };
 		099AE0DC1D210AEF007B1E1D /* brad-pitt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "brad-pitt.jpg"; sourceTree = "<group>"; };
@@ -52,6 +69,9 @@
 		09ADA3FB1D17EEA80041C84A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09ADA3FE1D17EEA80041C84A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09ADA4001D17EEA80041C84A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D275BD1D2A44CF00B4073D /* ICOListaTareasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOListaTareasTableViewController.swift; sourceTree = "<group>"; };
+		09D275C01D2A461F00B4073D /* APIConstantes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstantes.swift; sourceTree = "<group>"; };
+		09D275C31D2A5FF700B4073D /* ICOCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +97,13 @@
 		099AE0EC1D210AF4007B1E1D /* IMAGES */ = {
 			isa = PBXGroup;
 			children = (
+				09581E1F1D2CF3A1006A14DA /* LaunchScreen.png */,
+				09581E131D2CF34A006A14DA /* 58x58@2x.png */,
+				09581E141D2CF34A006A14DA /* 80x80@2x.png */,
+				09581E151D2CF34A006A14DA /* 87x87@3x.png */,
+				09581E161D2CF34A006A14DA /* 120x120@2x.png */,
+				09581E171D2CF34A006A14DA /* 120x120@3x.png */,
+				09581E181D2CF34A006A14DA /* 180x180@3x.png */,
 				099AE0F81D211D53007B1E1D /* fondodegradado.png */,
 				099AE0F61D211600007B1E1D /* backPerfil.png */,
 				099AE0DC1D210AEF007B1E1D /* brad-pitt.jpg */,
@@ -123,6 +150,8 @@
 			children = (
 				099AE0EC1D210AF4007B1E1D /* IMAGES */,
 				09ADA3F41D17EEA80041C84A /* AppDelegate.swift */,
+				09D275C21D2A464200B4073D /* API */,
+				09D275BF1D2A44D200B4073D /* VC_LISTA_TAREAS */,
 				095FA6521D23B6FF00BD42D6 /* VC_NUEVASTAREAS */,
 				099AE0F51D210DD1007B1E1D /* VC_CONTACTOS */,
 				09ADA3F81D17EEA80041C84A /* Main.storyboard */,
@@ -131,6 +160,23 @@
 				09ADA4001D17EEA80041C84A /* Info.plist */,
 			);
 			path = App_TaskVersion2.0;
+			sourceTree = "<group>";
+		};
+		09D275BF1D2A44D200B4073D /* VC_LISTA_TAREAS */ = {
+			isa = PBXGroup;
+			children = (
+				09D275BD1D2A44CF00B4073D /* ICOListaTareasTableViewController.swift */,
+				09D275C31D2A5FF700B4073D /* ICOCustomCell.swift */,
+			);
+			name = VC_LISTA_TAREAS;
+			sourceTree = "<group>";
+		};
+		09D275C21D2A464200B4073D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				09D275C01D2A461F00B4073D /* APIConstantes.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,9 +239,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				099AE0F71D211600007B1E1D /* backPerfil.png in Resources */,
+				09581E1A1D2CF34A006A14DA /* 80x80@2x.png in Resources */,
 				099AE0E41D210AEF007B1E1D /* brad-pitt.jpg in Resources */,
 				099AE0F91D211D53007B1E1D /* fondodegradado.png in Resources */,
 				09ADA3FF1D17EEA80041C84A /* LaunchScreen.storyboard in Resources */,
+				09581E1D1D2CF34A006A14DA /* 120x120@3x.png in Resources */,
+				09581E1C1D2CF34A006A14DA /* 120x120@2x.png in Resources */,
 				09ADA3FC1D17EEA80041C84A /* Assets.xcassets in Resources */,
 				099AE0EE1D210B46007B1E1D /* Contactos.plist in Resources */,
 				09ADA3FA1D17EEA80041C84A /* Main.storyboard in Resources */,
@@ -203,9 +252,13 @@
 				099AE0E81D210AEF007B1E1D /* Sara_Evans.jpg in Resources */,
 				099AE0E71D210AEF007B1E1D /* Miranda_Lambert.jpg in Resources */,
 				099AE0E61D210AEF007B1E1D /* kunis.jpg in Resources */,
+				09581E1E1D2CF34A006A14DA /* 180x180@3x.png in Resources */,
+				09581E191D2CF34A006A14DA /* 58x58@2x.png in Resources */,
 				099AE0E51D210AEF007B1E1D /* depp.jpg in Resources */,
 				099AE0EA1D210AEF007B1E1D /* Taylor_Swift2.jpg in Resources */,
+				09581E201D2CF3A1006A14DA /* LaunchScreen.png in Resources */,
 				099AE0E91D210AEF007B1E1D /* steve_jobs.jpg in Resources */,
+				09581E1B1D2CF34A006A14DA /* 87x87@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,9 +271,12 @@
 			files = (
 				099AE0F01D210D40007B1E1D /* ICOContactosTableViewController.swift in Sources */,
 				095FA64F1D23B6E900BD42D6 /* ICONuevaTareaViewController.swift in Sources */,
+				09D275C11D2A461F00B4073D /* APIConstantes.swift in Sources */,
+				09D275BE1D2A44CF00B4073D /* ICOListaTareasTableViewController.swift in Sources */,
 				099AE0F41D210DCC007B1E1D /* ICODetalleContactoViewController.swift in Sources */,
 				09ADA3F51D17EEA80041C84A /* AppDelegate.swift in Sources */,
 				099AE0F21D210DAD007B1E1D /* ICOContactosCustomCell.swift in Sources */,
+				09D275C41D2A5FF700B4073D /* ICOCustomCell.swift in Sources */,
 				095FA6511D23B6FB00BD42D6 /* ICOCategoriasTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,10 +391,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = App_TaskVersion2.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "es.cice.App-TaskVersion2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -347,10 +405,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = App_TaskVersion2.0/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "es.cice.App-TaskVersion2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

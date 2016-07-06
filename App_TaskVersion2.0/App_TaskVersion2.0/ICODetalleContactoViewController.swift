@@ -48,6 +48,8 @@ class ICODetalleContactoViewController: UIViewController {
         myImagePerfilIV.image = imagePerfilCustom
         myNombreLBL.text = diccionarioData!["firstName"] as? String
         myApellidoLBL.text = diccionarioData!["lastName"] as? String
+        
+        self.title = diccionarioData!["firstName"]as? String
 
         // Do any additional setup after loading the view.
     }

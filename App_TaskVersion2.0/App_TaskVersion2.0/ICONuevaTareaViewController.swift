@@ -8,12 +8,15 @@
 
 import UIKit
 
+
 class ICONuevaTareaViewController: UIViewController {
     
     //MARK: - VARIABLES LOCALES GLOBALES
     var arrayPrioridad = ["ALTA", "MEDIA - ALTA", "MEDIA", "BAJA", "SIN PRIORIDAD"]
     var contadorNegativo = 140
-    var nombreCategoria = "Sin Categoria"
+    var nombreCategoria = "Sin Categoría"
+    var CONSTANTES = Constantes()
+    var fotoSeleccionada = false
     
     //MARK: - IBOUTLET
     @IBOutlet weak var myNuevaTareaTF: UITextField!
@@ -24,11 +27,66 @@ class ICONuevaTareaViewController: UIViewController {
     @IBOutlet weak var mySalvarTareaButton: UIButton!
     @IBOutlet weak var myImagenNuevaTareaIV: UIImageView!
     @IBOutlet weak var myContadorCaracteres: UILabel!
-    @IBOutlet weak var myDescripcionTarea: UITextField!
-
+    @IBOutlet weak var descripcionTarea: UITextField!
     
     //MARK: - IBACTION
     @IBAction func salvarInfoNSUserdefaults(sender: AnyObject) {
+        
+        if myNuevaTareaTF.text != ""{
+            
+            if descripcionTarea.text != ""{
+                
+                if fotoSeleccionada{
+                    
+                    //TODO: - IMAGEN
+                    let imageDataComplete : NSData = UIImageJPEGRepresentation(myImagenNuevaTareaIV.image!, 0.5)!
+                    
+                    let prefs = NSUserDefaults.standardUserDefaults()
+                    
+                    myListaTareas.append(myNuevaTareaTF.text!)
+                    myListaPrioridadTareas.append(myPrioridadNuevaTareaTF.text!)
+                    myListaFechaTareas.append(myFechaNuevaTarea.text!)
+                    myListaDescripcionTareas.append(descripcionTarea.text!)
+                    myListaCategoriatareas.append(myPresentaNuevaCategoriaLBL.text!)
+                    myListaFotostareas.append(imageDataComplete)
+                    
+                    prefs.setObject(myListaTareas, forKey: self.CONSTANTES.LISTA_TAREA_KEY)
+                    prefs.setObject(myListaPrioridadTareas, forKey: self.CONSTANTES.LISTA_PRIORIDAD_KEY)
+                    prefs.setObject(myListaFechaTareas, forKey: self.CONSTANTES.LISTA_FECHA_KEY)
+                    prefs.setObject(myListaDescripcionTareas, forKey: self.CONSTANTES.LISTA_DESCRIPCION_KEY)
+                    prefs.setObject(myListaCategoriatareas, forKey: self.CONSTANTES.LISTA_CATEGORIA_KEY)
+                    prefs.setObject(myListaFotostareas, forKey: self.CONSTANTES.LISTA_FOTO_KEY)
+                    
+                    //NOTIFICACION PUSH LOCAL
+                    let localNotification = UILocalNotification()
+                    localNotification.fireDate = NSDate(timeIntervalSinceNow: 5)
+                    localNotification.alertBody = myNuevaTareaTF.text
+                    localNotification.timeZone = NSTimeZone.defaultTimeZone()
+                    localNotification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber + 1
+                    UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+                    
+                    presentViewController(showAlertVC("Atención", messageData: "Datos salvados correctamente"), animated: true, completion: {
+                        Void in
+                        
+                        self.limpiarDatos()
+                    })
+                    
+                }else{
+                    
+                    presentViewController(showAlertVC("Atención", messageData: "Es necesario que selecciones una foto para tu tarea"), animated: true, completion: nil)
+                }
+                
+            }else{
+                
+                presentViewController(showAlertVC("Atención", messageData: "Es necesario que describas la Tarea"), animated: true, completion: nil)
+                
+            }
+            
+        }else{
+            
+            presentViewController(showAlertVC("Atención", messageData: "Es necesario que escribas un tarea"), animated: true, completion: nil)
+            
+        }
         
         
     }
@@ -46,17 +104,20 @@ class ICONuevaTareaViewController: UIViewController {
         datePickerV.datePickerMode = .DateAndTime
         sender.inputView = datePickerV
         datePickerV.addTarget(self, action: #selector(ICONuevaTareaViewController.datePickerValueChanged(_:)), forControlEvents: .ValueChanged)
+        
     }
     
     
     @IBAction func contadorNegativoDescripcion140(sender: UITextField) {
-        if (myDescripcionTarea.text?.characters.count >= 0){
-            myContadorCaracteres.text = "\(contadorNegativo - (myDescripcionTarea.text?.characters.count)!)"
+        
+        if descripcionTarea.text?.characters.count >= 0{
+            myContadorCaracteres.text = "\(contadorNegativo - (descripcionTarea.text?.characters.count)!)"
         }
+        
     }
     
-    //MARK: LIFE VC
-
+    
+    //MARK: -LIFE VC
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -98,12 +159,13 @@ class ICONuevaTareaViewController: UIViewController {
         myPrioridadNuevaTareaTF.inputAccessoryView = toolbar
         
         showFechaPorDefecto()
-        myDescripcionTarea.delegate = self
-        
+        descripcionTarea.delegate = self
         myPresentaNuevaCategoriaLBL.text = nombreCategoria
         
+        //TODO: - Aqui encuentro la ruta de mi Simulador
+        print(NSBundle.mainBundle())
         
-        // Do any additional setup after loading the view.
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -124,10 +186,6 @@ class ICONuevaTareaViewController: UIViewController {
         myPrioridadNuevaTareaTF.resignFirstResponder()
     }
     
-    
-   
-    
-    
     func datePickerValueChanged(sender : UIDatePicker){
         
         let dateFormater = NSDateFormatter()
@@ -145,22 +203,34 @@ class ICONuevaTareaViewController: UIViewController {
         myFechaNuevaTarea.text = dateFormater.stringFromDate(NSDate())
     }
     
-    //MARK: SEGUE NORMAL
+    func limpiarDatos(){
+        myNuevaTareaTF.text = ""
+        descripcionTarea.text = ""
+        myPresentaNuevaCategoriaLBL.text = nombreCategoria
+        myImagenNuevaTareaIV.image = UIImage(named: "placeholder")
+    }
+    
+    
+    //MARK: - SEGUE NORMAL
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "seleccionarNuevaCategoria"{
+        if segue.identifier == "seleccionaNuevaCategoria"{
             let categoriaVC = segue.destinationViewController as! ICOCategoriasTableViewController
             categoriaVC.nombreCategoriaSeleccionada = nombreCategoria
+            
         }
     }
     
-    
-    //MARK: SEGUE ESPECIAL
+    //MARK: - SEGUE ESPECIAL
     @IBAction func categoriaSeleccionadaDesdeTVCCategoria(segue : UIStoryboardSegue){
+        
         let categoriaVC = segue.sourceViewController as! ICOCategoriasTableViewController
         nombreCategoria = categoriaVC.nombreCategoriaSeleccionada
         myPresentaNuevaCategoriaLBL.text = nombreCategoria
+        
     }
-
+    
+    
+   
 }
 
 
@@ -217,6 +287,7 @@ extension ICONuevaTareaViewController : UIImagePickerControllerDelegate, UINavig
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         
+        fotoSeleccionada = true
         myImagenNuevaTareaIV.image = image
         self.dismissViewControllerAnimated(true, completion: nil)
     }
@@ -245,23 +316,14 @@ extension ICONuevaTareaViewController : UIPickerViewDataSource, UIPickerViewDele
     
 }
 
+//MARK: - DELEGATE TEXTFIELD
 extension ICONuevaTareaViewController : UITextFieldDelegate{
     
-    
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        let newLength = (myDescripcionTarea.text?.characters.count)! + string.utf16.count - range.length
         
-        return newLength <= 140
+        let newLength = (descripcionTarea.text?.characters.count)! + string.utf16.count - range.length
+        return newLength <= 140 // Bool
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
 }
 

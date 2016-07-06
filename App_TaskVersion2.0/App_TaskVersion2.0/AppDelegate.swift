@@ -17,15 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        //TODO: - Aqui personalizo la NavigationBar 
-        let navigationBarAppearance = UINavigationBar.appearance()
-        let colorNB = UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
+        //TODO: - Aqui customizo el texto de la NavigationBar
+        configuracionNavigationBar()
         
-        navigationBarAppearance.tintColor = UIColor.whiteColor()
-        navigationBarAppearance.barTintColor = colorNB
+        //TODO: - NOTIFICACION PUSH LOCAL
+        if(UIApplication.instancesRespondToSelector(#selector(UIApplication.registerUserNotificationSettings(_:)))){
+            let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+            UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        }
         
-        //TODO: - Aqui coloco la status bar en blanco
-        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+       
         
         return true
     }
@@ -51,7 +53,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    
+    
+    //MARK: - UTILS
+    func configuracionNavigationBar(){
+        
+        //TODO: - Aqui personalizo la NavigationBar
+        let navigationBarAppearance = UINavigationBar.appearance()
+        let colorNB = UIColor(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
+        
+        navigationBarAppearance.tintColor = UIColor.whiteColor()
+        navigationBarAppearance.barTintColor = colorNB
+        
+        //TODO: - Aqui coloco la status bar en blanco de manera automagica
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+        //TODO: - Aqui personalizo el texto de la barra de navegacion
+        let shadow = NSShadow()
+        shadow.shadowColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.7)
+        shadow.shadowOffset = CGSizeMake(0.0, 1.5)
+        
+        navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSShadowAttributeName: shadow]
+        
+
+        
+    }
 
 
 }
+
+
+
+
+
+
+
+
+
 

@@ -343,7 +343,7 @@
                     <connections>
                         <segue destination="GDP-ec-BSB" kind="relationship" relationship="viewControllers" id="Isd-PF-8NV"/>
                         <segue destination="uBD-JS-cyQ" kind="relationship" relationship="viewControllers" id="cyC-O1-Q9K"/>
-                        <segue destination="ILy-fa-4nt" kind="relationship" relationship="viewControllers" id="kg5-Y2-ZeU"/>
+                        <segue destination="ST0-G1-iCz" kind="relationship" relationship="viewControllers" id="kg5-Y2-ZeU"/>
                         <segue destination="cjo-w3-TGo" kind="relationship" relationship="viewControllers" id="O0q-pp-sEg"/>
                     </connections>
                 </tabBarController>
@@ -422,7 +422,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="pdO-rZ-5Ac" kind="push" identifier="seleccionarNuevaCategoria" id="0es-8G-oYB"/>
+                                    <segue destination="pdO-rZ-5Ac" kind="push" identifier="seleccionaNuevaCategoria" id="0es-8G-oYB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pz3-Ty-RFW">
@@ -461,15 +461,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="140" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJV-MJ-0Uv">
-                                <rect key="frame" x="283" y="344" width="25" height="21"/>
+                                <rect key="frame" x="274" y="348" width="37" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                 <color key="textColor" red="0.78477977392416787" green="0.7990188927566213" blue="0.86536871693121697" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="isl-P6-0zF">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" usesAttributedText="YES" borderStyle="line" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="isl-P6-0zF">
                                 <rect key="frame" x="8" y="282" width="305" height="66"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="contadorNegativoDescripcion140:" destination="kqT-iv-L7J" eventType="editingChanged" id="oi1-Y0-WXv"/>
@@ -480,9 +479,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Nuevas Tareas" id="Gha-TP-Pmg"/>
                     <connections>
+                        <outlet property="descripcionTarea" destination="isl-P6-0zF" id="N1I-B4-KiJ"/>
                         <outlet property="myCategoriaButton" destination="bk9-cP-OYi" id="qT3-aG-eMq"/>
                         <outlet property="myContadorCaracteres" destination="pJV-MJ-0Uv" id="Dh6-cT-V0x"/>
-                        <outlet property="myDescripcionTarea" destination="isl-P6-0zF" id="Jq5-c7-KPt"/>
                         <outlet property="myFechaNuevaTarea" destination="iSh-bs-tAl" id="e0v-tC-NUT"/>
                         <outlet property="myImagenNuevaTareaIV" destination="7Ss-n5-qfp" id="u0o-da-ydJ"/>
                         <outlet property="myNuevaTareaTF" destination="m3r-RK-tFM" id="uFG-I3-ZX4"/>
@@ -521,7 +520,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="HMV-Hn-beq" kind="unwind" identifier="informacionPorUnwind" unwindAction="categoriaSeleccionadaDesdeTVCCategoria:" id="xup-h0-gFE"/>
+                                    <segue destination="47L-DB-Vc8" kind="unwind" identifier="informacionPorUnwind" unwindAction="categoriaSeleccionadaDesdeTVCCategoria:" id="KP8-kU-mgE"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -533,26 +532,80 @@
                     <navigationItem key="navigationItem" title="Categorias" id="LBa-al-tPU"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5S0-k3-wrE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="HMV-Hn-beq" userLabel="Exit" sceneMemberID="exit"/>
+                <exit id="47L-DB-Vc8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1626" y="17"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Lista Tareas Table View Controller-->
         <scene sceneID="3fb-25-OtG">
             <objects>
-                <tableViewController id="Pvv-Bg-bk2" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tQx-kG-BJu">
+                <tableViewController id="Pvv-Bg-bk2" customClass="ICOListaTareasTableViewController" customModule="App_TaskVersion2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="102" sectionHeaderHeight="28" sectionFooterHeight="28" id="tQx-kG-BJu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cTX-IO-B23">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="102" id="cTX-IO-B23" customClass="ICOCustomCell" customModule="App_TaskVersion2_0" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="320" height="102"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cTX-IO-B23" id="cPT-JD-gea">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dws-2F-IpD">
+                                            <rect key="frame" x="247" y="7" width="70" height="70"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre de la Tarea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLj-j0-b4d">
+                                            <rect key="frame" x="71" y="8" width="173" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="decripcion de la Tarea" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCs-3q-4Qt">
+                                            <rect key="frame" x="8" y="41" width="236" height="43"/>
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha de la tarea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDV-px-4fy">
+                                            <rect key="frame" x="8" y="85" width="236" height="15"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="12"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Categoria" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kES-P9-dYl">
+                                            <rect key="frame" x="247" y="78" width="70" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prioridad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6D-PP-k9e">
+                                            <rect key="frame" x="8" y="25" width="66" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tarea:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UU4-NV-Djo">
+                                            <rect key="frame" x="8" y="7" width="66" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prioridad de la Tarea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ii-4o-KLV">
+                                            <rect key="frame" x="71" y="25" width="173" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="myCategoriaLBL" destination="kES-P9-dYl" id="DaB-iu-DI3"/>
+                                    <outlet property="myDescripcionTareaLBL" destination="QCs-3q-4Qt" id="hAJ-Kl-QMq"/>
+                                    <outlet property="myFechaTareaLBL" destination="aDV-px-4fy" id="GpW-d0-Whe"/>
+                                    <outlet property="myImageIV" destination="Dws-2F-IpD" id="b5F-O4-Nrf"/>
+                                    <outlet property="myPrioridadTarea" destination="2Ii-4o-KLV" id="tW2-Ge-64p"/>
+                                    <outlet property="myTareaLBL" destination="uLj-j0-b4d" id="gkE-Ep-m04"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -560,11 +613,11 @@
                             <outlet property="delegate" destination="Pvv-Bg-bk2" id="LY0-uF-ZQc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Wzp-mO-cTH"/>
+                    <navigationItem key="navigationItem" id="Hih-ZD-6Ci"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ckv-qt-8Hb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1154" y="760"/>
+            <point key="canvasLocation" x="1224" y="760"/>
         </scene>
         <!--Configuracion-->
         <scene sceneID="Ucq-Gb-MuA">
@@ -693,7 +746,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cwG-5t-hB4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1296" y="1508"/>
+            <point key="canvasLocation" x="1224" y="1508"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="JJv-IA-Xid">
@@ -898,9 +951,9 @@
             <point key="canvasLocation" x="764" y="17"/>
         </scene>
         <!--Listado Tareas-->
-        <scene sceneID="WnY-Zu-ctQ">
+        <scene sceneID="pNX-Xz-VWM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ILy-fa-4nt" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ST0-G1-iCz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Listado Tareas" image="listadoTareas" selectedImage="listadoTareas" id="xm2-eV-JTb">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
@@ -909,16 +962,16 @@
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mm9-vx-0uP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PxD-GQ-w1j">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Pvv-Bg-bk2" kind="relationship" relationship="rootViewController" id="asa-vu-6YF"/>
+                        <segue destination="Pvv-Bg-bk2" kind="relationship" relationship="rootViewController" id="gKC-AA-RuF"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="V4e-GL-cbA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IGe-ch-rSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="764" y="760"/>
         </scene>

@@ -10,33 +10,20 @@ import UIKit
 
 class ICOCategoriasTableViewController: UITableViewController {
     
-    
-    //MARK: VARIABLES LOCALES GLOBALES
+    //MARK: - VARIABLES LOCALES GLOBALES
     var nombreCategoriaSeleccionada = ""
     var seleccionIndexPath = NSIndexPath()
-    var listadoCategorias = ["Sin Categoria", "Tienda de Apple", "Bar con los Amigos", "En la libreria", "En el corte ingles",
-                             "En el Mercadona", "En Casa", "En el Parque El Retiro", "Peluqueria", "En el trabajo"]
-    
-
-    //MARK: LIFE VC
-
+    var listadoCategorias = ["Sin Categoría", "Tienda de Apple", "Bar con los Amigos", "En la Librería", "En el Corte Inglés", "En el Mercadona", "En Casa", "En el Parque el Retiro", "Peluquería", "En el trabajo"]
+ 
+    //MARK: - LIFE VC
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+
         for index in 0..<listadoCategorias.count{
             if listadoCategorias[index] == nombreCategoriaSeleccionada{
                 seleccionIndexPath = NSIndexPath(forRow: index, inSection: 0)
             }
         }
-        
-        
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,11 +45,15 @@ class ICOCategoriasTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
         // Configure the cell...
+        
         let nombreCategoria = listadoCategorias[indexPath.row]
+        
         cell.textLabel?.text = nombreCategoria
+        
         
         if nombreCategoria == nombreCategoriaSeleccionada{
             cell.accessoryType = .Checkmark
@@ -73,22 +64,26 @@ class ICOCategoriasTableViewController: UITableViewController {
         return cell
     }
     
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
         if indexPath.row != seleccionIndexPath.row{
+            
             if let nuevaSeleccionCelda = tableView.cellForRowAtIndexPath(indexPath){
                 nuevaSeleccionCelda.accessoryType = .Checkmark
             }
             if let antiguaSeleccionCelda = tableView.cellForRowAtIndexPath(seleccionIndexPath){
                 antiguaSeleccionCelda.accessoryType = .None
             }
-            seleccionIndexPath = indexPath
+            
+            seleccionIndexPath = indexPath  
         }
     }
     
+    //MARK: -
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "informacionPorUnwind"{
             let cell = sender as! UITableViewCell
-            
             if let indexPath = tableView.indexPathForCell(cell){
                 nombreCategoriaSeleccionada = listadoCategorias[indexPath.row]
             }
