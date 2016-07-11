@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0929A1101D337F7C00488387 /* DatosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929A10F1D337F7C00488387 /* DatosModel.swift */; };
+		0929A1131D33867A00488387 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929A1121D33867A00488387 /* WebViewController.swift */; };
 		09581E4E1D2D03B3006A14DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09581E4D1D2D03B3006A14DA /* AppDelegate.swift */; };
 		09581E501D2D03B3006A14DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09581E4F1D2D03B3006A14DA /* ViewController.swift */; };
 		09581E531D2D03B3006A14DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09581E511D2D03B3006A14DA /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0929A10F1D337F7C00488387 /* DatosModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatosModel.swift; sourceTree = "<group>"; };
+		0929A1121D33867A00488387 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = ../WebViewController.swift; sourceTree = "<group>"; };
 		09581E4A1D2D03B3006A14DA /* App_MVC_Repaso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_MVC_Repaso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09581E4D1D2D03B3006A14DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09581E4F1D2D03B3006A14DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +43,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0929A10E1D337F6500488387 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				0929A1121D33867A00488387 /* WebViewController.swift */,
+				09581E4F1D2D03B3006A14DA /* ViewController.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		0929A1111D337F8100488387 /* MODELS */ = {
+			isa = PBXGroup;
+			children = (
+				0929A10F1D337F7C00488387 /* DatosModel.swift */,
+			);
+			name = MODELS;
+			sourceTree = "<group>";
+		};
 		09581E411D2D03B3006A14DA = {
 			isa = PBXGroup;
 			children = (
@@ -60,12 +81,13 @@
 			children = (
 				09581E611D2D090B006A14DA /* manolo.jpg */,
 				09581E4D1D2D03B3006A14DA /* AppDelegate.swift */,
-				09581E4F1D2D03B3006A14DA /* ViewController.swift */,
+				0929A10E1D337F6500488387 /* VC */,
 				09581E511D2D03B3006A14DA /* Main.storyboard */,
 				09581E541D2D03B3006A14DA /* Assets.xcassets */,
 				09581E561D2D03B3006A14DA /* LaunchScreen.storyboard */,
 				09581E591D2D03B3006A14DA /* Info.plist */,
 				09581E5F1D2D0414006A14DA /* ICOPersonaje.swift */,
+				0929A1111D337F8100488387 /* MODELS */,
 			);
 			path = App_MVC_Repaso;
 			sourceTree = "<group>";
@@ -143,8 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0929A1101D337F7C00488387 /* DatosModel.swift in Sources */,
 				09581E601D2D0414006A14DA /* ICOPersonaje.swift in Sources */,
 				09581E501D2D03B3006A14DA /* ViewController.swift in Sources */,
+				0929A1131D33867A00488387 /* WebViewController.swift in Sources */,
 				09581E4E1D2D03B3006A14DA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,10 +283,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = App_MVC_Repaso/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cice.App-MVC-Repaso";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -271,10 +297,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = App_MVC_Repaso/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cice.App-MVC-Repaso";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -297,6 +325,7 @@
 				09581E5E1D2D03B3006A14DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

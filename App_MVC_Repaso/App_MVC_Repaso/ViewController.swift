@@ -10,42 +10,42 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //MARK: VARIABLES LOCALES GLOBALES
     
+    let datosPersonaje = DatosModel(pNombre: "Estefi", pApellido: "Gil", pMovil: 1234567, pDireccion: "Quero 77", pEmail: "stefy83@gmail.com",
+                                    pLoremIpsum: "blablalbalblalblalb", pFotoPerfil: UIImage(named:"manolo.jpg")!, pUrlWebSite: NSURL(string: "https://trakt.tv/")!)
     
     //MARK: - IBOUTLET
     
-    @IBOutlet weak var myFirstName: UILabel!
-    @IBOutlet weak var myLastName: UILabel!
-    @IBOutlet weak var myAlias: UILabel!
-    @IBOutlet weak var myTelefono: UILabel!
-    @IBOutlet weak var myDireccion: UILabel!
-    @IBOutlet weak var myCumpleanos: UILabel!
-    @IBOutlet weak var myEmail: UILabel!
-    @IBOutlet weak var myCV: UILabel!
-    @IBOutlet weak var myDescripcion: UILabel!
-    @IBOutlet weak var myImagen: UIImageView!
+    @IBOutlet weak var myNombreLBL: UILabel!
+    @IBOutlet weak var myApellidoLBL: UILabel!
+    @IBOutlet weak var myMovilLBL: UILabel!
+    @IBOutlet weak var myDireccionLBL: UILabel!
+    @IBOutlet weak var myEmailLBL: UILabel!
+    @IBOutlet weak var myLoremLBL: UILabel!
+    @IBOutlet weak var myImageIV: UIImageView!
+    @IBOutlet weak var myVisitasSitioWebBUTTON: UIButton!
+
     
+    //MARK: - IBACTION
+    
+    @IBAction func ShowSitioWebACTION(sender: AnyObject) {
+    }
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let personaje = ICOPersonaje(aFirstName: "Manolo", aLastName: "El del bombo", aAlias: "Manolete", aTelefono: "91456783", aDireccion: "C/bombo", aCumpleanos: "28/07/1983", aEmail: "manoletebombete@gmail.com", aCv: "soy un crack", aBiografia: "blablalbalblalb",aImagen: UIImage(named: "manolo.jpg")!)
+        myNombreLBL.text = datosPersonaje.nombre
+        myApellidoLBL.text = datosPersonaje.apellido
+        myMovilLBL.text = "\"datosPersonaje.movil"
+        myDireccionLBL.text = datosPersonaje.direccion
+        myEmailLBL.text = datosPersonaje.email
+        myLoremLBL.text = datosPersonaje.loremIpsum
+        myImageIV.image = datosPersonaje.fotoPerfil
         
-        
-        myFirstName.text = personaje.firstName
-        myLastName.text = personaje.lastName
-        myAlias.text = personaje.alias
-        myTelefono.text = personaje.telefono
-        myDireccion.text = personaje.direccion
-        myCumpleanos.text = personaje.cumpleanos
-        myEmail.text = personaje.email
-        myCV.text = personaje.cv
-        myDescripcion.text = personaje.biografia
-        myImagen.image = personaje.imagen
-        
-        
+        myVisitasSitioWebBUTTON.layer.cornerRadius = 5
         
         
         
@@ -56,6 +56,15 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //MARK: - NAVIGATION
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showWebSite"{
+            let showWebSiteVC = segue.destinationViewController as! WebViewController
+            showWebSiteVC.enlaceWebSite = datosPersonaje.urlWebSite
+        }
     }
 
 
