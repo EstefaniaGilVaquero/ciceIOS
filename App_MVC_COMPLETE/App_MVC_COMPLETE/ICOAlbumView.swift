@@ -48,5 +48,5 @@ class ICOAlbumView: UIView {
         }else{
             backgroundColor = UIColor.blackColor()
         }
-    }
+
 }
