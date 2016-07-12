@@ -49,7 +49,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Ncd-lZ-uT3" kind="push" identifier="showWebSite" id="CXo-Kk-5GV"/>
+                                            <segue destination="Ncd-lZ-uT3" kind="push" identifier="prueba" id="CXo-Kk-5GV"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNU-Th-JFO">
@@ -213,14 +213,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ci2-PP-Cad">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="V0J-su-U5T">
                                 <rect key="frame" x="150" y="306" width="20" height="20"/>
                                 <color key="color" red="1" green="0.087949911200346675" blue="0.090436710565177436" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
-                            <webView contentMode="scaleToFill" scalesPageToFit="YES" paginationMode="topToBottom" translatesAutoresizingMaskIntoConstraints="NO" id="Ci2-PP-Cad">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
