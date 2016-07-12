@@ -19,8 +19,14 @@ class DatosModel: NSObject {
     var fotoPerfil : UIImage?
     var urlWebSite : NSURL?
     
-    init(pNombre : String, pApellido : String, pMovil : Int, pDireccion : String, pEmail : String,
-        pLoremIpsum : String, pFotoPerfil : UIImage, pUrlWebSite : NSURL) {
+    init(pNombre : String,
+         pApellido : String,
+         pMovil : Int,
+         pDireccion : String,
+         pEmail : String,
+        pLoremIpsum : String,
+        pFotoPerfil : UIImage,
+        pUrlWebSite : NSURL) {
         
         self.nombre = pNombre
         self.apellido = pApellido
@@ -30,6 +36,7 @@ class DatosModel: NSObject {
         self.loremIpsum = pLoremIpsum
         self.fotoPerfil = pFotoPerfil
         self.urlWebSite = pUrlWebSite
+        super.init()
     }
 
 }

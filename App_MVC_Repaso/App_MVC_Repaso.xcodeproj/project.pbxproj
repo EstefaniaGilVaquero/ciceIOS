@@ -79,15 +79,15 @@
 		09581E4C1D2D03B3006A14DA /* App_MVC_Repaso */ = {
 			isa = PBXGroup;
 			children = (
-				09581E611D2D090B006A14DA /* manolo.jpg */,
-				09581E4D1D2D03B3006A14DA /* AppDelegate.swift */,
+				0929A1111D337F8100488387 /* MODELS */,
 				0929A10E1D337F6500488387 /* VC */,
+				09581E4D1D2D03B3006A14DA /* AppDelegate.swift */,
+				09581E611D2D090B006A14DA /* manolo.jpg */,
 				09581E511D2D03B3006A14DA /* Main.storyboard */,
 				09581E541D2D03B3006A14DA /* Assets.xcassets */,
 				09581E561D2D03B3006A14DA /* LaunchScreen.storyboard */,
 				09581E591D2D03B3006A14DA /* Info.plist */,
 				09581E5F1D2D0414006A14DA /* ICOPersonaje.swift */,
-				0929A1111D337F8100488387 /* MODELS */,
 			);
 			path = App_MVC_Repaso;
 			sourceTree = "<group>";
