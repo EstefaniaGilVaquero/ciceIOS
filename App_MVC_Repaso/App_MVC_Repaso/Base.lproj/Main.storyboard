@@ -49,7 +49,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Ncd-lZ-uT3" kind="push" identifier="showWebSite" id="CXo-Kk-5GV"/>
+                                            <segue destination="Ncd-lZ-uT3" kind="push" identifier="prueba" id="CXo-Kk-5GV"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNU-Th-JFO">
