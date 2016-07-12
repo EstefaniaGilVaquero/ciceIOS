@@ -17,14 +17,13 @@ class ICOAlbumView: UIView {
     //este inicializador solo se usa cuando no tenemos control del Storyboard, es decir
     //siempre que tengamos el AppDelegate determina el arranque de los controladores y 
     //de las vistas, esto es abstracto para el appDelegate
-    init?(coder aDecoder: NSCoder){
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
-        //Metodo propio
+        //Metdodo propio
         inicializadorComun()
     }
     
-    init(frame: CGRect, caratulaAlbum : String){
+    init(frame: CGRect, caratulaAlbum : String) {
         super.init(frame: frame)
         inicializadorComun()
     }
@@ -32,13 +31,13 @@ class ICOAlbumView: UIView {
     //Esta funcion establece valores predeterminados para la vista del album, vamos a colocar
     //un fondo negro a la vista, con un margen de 5 puntos
     func inicializadorComun(){
-        
+    
         backgroundColor = UIColor.blackColor()
         caratulaAlbumFinal = UIImageView(frame: CGRectMake(5, 5, frame.size.width-10, frame.size.height-10))
         caratulaAlbumFinal?.layer.cornerRadius = caratulaAlbumFinal?.frame.size.width / 2
         caratulaAlbumFinal?.contentMode = .ScaleAspectFill
         caratulaAlbumFinal?.clipsToBounds = true
-        
+    
         addSubview(caratulaAlbumFinal)
     }
     
@@ -48,5 +47,11 @@ class ICOAlbumView: UIView {
         }else{
             backgroundColor = UIColor.blackColor()
         }
+        
+    }
+
 
 }
+    
+
+

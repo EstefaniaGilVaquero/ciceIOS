@@ -64,13 +64,14 @@
 			children = (
 				0929A1321D338B4E00488387 /* NOTAS DE DESARROLLO.swift */,
 				0929A1201D338B3B00488387 /* AppDelegate.swift */,
+				D54C3E4C1D357B2F0048448A /* VIEWS */,
 				0929A1371D338ED000488387 /* CONTROLLER */,
-				0929A1241D338B3B00488387 /* Main.storyboard */,
 				0929A1361D338EC500488387 /* MODEL */,
+				09E508E81D33A32600F1BF1D /* API */,
+				0929A1241D338B3B00488387 /* Main.storyboard */,
 				0929A1271D338B3B00488387 /* Assets.xcassets */,
 				0929A1291D338B3B00488387 /* LaunchScreen.storyboard */,
 				0929A12C1D338B3B00488387 /* Info.plist */,
-				09E508E81D33A32600F1BF1D /* API */,
 			);
 			path = App_MVC_COMPLETE;
 			sourceTree = "<group>";
@@ -87,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				0929A1221D338B3B00488387 /* ViewController.swift */,
-				0929A1381D3398B700488387 /* ICOAlbumView.swift */,
 			);
 			name = CONTROLLER;
 			sourceTree = "<group>";
@@ -98,6 +98,14 @@
 				09E508E61D33A2CC00F1BF1D /* ICOLibraryAPI.swift */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		D54C3E4C1D357B2F0048448A /* VIEWS */ = {
+			isa = PBXGroup;
+			children = (
+				0929A1381D3398B700488387 /* ICOAlbumView.swift */,
+			);
+			name = VIEWS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
