@@ -10,6 +10,6 @@ import Foundation
 
 extension ICOAlbumModel{
     func icoe_tableRepresentation() -> (titulos : [String], valores: [String]) {
-        return (["Artista", "Album Musical", "Genero", "Año"], [artista!,tituoAlbum!,generoMusical!,anyoDisco!])
+        return (["Artista", "Album Musical", "Genero", "Año"], [artista!,tituloAlbum!,generoMusical!,anyoDisco!])
     }
 }

@@ -34,11 +34,11 @@ class ICOAlbumView: UIView {
     
         backgroundColor = UIColor.blackColor()
         caratulaAlbumFinal = UIImageView(frame: CGRectMake(5, 5, frame.size.width-10, frame.size.height-10))
-        caratulaAlbumFinal?.layer.cornerRadius = caratulaAlbumFinal?.frame.size.width / 2
+        caratulaAlbumFinal?.layer.cornerRadius = (caratulaAlbumFinal?.frame.size.width)! / 2
         caratulaAlbumFinal?.contentMode = .ScaleAspectFill
         caratulaAlbumFinal?.clipsToBounds = true
     
-        addSubview(caratulaAlbumFinal)
+        addSubview(caratulaAlbumFinal!)
     }
     
     func hightLightAlbum(didHighLightView view : Bool){

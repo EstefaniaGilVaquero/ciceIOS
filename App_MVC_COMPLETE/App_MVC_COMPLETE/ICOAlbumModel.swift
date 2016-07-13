@@ -6,11 +6,11 @@
 //  Copyright © 2016 cice. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
 class ICOAlbumModel: NSObject {
     
-    var tituoAlbum : String?
+    var tituloAlbum : String?
     var artista : String?
     var generoMusical : String?
     var urlCaraturla : String?
@@ -22,8 +22,8 @@ class ICOAlbumModel: NSObject {
           aUrlCaratula : String,
           aAnyoDisco : String){
         
-        self.tituoAlbum = aTituloAlbum
-        self.artista = artista
+        self.tituloAlbum = aTituloAlbum
+        self.artista = aArtista
         self.generoMusical = aGeneroMusical
         self.urlCaraturla = aUrlCaratula
         self.anyoDisco = aAnyoDisco

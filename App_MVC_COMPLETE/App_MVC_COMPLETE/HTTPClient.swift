@@ -21,7 +21,7 @@ class HTTPClient {
         return NSData()
     }
     
-    func downloadImage(url : Stirng) -> UIImage{
+    func downloadImage(url : String) -> UIImage{
         let aUrl = NSURL(string: url)
         let aData = NSData(contentsOfURL: aUrl!)
         let image = UIImage(data: aData!)
