@@ -15,6 +15,9 @@
 		0929A1331D338B4E00488387 /* NOTAS DE DESARROLLO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929A1321D338B4E00488387 /* NOTAS DE DESARROLLO.swift */; };
 		0929A1351D338EB900488387 /* ICOAlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929A1341D338EB900488387 /* ICOAlbumModel.swift */; };
 		0929A1391D3398B700488387 /* ICOAlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929A1381D3398B700488387 /* ICOAlbumView.swift */; };
+		09A2EBA61D36203200161DEA /* ICOPersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2EBA51D36203200161DEA /* ICOPersistanceManager.swift */; };
+		09A2EBAA1D3627C000161DEA /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2EBA91D3627C000161DEA /* HTTPClient.swift */; };
+		09A2EBAC1D36320F00161DEA /* ICOAlbumModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2EBAB1D36320F00161DEA /* ICOAlbumModelExtension.swift */; };
 		09E508E71D33A2CC00F1BF1D /* ICOLibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E508E61D33A2CC00F1BF1D /* ICOLibraryAPI.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		0929A1321D338B4E00488387 /* NOTAS DE DESARROLLO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NOTAS DE DESARROLLO.swift"; path = "../NOTAS DE DESARROLLO.swift"; sourceTree = "<group>"; };
 		0929A1341D338EB900488387 /* ICOAlbumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOAlbumModel.swift; sourceTree = "<group>"; };
 		0929A1381D3398B700488387 /* ICOAlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOAlbumView.swift; sourceTree = "<group>"; };
+		09A2EBA51D36203200161DEA /* ICOPersistanceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOPersistanceManager.swift; sourceTree = "<group>"; };
+		09A2EBA91D3627C000161DEA /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		09A2EBAB1D36320F00161DEA /* ICOAlbumModelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOAlbumModelExtension.swift; sourceTree = "<group>"; };
 		09E508E61D33A2CC00F1BF1D /* ICOLibraryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOLibraryAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,12 +68,12 @@
 		0929A11F1D338B3B00488387 /* App_MVC_COMPLETE */ = {
 			isa = PBXGroup;
 			children = (
-				0929A1321D338B4E00488387 /* NOTAS DE DESARROLLO.swift */,
 				0929A1201D338B3B00488387 /* AppDelegate.swift */,
-				D54C3E4C1D357B2F0048448A /* VIEWS */,
-				0929A1371D338ED000488387 /* CONTROLLER */,
-				0929A1361D338EC500488387 /* MODEL */,
 				09E508E81D33A32600F1BF1D /* API */,
+				D54C3E4C1D357B2F0048448A /* VIEWS */,
+				0929A1361D338EC500488387 /* MODEL */,
+				0929A1371D338ED000488387 /* CONTROLLER */,
+				09A2EBA41D361D0500161DEA /* NOTAS */,
 				0929A1241D338B3B00488387 /* Main.storyboard */,
 				0929A1271D338B3B00488387 /* Assets.xcassets */,
 				0929A1291D338B3B00488387 /* LaunchScreen.storyboard */,
@@ -80,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				0929A1341D338EB900488387 /* ICOAlbumModel.swift */,
+				09A2EBAB1D36320F00161DEA /* ICOAlbumModelExtension.swift */,
 			);
 			name = MODEL;
 			sourceTree = "<group>";
@@ -92,10 +99,20 @@
 			name = CONTROLLER;
 			sourceTree = "<group>";
 		};
+		09A2EBA41D361D0500161DEA /* NOTAS */ = {
+			isa = PBXGroup;
+			children = (
+				0929A1321D338B4E00488387 /* NOTAS DE DESARROLLO.swift */,
+			);
+			name = NOTAS;
+			sourceTree = "<group>";
+		};
 		09E508E81D33A32600F1BF1D /* API */ = {
 			isa = PBXGroup;
 			children = (
 				09E508E61D33A2CC00F1BF1D /* ICOLibraryAPI.swift */,
+				09A2EBA51D36203200161DEA /* ICOPersistanceManager.swift */,
+				09A2EBA91D3627C000161DEA /* HTTPClient.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -182,9 +199,12 @@
 			files = (
 				0929A1231D338B3B00488387 /* ViewController.swift in Sources */,
 				0929A1331D338B4E00488387 /* NOTAS DE DESARROLLO.swift in Sources */,
+				09A2EBAA1D3627C000161DEA /* HTTPClient.swift in Sources */,
 				09E508E71D33A2CC00F1BF1D /* ICOLibraryAPI.swift in Sources */,
 				0929A1211D338B3B00488387 /* AppDelegate.swift in Sources */,
 				0929A1391D3398B700488387 /* ICOAlbumView.swift in Sources */,
+				09A2EBAC1D36320F00161DEA /* ICOAlbumModelExtension.swift in Sources */,
+				09A2EBA61D36203200161DEA /* ICOPersistanceManager.swift in Sources */,
 				0929A1351D338EB900488387 /* ICOAlbumModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

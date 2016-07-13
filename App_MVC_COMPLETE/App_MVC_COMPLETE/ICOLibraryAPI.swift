@@ -10,6 +10,11 @@ import UIKit
 
 class ICOLibraryAPI: NSObject {
     
+    //MARK: - VARIABLES LOCALES PRIVADAS
+    private let persistanceManager = ICOPersistanceManager()
+    private let httpClient = HTTPClient()
+    private let isOnline = false
+    
     //Creamos el patron Singleton
     //1.Creamos una variable de clase como una variable de tipo computarizada (OBJC)
     
@@ -23,6 +28,26 @@ class ICOLibraryAPI: NSObject {
         }
         //4. Devuelve la propiedad de tipo computerizado
         return Singleton.instance
+    }
+    
+    //MARK: - Peristance Manager
+    
+    func getAlbumesMusicales() -> [ICOAlbumModel]{
+        return persistanceManager.getAlbumesMusicales()
+    }
+    
+    func addAlbumesMusicales (album : ICOAlbumModel, indice : Int){
+        persistanceManager.addAlbumesMusicales(album, indice: indice)
+        if isOnline{
+            httpClient.postRequest("/api/addAlbumesMusicales", body: album.description)
+        }
+    }
+    
+    func deleteAlbumesMusicales(indice : Int){
+        persistanceManager.deleteAlbumesMusicales(indice)
+        if isOnline{
+            httpClient.postRequest("/api/deleteAlbumesMusicales", body: "\(indice)")
+        }
     }
 
 }
