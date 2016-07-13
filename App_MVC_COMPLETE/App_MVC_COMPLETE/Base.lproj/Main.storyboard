@@ -28,7 +28,7 @@
                                     <constraint firstAttribute="height" constant="384" id="HtZ-ER-OZ9"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="YHB-SZ-0bh" detailTextLabel="Ljb-1k-mDS" style="IBUITableViewCellStyleValue1" id="BYh-MQ-NQ5">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="YHB-SZ-0bh" detailTextLabel="Ljb-1k-mDS" style="IBUITableViewCellStyleValue1" id="BYh-MQ-NQ5">
                                         <rect key="frame" x="0.0" y="50" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BYh-MQ-NQ5" id="d1u-c2-f5m">
@@ -67,6 +67,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DQP-vs-Wj0"/>
+                    <connections>
+                        <outlet property="MyTableViewVC" destination="qQQ-B7-gUJ" id="OkS-MX-U0h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
