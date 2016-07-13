@@ -39,7 +39,23 @@
  //COMO USAR EL MVC
  
  1. PATRON SINGLETON
-    1. -> Garantiza que solo exista una instancia de una clase determinada y por lo general utiliza una carga lena(carga perezosa(lazy)) ->
+    1. -> Garantiza que solo exista una instancia de una clase determinada y por lo general utiliza una carga lenta(carga perezosa(lazy))
+    2. -> Con este patron SINGLETON vamos a gestionar la "comunicacion" entre los datos del modelo y el controlador de las vistas
+    3. -> Solo se debe cargar una unica vez para gestionar el ahorro de la memoria, para identificar al singleton en COCOA "shared","default", "standard"
+ 2. Creamos una clase que se encargará del PARSEO de datos, y a esta le llamaremos ICOPersistanceManager
+ 
+ ICOLibraryAPI del tipo NSOject
+ ICOPersistanceManager del tipo NSObject
+ 
+ 2. PATRON FACHADA
+    1. Aqui le damos el sentido a nuestra APIMANAGER y nuestra PERSISTANCEMANAGER(Parser)
+        el Singleton no tiene que saber la logica que está por detras
+ 
+ 3. PATRON DECORADOR
+    1. Este patron añade dinamicamente responsabilidades a los objetos, sin modificar su codigo.(EXTENSIONES, DELEGADOS)
+        Extensiones -> Es un potente mecanismo que permite añadir nuevas funcionalidades de clases existentes, estructuras, enumeraciones, pero ademas se puede
+                        extender codigo al cual no tenemos acceso y mejorar la funcionalidad.
+                    -> 
  
  
  /**/*/
