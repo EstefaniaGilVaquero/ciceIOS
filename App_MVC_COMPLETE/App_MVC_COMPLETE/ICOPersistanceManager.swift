@@ -18,31 +18,61 @@ class ICOPersistanceManager: NSObject {
                                    aArtista: "David Bowie",
                                    aGeneroMusical: "Pop",
                                    aUrlCaratula: "http://www.andresocampo.com/pruebas/CICE/albumMusic/bestofbowie.jpg",
-                                   aAnyoDisco: "1992")
+                                   aAnyoDisco: "1992",
+                                   aArtistaInvitado: "Falete",
+                                   aFestival: "Benidorm",
+                                   aDiscografica: "Warner Music",
+                                   aNumeroCancionesDisco: "18",
+                                   aPremios: "Planeta",
+                                   aVentas: "500.000 copias")
         
         let album2 = ICOAlbumModel(aTituloAlbum: "Return of Saturn",
                                    aArtista: "No Doubt",
                                    aGeneroMusical: "Pop",
                                    aUrlCaratula: "http://www.andresocampo.com/pruebas/CICE/albumMusic/returnofsaturn.jpg",
-                                   aAnyoDisco: "2001")
+                                   aAnyoDisco: "2001",
+                                   aArtistaInvitado: "Falete",
+                                   aFestival: "Benidorm",
+                                   aDiscografica: "Warner Music",
+                                   aNumeroCancionesDisco: "18",
+                                   aPremios: "Planeta",
+                                   aVentas: "500.000 copias")
         
         let album3 = ICOAlbumModel(aTituloAlbum: "Nothing Like The Sun",
                                    aArtista: "Sting",
                                    aGeneroMusical: "Pop",
                                    aUrlCaratula: "http://www.andresocampo.com/pruebas/CICE/albumMusic/nothinglikethesun.jpg",
-                                   aAnyoDisco: "2005")
+                                   aAnyoDisco: "2005",
+                                   aArtistaInvitado: "Tamara",
+                                   aFestival: "Benidorm",
+                                   aDiscografica: "Warner Music",
+                                   aNumeroCancionesDisco: "18",
+                                   aPremios: "Goya",
+                                   aVentas: "500.000 copias")
         
         let album4 = ICOAlbumModel(aTituloAlbum: "Songo Fascent",
                                    aArtista: "U2",
                                    aGeneroMusical: "Pop",
                                    aUrlCaratula: "http://www.andresocampo.com/pruebas/CICE/albumMusic/songofascent.jpg",
-                                   aAnyoDisco: "2011")
+                                   aAnyoDisco: "2011",
+                                   aArtistaInvitado: "Falete",
+                                   aFestival: "Benidorm",
+                                   aDiscografica: "Warner Music",
+                                   aNumeroCancionesDisco: "18",
+                                   aPremios: "Oscar",
+                                   aVentas: "500.000 copias")
         
         let album5 = ICOAlbumModel(aTituloAlbum: "Madonna Grandes Exitos",
                                    aArtista: "Madonna",
                                    aGeneroMusical: "Pop",
                                    aUrlCaratula: "http://www.andresocampo.com/pruebas/CICE/albumMusic/madonnamusicalbum.jpg",
-                                   aAnyoDisco: "2017")
+                                   aAnyoDisco: "2017",
+                                   aArtistaInvitado: "Falete",
+                                   aFestival: "Benidorm",
+                                   aDiscografica: "Warner Music",
+                                   aNumeroCancionesDisco: "18",
+                                   aPremios: "Principe de Asturias",
+                                   aVentas: "500.000 copias")
         
         //Alimentamos el array
         albumesMusicales = [album1,album2,album3,album4,album5]

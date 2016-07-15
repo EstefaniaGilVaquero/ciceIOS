@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0918655E1D38CA1E0073E158 /* ICOHorizontalScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0918655D1D38CA1E0073E158 /* ICOHorizontalScroller.swift */; };
 		0929A1211D338B3B00488387 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929A1201D338B3B00488387 /* AppDelegate.swift */; };
 		0929A1231D338B3B00488387 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929A1221D338B3B00488387 /* ViewController.swift */; };
 		0929A1261D338B3B00488387 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0929A1241D338B3B00488387 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0918655D1D38CA1E0073E158 /* ICOHorizontalScroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOHorizontalScroller.swift; sourceTree = "<group>"; };
 		0929A11D1D338B3B00488387 /* App_MVC_COMPLETE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_MVC_COMPLETE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0929A1201D338B3B00488387 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0929A1221D338B3B00488387 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				0929A1381D3398B700488387 /* ICOAlbumView.swift */,
+				0918655D1D38CA1E0073E158 /* ICOHorizontalScroller.swift */,
 			);
 			name = VIEWS;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				0929A1231D338B3B00488387 /* ViewController.swift in Sources */,
 				0929A1331D338B4E00488387 /* NOTAS DE DESARROLLO.swift in Sources */,
 				09A2EBAA1D3627C000161DEA /* HTTPClient.swift in Sources */,
+				0918655E1D38CA1E0073E158 /* ICOHorizontalScroller.swift in Sources */,
 				09E508E71D33A2CC00F1BF1D /* ICOLibraryAPI.swift in Sources */,
 				0929A1211D338B3B00488387 /* AppDelegate.swift in Sources */,
 				0929A1391D3398B700488387 /* ICOAlbumView.swift in Sources */,
