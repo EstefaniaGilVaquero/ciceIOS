@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     //MARK: - IBOUTLET
     @IBOutlet weak var MyTableViewVC: UITableView!
+    @IBOutlet weak var miPropioDesplazadorHorizontal: ICOHorizontalScroller!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,8 @@ class ViewController: UIViewController {
         //4
         showDataForAlbumesMusicales(indiceAlbumActual)
         
+        //TODO: - DELEGADO HORIZONTAL
+        miPropioDesplazadorHorizontal.icoDelegate = self
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -80,6 +83,39 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource{
     
 }
 
+//MARK: - DELEGATE SCROLL HORIZONTAL
+extension ViewController : ICOHorizontalScrollerDelegate{
+    
+    func numeroVistasEnHorizontalScroller(scroller: ICOHorizontalScroller) -> Int {
+        return 1
+    }
+    
+    func vistaPorIndiceHorizontalScroller(scroller: ICOHorizontalScroller, indice: Int) -> UIView {
+        
+        let albumMusical = allAlbumesMusicales[indice]
+        let vistaAlbumMusical = ICOAlbumView(frame: CGRectMake(0, 0, 100, 100), caratulaAlbum: albumMusical.urlCaraturla!)
+        if indiceAlbumActual == indice{
+            vistaAlbumMusical.hightLightAlbum(didHighLightView: true)
+        }else{
+            vistaAlbumMusical.hightLightAlbum(didHighLightView: false)
+        }
+        return vistaAlbumMusical
+    }
+    
+    func clickVistaPorIndiceHorizontalScroller(scroller: ICOHorizontalScroller, indice: Int) {
+        let vistaAlbumMusicalPrevio = scroller.vistaIndiceObjeto(indiceAlbumActual) as! ICOAlbumView
+        vistaAlbumMusicalPrevio.hightLightAlbum(didHighLightView: false)
+        indiceAlbumActual = indice
+        
+        let vistaAlbumMusicalSeleccionada = scroller.vistaIndiceObjeto(indiceAlbumActual) as! ICOAlbumView
+        vistaAlbumMusicalSeleccionada.hightLightAlbum(didHighLightView: true)
+        showDataForAlbumesMusicales(indice)
+    }
+    
+    func vistaInicial(scroller: ICOHorizontalScroller) -> Int {
+        return Int()
+    }
+}
 
 
 
