@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         
         //TODO: - DELEGADO HORIZONTAL
         miPropioDesplazadorHorizontal.icoDelegate = self
+        recargarDatosHorizontalScroller()
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -81,19 +82,28 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
+    func recargarDatosHorizontalScroller(){
+        allAlbumesMusicales = ICOLibraryAPI.sharedInstance.getAlbumesMusicales()
+        if indiceAlbumActual < 0 || indiceAlbumActual >= allAlbumesMusicales.count{
+            indiceAlbumActual = allAlbumesMusicales.count
+        }
+        miPropioDesplazadorHorizontal.recargarDatosHorizontalScroller()
+        showDataForAlbumesMusicales(indiceAlbumActual)
+    }
+    
 }
 
 //MARK: - DELEGATE SCROLL HORIZONTAL
 extension ViewController : ICOHorizontalScrollerDelegate{
     
     func numeroVistasEnHorizontalScroller(scroller: ICOHorizontalScroller) -> Int {
-        return 1
+        return allAlbumesMusicales.count
     }
     
     func vistaPorIndiceHorizontalScroller(scroller: ICOHorizontalScroller, indice: Int) -> UIView {
         
         let albumMusical = allAlbumesMusicales[indice]
-        let vistaAlbumMusical = ICOAlbumView(frame: CGRectMake(0, 0, 100, 100), caratulaAlbum: albumMusical.urlCaraturla!)
+        let vistaAlbumMusical = ICOAlbumView(frame: CGRect(x:0, y:0, width:100, height:100), caratulaAlbum: albumMusical.urlCaraturla!)
         if indiceAlbumActual == indice{
             vistaAlbumMusical.hightLightAlbum(didHighLightView: true)
         }else{
@@ -113,7 +123,7 @@ extension ViewController : ICOHorizontalScrollerDelegate{
     }
     
     func vistaInicial(scroller: ICOHorizontalScroller) -> Int {
-        return Int()
+        return indiceAlbumActual
     }
 }
 

@@ -85,7 +85,7 @@ class ICOHorizontalScroller: UIView {
             attribute: .Bottom,
             relatedBy: .Equal,
             toItem: self,
-            attribute: .Top,
+            attribute: .Bottom,
             multiplier: 1.0,
             constant: 0.0))
         
@@ -173,8 +173,8 @@ class ICOHorizontalScroller: UIView {
     
     func centrarVistaActualAlbumMusical(){
         var puntoCentralFinal = Int(desplazadorHorizontal.contentOffset.x) + VIEW_OFF_SETT / 2
-        let vistaIndice = puntoCentralFinal / (VIEW_OFF_SETT) + (2 * VIEW_PADDING)
-        puntoCentralFinal = vistaIndice * (VIEW_OFF_SETT) + (2 * VIEW_PADDING)
+        let vistaIndice = puntoCentralFinal / (VIEW_OFF_SETT + (2 * VIEW_PADDING))
+        puntoCentralFinal = vistaIndice * (VIEW_OFF_SETT + (2 * VIEW_PADDING))
         desplazadorHorizontal.setContentOffset(CGPoint(x: puntoCentralFinal, y: 0), animated: true)
         if let delegate = icoDelegate{
             delegate.clickVistaPorIndiceHorizontalScroller(self, indice: vistaIndice)
