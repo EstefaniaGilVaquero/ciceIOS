@@ -57,18 +57,10 @@ class ICOHorizontalScroller: UIView {
         desplazadorHorizontal.translatesAutoresizingMaskIntoConstraints = false
         
         //3 -> Aplicamos restricciones al scrollView
-        self.addConstraint(NSLayoutConstraint(item: desplazadorHorizontal,
-            attribute: .Leading,
-            relatedBy: .Equal,
-            toItem: self,
-            attribute: .Leading,
-            multiplier: 1.0,
-            constant: 0.0))
+        self.addConstraint(NSLayoutConstraint(item: desplazadorHorizontal,attribute: .Leading,relatedBy: .Equal,toItem: self,
+            attribute: .Leading,multiplier: 1.0,constant: 0.0))
         
-        self.addConstraint(NSLayoutConstraint(item: desplazadorHorizontal,
-            attribute: .Trailing,
-            relatedBy: .Equal,
-            toItem: self,
+        self.addConstraint(NSLayoutConstraint(item: desplazadorHorizontal,attribute: .Trailing,relatedBy: .Equal,toItem: self,
             attribute: .Trailing,
             multiplier: 1.0,
             constant: 0.0))
@@ -159,8 +151,12 @@ class ICOHorizontalScroller: UIView {
          
                 self.desplazadorHorizontal.contentSize = CGSizeMake(CGFloat(valorX + VIEW_OFF_SETT), frame.size.height)
                 
+               // if let vistaInicial = icoDelegate?.vistaInicial(self){
+                //    desplazadorHorizontal.setContentOffset(CGPoint(x: CGFloat(vistaInicial) * CGFloat((VIEW_DIMENSIONS) + (2 * VIEW_PADDING)),y:0), animated: true)
+               // }
+                
                 if let vistaInicial = icoDelegate?.vistaInicial(self){
-                    desplazadorHorizontal.setContentOffset(CGPoint(x: CGFloat(vistaInicial) * CGFloat((VIEW_DIMENSIONS) + (2 * VIEW_PADDING)),y:0), animated: true)
+                    desplazadorHorizontal.setContentOffset(CGPoint(x: CGFloat(vistaInicial) * CGFloat(VIEW_DIMENSIONS + (2 * VIEW_PADDING)),y:0), animated: true)
                 }
             }
         }
