@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="App_Descarga_Sync_Async_Demo1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFK-r9-rFV">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Sync" id="cX8-1m-SB0">
+                                        <connections>
+                                            <action selector="syncMethodDownload:" destination="BYZ-38-t0r" id="f1F-9V-XUC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="iwM-4C-rqb"/>
+                                    <barButtonItem title="Async" id="mAO-F4-JFW">
+                                        <connections>
+                                            <action selector="asyncMethodDownload:" destination="BYZ-38-t0r" id="fBr-yK-b67"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="azf-sj-bgG"/>
+                                    <barButtonItem title="Async+" id="5Vs-Se-N2N">
+                                        <connections>
+                                            <action selector="asyncPlusMethodDownload:" destination="BYZ-38-t0r" id="YzP-Jz-hRJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7k5-cf-uYU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="CJA-4h-put">
+                                <rect key="frame" x="150" y="252" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aFK-r9-rFV" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="0v4-4z-URs"/>
+                            <constraint firstItem="7k5-cf-uYU" firstAttribute="trailing" secondItem="aFK-r9-rFV" secondAttribute="trailing" id="Cx5-7P-cao"/>
+                            <constraint firstItem="CJA-4h-put" firstAttribute="centerX" secondItem="aFK-r9-rFV" secondAttribute="centerX" id="Fd0-11-VFO"/>
+                            <constraint firstItem="7k5-cf-uYU" firstAttribute="leading" secondItem="aFK-r9-rFV" secondAttribute="leading" id="KTu-Jb-wKk"/>
+                            <constraint firstItem="aFK-r9-rFV" firstAttribute="top" secondItem="7k5-cf-uYU" secondAttribute="bottom" id="L5d-V1-Leo"/>
+                            <constraint firstAttribute="trailing" secondItem="7k5-cf-uYU" secondAttribute="trailing" id="Pfa-4M-F2o"/>
+                            <constraint firstItem="7k5-cf-uYU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YS0-Kg-eBC"/>
+                            <constraint firstItem="7k5-cf-uYU" firstAttribute="centerY" secondItem="CJA-4h-put" secondAttribute="centerY" id="alN-K9-QEO"/>
+                            <constraint firstItem="7k5-cf-uYU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nOc-FY-DfF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myActivityIndicatorAI" destination="CJA-4h-put" id="Kzj-Be-UYZ"/>
+                        <outlet property="myImageViewIV" destination="7k5-cf-uYU" id="SEp-SB-PWI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="301" y="412"/>
+        </scene>
+    </scenes>
+</document>
