@@ -102,6 +102,7 @@ class ICOHorizontalScroller: UIView {
                 let view = desplazadorHorizontal.subviews[indice]
                 //3 -> debemos comprobar si es exitoso o no, si se ha encontrado algo en el instante que se ha pulsado la imagen
                 if CGRectContainsPoint(view.frame, ubicacion){
+                    delegate.clickVistaPorIndiceHorizontalScroller(self, indice: indice)
                     desplazadorHorizontal.setContentOffset(CGPoint(x:view.frame.origin.x - self.frame.size.width / 2 + view.frame.size.width / 2, y: 0), animated: true)
                 }
             }

@@ -15,6 +15,49 @@ class ICOLibraryAPI: NSObject {
     private let httpClient = HTTPClient()
     private let isOnline = false
     
+    //Aqui solo colocaremos el observador de la notificacion
+    override init() {
+        super.init()
+        //NOTIFICACION
+        //En este lado de la ecuacion el "OBSERVADOR" recibe -> cada vez que ICoAlbumView notifique un mensaje "ICODescargaImagenesNotificacion"
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ICOLibraryAPI.descargaDeImagenes(_:)), name: "ICODescargaImagenesNotificacion", object: nil)
+    }
+    
+    
+    //Siempre que tengamos notificcaciones estamos obligados a darse de baja como observador
+    deinit{
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    
+    //Funcion que descarga la imagen
+    func descargaDeImagenes(notificacion : NSNotification){
+        let userInfo = notificacion.userInfo as! [String: AnyObject]
+        let imageViewData = userInfo["imageView"] as! UIImageView?
+        let urlCaratulaData = userInfo["urlCaratula"] as! String
+        
+        if let imageViewDesempaquetada = imageViewData{
+            imageViewDesempaquetada.image = persistanceManager.getImagenesSalvadasLocalmente(urlCaratulaData.lastPathComponent)
+            
+            if imageViewDesempaquetada.image == nil{
+                
+                //COLA 2 PLANO
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),{
+                    let imagenesDescargadas = self.httpClient.downloadImage(urlCaratulaData as String)
+                    
+                    //COLA 1 PLANO
+                    dispatch_async(dispatch_get_main_queue(),{
+                        imageViewDesempaquetada.image = imagenesDescargadas
+                        self.persistanceManager.salvarLocalmenteImagenes(imagenesDescargadas, fileName: urlCaratulaData.lastPathComponent)
+                        })
+                })
+            }
+        }
+        
+    }
+    
+    
+    
     //Creamos el patron Singleton
     //1.Creamos una variable de clase como una variable de tipo computarizada (OBJC)
     
@@ -50,4 +93,12 @@ class ICOLibraryAPI: NSObject {
         }
     }
 
+}
+
+extension String{
+    var lastPathComponent : String{
+        get{
+            return(self as NSString).lastPathComponent
+        }
+    }
 }

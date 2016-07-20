@@ -122,6 +122,9 @@ class ViewController: UIViewController {
         //        var f, t string;
         //        func usa_fichero(rf) { f = rf; if t!="" {buscar(f,t)} }
         //        func usa_teclado(rt) { t = rt; if f!="" {buscar(f,t)} }
+        
+        
+        
         //
         //        //Resto del programa
         //

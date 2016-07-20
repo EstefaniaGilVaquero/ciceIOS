@@ -26,8 +26,17 @@ class ICOAlbumView: UIView {
     init(frame: CGRect, caratulaAlbum : String) {
         super.init(frame: frame)
         inicializadorComun()
-    }
     
+    
+        //NOTIFICACIONES
+        //Es un patron de subscripcion o publicacion que permite que un objeto ( edite siendo un remitente de un mensaje) 
+        //este mensaje se envia a un abonado(observador/oyente/receptor de mensaje)
+        //Enviamos una notificacion a traves del singleton de la app, que contiene una imageView?(caratulaAlbumFimanl) y la
+        //direccion "urlCaratula"
+        //> ICOLibraryAPI
+    NSNotificationCenter.defaultCenter().postNotificationName("ICODescargaImagenesNotification", object: self,userInfo: ["imageView": caratulaAlbum, "urlCaratula":caratulaAlbum])
+    }
+
     //Esta funcion establece valores predeterminados para la vista del album, vamos a colocar
     //un fondo negro a la vista, con un margen de 5 puntos
     func inicializadorComun(){

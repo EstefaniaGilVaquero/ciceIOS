@@ -100,6 +100,42 @@ class ICOPersistanceManager: NSObject {
         albumesMusicales.removeAtIndex(indice)
     }
     
+    func salvarLocalmenteImagenes(imagen : UIImage, fileName : String){
+        let path = NSHomeDirectory().stringByAppendingString("/Documents/\(fileName)")
+        let data = UIImageJPEGRepresentation(imagen, 0.5)
+        data!.writeToFile(path, atomically: true)
+        
+    }
+    
+    
+    func getImagenesSalvadasLocalmente(fileName : String) -> UIImage? {
+        let path = NSHomeDirectory().stringByAppendingString("/Documents/\(fileName)")
+        let data : NSData?
+        do{
+            data = try NSData(contentsOfFile: path, options: NSDataReadingOptions.UncachedRead)
+            return UIImage(data: data!)
+        }catch let error as NSError{
+            print(error.description)
+            return nil
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
