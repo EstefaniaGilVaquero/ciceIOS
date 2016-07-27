@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		091FC42E1D489A1C00B14109 /* ICOModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091FC42D1D489A1C00B14109 /* ICOModel.swift */; };
+		091FC4641D489EB900B14109 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091FC4571D489EA700B14109 /* SwiftyJSON.framework */; };
+		091FC4651D489EB900B14109 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091FC45B1D489EA700B14109 /* SwiftyJSON.framework */; };
+		091FC4661D489EB900B14109 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091FC45F1D489EA700B14109 /* SwiftyJSON.framework */; };
+		091FC4671D489EB900B14109 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091FC4611D489EA700B14109 /* SwiftyJSON.framework */; };
+		091FC4691D489EDC00B14109 /* ICOAddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091FC4681D489EDC00B14109 /* ICOAddressModel.swift */; };
+		091FC46B1D489F0A00B14109 /* ICOGeoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091FC46A1D489F0A00B14109 /* ICOGeoModel.swift */; };
+		091FC46D1D48A0EC00B14109 /* ICOCompanyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091FC46C1D48A0EC00B14109 /* ICOCompanyModel.swift */; };
+		091FC4721D48A27E00B14109 /* ICOUsersParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091FC4711D48A27E00B14109 /* ICOUsersParser.swift */; };
+		091FC4761D48A95700B14109 /* APIConstantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091FC4751D48A95700B14109 /* APIConstantes.swift */; };
+		091FC4781D48AAD500B14109 /* APIManagerFinal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091FC4771D48AAD500B14109 /* APIManagerFinal.swift */; };
+		091FC4801D48AD6700B14109 /* ICOTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091FC47F1D48AD6700B14109 /* ICOTableViewCell.swift */; };
+		091FC4821D48AD8500B14109 /* ICOTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091FC4811D48AD8500B14109 /* ICOTableViewController.swift */; };
+		097972331D4894D2007C674C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097972321D4894D2007C674C /* AppDelegate.swift */; };
+		097972381D4894D2007C674C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097972361D4894D2007C674C /* Main.storyboard */; };
+		0979723A1D4894D2007C674C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097972391D4894D2007C674C /* Assets.xcassets */; };
+		0979723D1D4894D2007C674C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0979723B1D4894D2007C674C /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		091FC4561D489EA700B14109 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 091FC44C1D489EA700B14109 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+		091FC4581D489EA700B14109 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 091FC44C1D489EA700B14109 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFE619575BE100351305;
+			remoteInfo = "SwiftyJSON iOS Tests";
+		};
+		091FC45A1D489EA700B14109 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 091FC44C1D489EA700B14109 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC5B1A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON OSX";
+		};
+		091FC45C1D489EA700B14109 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 091FC44C1D489EA700B14109 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC651A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON OSX Tests";
+		};
+		091FC45E1D489EA700B14109 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 091FC44C1D489EA700B14109 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4D7CCE81B9465A700EE7221;
+			remoteInfo = "SwiftyJSON watchOS";
+		};
+		091FC4601D489EA700B14109 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 091FC44C1D489EA700B14109 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7236B4F61BAC14150020529B;
+			remoteInfo = "SwiftyJSON tvOS";
+		};
+		091FC4621D489EA700B14109 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 091FC44C1D489EA700B14109 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A8580F741BCF5C5B00DA927B;
+			remoteInfo = "SwiftyJSON tvOS Tests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		091FC42D1D489A1C00B14109 /* ICOModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOModel.swift; sourceTree = "<group>"; };
+		091FC44C1D489EA700B14109 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../../../../../../../../Users/cice/Downloads/SwiftyJSON-master 2/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
+		091FC4681D489EDC00B14109 /* ICOAddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOAddressModel.swift; sourceTree = "<group>"; };
+		091FC46A1D489F0A00B14109 /* ICOGeoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOGeoModel.swift; sourceTree = "<group>"; };
+		091FC46C1D48A0EC00B14109 /* ICOCompanyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOCompanyModel.swift; sourceTree = "<group>"; };
+		091FC4711D48A27E00B14109 /* ICOUsersParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOUsersParser.swift; sourceTree = "<group>"; };
+		091FC4751D48A95700B14109 /* APIConstantes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstantes.swift; sourceTree = "<group>"; };
+		091FC4771D48AAD500B14109 /* APIManagerFinal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManagerFinal.swift; sourceTree = "<group>"; };
+		091FC47F1D48AD6700B14109 /* ICOTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOTableViewCell.swift; sourceTree = "<group>"; };
+		091FC4811D48AD8500B14109 /* ICOTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOTableViewController.swift; sourceTree = "<group>"; };
+		0979722F1D4894D1007C674C /* AppWebServiceReto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppWebServiceReto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		097972321D4894D2007C674C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		097972371D4894D2007C674C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		097972391D4894D2007C674C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0979723C1D4894D2007C674C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0979723E1D4894D2007C674C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0979722C1D4894D1007C674C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091FC4641D489EB900B14109 /* SwiftyJSON.framework in Frameworks */,
+				091FC4651D489EB900B14109 /* SwiftyJSON.framework in Frameworks */,
+				091FC4661D489EB900B14109 /* SwiftyJSON.framework in Frameworks */,
+				091FC4671D489EB900B14109 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		091FC42F1D489A2000B14109 /* MODEL */ = {
+			isa = PBXGroup;
+			children = (
+				091FC42D1D489A1C00B14109 /* ICOModel.swift */,
+				091FC4681D489EDC00B14109 /* ICOAddressModel.swift */,
+				091FC46A1D489F0A00B14109 /* ICOGeoModel.swift */,
+				091FC46C1D48A0EC00B14109 /* ICOCompanyModel.swift */,
+			);
+			name = MODEL;
+			sourceTree = "<group>";
+		};
+		091FC44D1D489EA700B14109 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				091FC4571D489EA700B14109 /* SwiftyJSON.framework */,
+				091FC4591D489EA700B14109 /* SwiftyJSON iOS Tests.xctest */,
+				091FC45B1D489EA700B14109 /* SwiftyJSON.framework */,
+				091FC45D1D489EA700B14109 /* SwiftyJSON OSX Tests.xctest */,
+				091FC45F1D489EA700B14109 /* SwiftyJSON.framework */,
+				091FC4611D489EA700B14109 /* SwiftyJSON.framework */,
+				091FC4631D489EA700B14109 /* SwiftyJSON tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		091FC4701D48A22200B14109 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				091FC4751D48A95700B14109 /* APIConstantes.swift */,
+				091FC4771D48AAD500B14109 /* APIManagerFinal.swift */,
+				091FC4711D48A27E00B14109 /* ICOUsersParser.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		097972261D4894D0007C674C = {
+			isa = PBXGroup;
+			children = (
+				097972311D4894D2007C674C /* AppWebServiceReto */,
+				097972301D4894D1007C674C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		097972301D4894D1007C674C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0979722F1D4894D1007C674C /* AppWebServiceReto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		097972311D4894D2007C674C /* AppWebServiceReto */ = {
+			isa = PBXGroup;
+			children = (
+				091FC44C1D489EA700B14109 /* SwiftyJSON.xcodeproj */,
+				097972321D4894D2007C674C /* AppDelegate.swift */,
+				091FC42F1D489A2000B14109 /* MODEL */,
+				097972361D4894D2007C674C /* Main.storyboard */,
+				097972391D4894D2007C674C /* Assets.xcassets */,
+				0979723B1D4894D2007C674C /* LaunchScreen.storyboard */,
+				0979723E1D4894D2007C674C /* Info.plist */,
+				091FC4701D48A22200B14109 /* API */,
+				091FC47F1D48AD6700B14109 /* ICOTableViewCell.swift */,
+				091FC4811D48AD8500B14109 /* ICOTableViewController.swift */,
+			);
+			path = AppWebServiceReto;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0979722E1D4894D1007C674C /* AppWebServiceReto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 097972411D4894D2007C674C /* Build configuration list for PBXNativeTarget "AppWebServiceReto" */;
+			buildPhases = (
+				0979722B1D4894D1007C674C /* Sources */,
+				0979722C1D4894D1007C674C /* Frameworks */,
+				0979722D1D4894D1007C674C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppWebServiceReto;
+			productName = AppWebServiceReto;
+			productReference = 0979722F1D4894D1007C674C /* AppWebServiceReto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		097972271D4894D0007C674C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Cice;
+				TargetAttributes = {
+					0979722E1D4894D1007C674C = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = NZ9BB45RRX;
+					};
+				};
+			};
+			buildConfigurationList = 0979722A1D4894D0007C674C /* Build configuration list for PBXProject "AppWebServiceReto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 097972261D4894D0007C674C;
+			productRefGroup = 097972301D4894D1007C674C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 091FC44D1D489EA700B14109 /* Products */;
+					ProjectRef = 091FC44C1D489EA700B14109 /* SwiftyJSON.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0979722E1D4894D1007C674C /* AppWebServiceReto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		091FC4571D489EA700B14109 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 091FC4561D489EA700B14109 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		091FC4591D489EA700B14109 /* SwiftyJSON iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON iOS Tests.xctest";
+			remoteRef = 091FC4581D489EA700B14109 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		091FC45B1D489EA700B14109 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 091FC45A1D489EA700B14109 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		091FC45D1D489EA700B14109 /* SwiftyJSON OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON OSX Tests.xctest";
+			remoteRef = 091FC45C1D489EA700B14109 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		091FC45F1D489EA700B14109 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 091FC45E1D489EA700B14109 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		091FC4611D489EA700B14109 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 091FC4601D489EA700B14109 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		091FC4631D489EA700B14109 /* SwiftyJSON tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON tvOS Tests.xctest";
+			remoteRef = 091FC4621D489EA700B14109 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0979722D1D4894D1007C674C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0979723D1D4894D2007C674C /* LaunchScreen.storyboard in Resources */,
+				0979723A1D4894D2007C674C /* Assets.xcassets in Resources */,
+				097972381D4894D2007C674C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0979722B1D4894D1007C674C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091FC42E1D489A1C00B14109 /* ICOModel.swift in Sources */,
+				091FC46B1D489F0A00B14109 /* ICOGeoModel.swift in Sources */,
+				091FC4721D48A27E00B14109 /* ICOUsersParser.swift in Sources */,
+				091FC4781D48AAD500B14109 /* APIManagerFinal.swift in Sources */,
+				091FC46D1D48A0EC00B14109 /* ICOCompanyModel.swift in Sources */,
+				091FC4821D48AD8500B14109 /* ICOTableViewController.swift in Sources */,
+				091FC4691D489EDC00B14109 /* ICOAddressModel.swift in Sources */,
+				091FC4761D48A95700B14109 /* APIConstantes.swift in Sources */,
+				097972331D4894D2007C674C /* AppDelegate.swift in Sources */,
+				091FC4801D48AD6700B14109 /* ICOTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		097972361D4894D2007C674C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				097972371D4894D2007C674C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0979723B1D4894D2007C674C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0979723C1D4894D2007C674C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0979723F1D4894D2007C674C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		097972401D4894D2007C674C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		097972421D4894D2007C674C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = AppWebServiceReto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cice.AppWebServiceReto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		097972431D4894D2007C674C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = AppWebServiceReto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cice.AppWebServiceReto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0979722A1D4894D0007C674C /* Build configuration list for PBXProject "AppWebServiceReto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0979723F1D4894D2007C674C /* Debug */,
+				097972401D4894D2007C674C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		097972411D4894D2007C674C /* Build configuration list for PBXNativeTarget "AppWebServiceReto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				097972421D4894D2007C674C /* Debug */,
+				097972431D4894D2007C674C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 097972271D4894D0007C674C /* Project object */;
+}
