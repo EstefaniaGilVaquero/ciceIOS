@@ -55,9 +55,58 @@ extension SegundaDetailViewController : CLLocationManagerDelegate{
             myVelocidadLBL.text = "\(userLocation.speed)"
             myAltitud.text = "\(userLocation.altitude)"
             
-            //GEOCOIFICACION INVERSA
+            //GEOCOIFICACION INVERSA // Dado un punto en el mapa, saber la calle mas cercana
+            CLGeocoder().reverseGeocodeLocation(userLocation, completionHandler: { (placemarks, error) in
+                if error != nil{
+                    print(error?.description)
+                }else{
+                    if let placemarkData = placemarks?[0]{
+                        var direccion = ""
+                        
+                        
+                        
+                        
+//                        let direccion = "\(placemarkData.thoroughfare)\n \(placemarkData.subThoroughfare!)"
+//                        self.myDireccionLBL.text = direccion
+//                        
+//                        
+//                        if placem
+                        
+                        direccion += self.controlDeValoresNil(placemarkData.thoroughfare)
+                        direccion += self.controlDeValoresNil(placemarkData.subThoroughfare)
+                        direccion += self.controlDeValoresNil(placemarkData.subLocality)
+                        direccion += self.controlDeValoresNil(placemarkData.subAdministrativeArea)
+                        direccion += self.controlDeValoresNil(placemarkData.country)
+                        direccion += self.controlDeValoresNil(placemarkData.postalCode)
+                        
+                        myDireccionLBL.text = direccion
+                        
+                        
+                    }
+                }
+                
+            })
             
         }
     }
+    
+    func controlDeValoresNil(info : String?) -> String{
+        if info != nil{
+            return "\(info!) \n"
+        }else{
+            return ""
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 }
