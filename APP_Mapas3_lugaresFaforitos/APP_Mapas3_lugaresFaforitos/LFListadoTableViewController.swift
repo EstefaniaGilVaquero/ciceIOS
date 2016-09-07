@@ -17,8 +17,13 @@ class LFListadoTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        lugaresGuardados.append(["calle": "CICE", "numero": "Estamos aqui", "lat": "40.436766", "long": "-3.676266"])
+        //Inicializo lugaresGuardados con las preferencias de usuario
+        setLugaresGuardadosWithUserPreferences()
         
+        //Si el usuario no tiene lugaresGuardados, ponemos por defecto uno
+        if lugaresGuardados.count == 0{
+            lugaresGuardados.append(["calle": "CICE", "numero": "Estamos aqui", "lat": "40.436766", "long": "-3.676266"])
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -77,5 +82,19 @@ class LFListadoTableViewController: UITableViewController {
         }
     }
     
+    //MARK: - USER PREFERENCES
+    func setLugaresGuardadosWithUserPreferences() {
+        
+        let arrayDeUbicacionesUsuario = NSUserDefaults.standardUserDefaults().arrayForKey("luegaresGuardados")
+        let numeroUbicaciones: Int = (arrayDeUbicacionesUsuario?.count)!-1
+        
+        for i in 0...numeroUbicaciones {
+            let calle = arrayDeUbicacionesUsuario![i].valueForKey("calle") as! String
+            let numero = arrayDeUbicacionesUsuario![i].valueForKey("numero") as! String
+            let lat = arrayDeUbicacionesUsuario![i].valueForKey("lat")!
+            let long = arrayDeUbicacionesUsuario![i].valueForKey("long")!
+            lugaresGuardados.append(["calle": calle, "numero": numero, "lat": "\(lat)", "long": "\(long)"])
+        }
+    }
 
 }

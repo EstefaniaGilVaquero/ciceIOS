@@ -19,7 +19,8 @@ class LFMapaViewController: UIViewController {
     //MARK: - VARIABLES LOCALES GLOBALES
     
     var customLocationManager = CLLocationManager()
-    
+    let prefs = NSUserDefaults.standardUserDefaults()
+
     
     
     override func viewDidLoad() {
@@ -92,6 +93,9 @@ class LFMapaViewController: UIViewController {
                     self.myLugaresFavoritos.addAnnotation(annotation)
                     
                     lugaresGuardados.append(["calle": newTitle, "numero": newSubTitle, "lat": "\(newCoordinate.latitude)", "long": "\(newCoordinate.longitude)"])
+                    //lo guardamos tb en las preferencias de usuario
+                    self.prefs.setObject(lugaresGuardados, forKey: "luegaresGuardados")
+                    
                 }
                 
             })
