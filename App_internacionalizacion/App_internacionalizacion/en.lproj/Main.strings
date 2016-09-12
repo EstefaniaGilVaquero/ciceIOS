@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Numero"; ObjectID = "1KA-1W-NTy"; */
+"1KA-1W-NTy.text" = "Numero";
+
+/* Class = "UILabel"; text = "Fecha"; ObjectID = "49c-7e-kYW"; */
+"49c-7e-kYW.text" = "Fecha";
+
+/* Class = "UILabel"; text = "Moneda"; ObjectID = "HhV-li-sE0"; */
+"HhV-li-sE0.text" = "Moneda";
+
+/* Class = "UILabel"; text = "Numero"; ObjectID = "Qrf-pw-LPw"; */
+"Qrf-pw-LPw.text" = "Numero";
+
+/* Class = "UILabel"; text = "Moneda"; ObjectID = "Uvo-Eg-qps"; */
+"Uvo-Eg-qps.text" = "Moneda";
+
+/* Class = "UILabel"; text = "texto"; ObjectID = "V4W-Gq-5e2"; */
+"V4W-Gq-5e2.text" = "texto";
+
+/* Class = "UILabel"; text = "Fecha"; ObjectID = "Vzg-Pi-6v1"; */
+"Vzg-Pi-6v1.text" = "Fecha";
+
+/* Class = "UILabel"; text = "Imagen"; ObjectID = "gRg-hl-fUt"; */
+"gRg-hl-fUt.text" = "Imagen";
+
+/* Class = "UILabel"; text = "texto"; ObjectID = "xVc-x8-B9T"; */
+"xVc-x8-B9T.text" = "texto";
