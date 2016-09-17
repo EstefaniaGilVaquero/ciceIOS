@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  App_internacionalizacion
+
+  Created by Estefanía Gil Vaquero on 14/9/16.
+  Copyright © 2016 cice. All rights reserved.
+*/
+
+GOOD_MORNING = "Bonjour mon amies";
+TITLE_DATA = "Nous sommmes ici dans la classe de iOS";
+MESSAGE_DATA = "c'est un message en Frace";
