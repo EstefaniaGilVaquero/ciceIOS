@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
+    <entity name="Contratos" representedClassName=".Contratos" syncable="YES">
+        <attribute name="despachoAbogados" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="direccionEmpresa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mesFecha" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreEmpresa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreTitularCuenta" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreYApellido" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numeroCaja" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numeroColegiado1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numeroColegiado2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numeroCuenta" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numeroFecha" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="observacionesGenerales" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Contratos" positionX="-36" positionY="9" width="128" height="225"/>
+    </elements>
+</model>
