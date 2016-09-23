@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "26A10BC0862C73BFFDD4BEA71B99AC5613B127E6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "26A10BC0862C73BFFDD4BEA71B99AC5613B127E6" : 0,
+    "C849130F358F350A59B0AF09897795366659043D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CE76AA4C-D9CF-449D-9D0E-9FB5242557B1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "26A10BC0862C73BFFDD4BEA71B99AC5613B127E6" : "App10_3_CoreData_GDP_BASE_ESTUDIANTES\/",
+    "C849130F358F350A59B0AF09897795366659043D" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AppCoreData_GDP",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AppCoreData_GDP.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/phdafoe\/App10_3_CoreData_GDP.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "26A10BC0862C73BFFDD4BEA71B99AC5613B127E6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/EstefaniaGilVaquero\/ciceIOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C849130F358F350A59B0AF09897795366659043D"
+    }
+  ]
+}

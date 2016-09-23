@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="mXA-Oy-g30">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Servicios Juridicos View Controller-->
+        <scene sceneID="5H7-sK-AXE">
+            <objects>
+                <viewController id="CGP-8A-3ST" customClass="DPServiciosJuridicosViewController" customModule="AppCoreData_GDP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Zy-Yj-Uiy"/>
+                        <viewControllerLayoutGuide type="bottom" id="VB7-ad-ZJt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gaH-1J-Ht9">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zft-N8-4PZ">
+                                <rect key="frame" x="0.0" y="28" width="540" height="352"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="cgJ-x7-dqO">
+                                <rect key="frame" x="98" y="370" width="349" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="540" height="400"/>
+                    <connections>
+                        <outlet property="myCustomPageControll" destination="cgJ-x7-dqO" id="xPl-a4-Ghh"/>
+                        <outlet property="myCustomScrollView" destination="zft-N8-4PZ" id="ZeE-Oa-5PA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SlJ-FI-7BE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2066" y="-340"/>
+        </scene>
+        <!--DP-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DPPrimeraViewController" customModule="AppCoreData_GDP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="slide.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="00D-wS-fYy">
+                                <rect key="frame" x="15" y="191" width="737" height="249"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="porque_pic3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="z0e-dw-Pa0">
+                                <rect key="frame" x="24" y="568" width="283" height="395"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" text="DP Abogados y Consultores España  info@icologic.co " textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDo-OO-irL">
+                                <rect key="frame" x="424" y="28" width="328" height="52"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0Y-et-5my">
+                                <rect key="frame" x="24" y="459" width="728" height="86"/>
+                                <string key="text">Somos un grupo de Abogados &amp; Consultores altamente especializados en los marcos jurídicos español y mexicano, así como en el diseño y ejecución de estrategias empresariales, administrativas y comerciales dirigidas a potenciar los procesos de internacionalización y apertura de nuevos mercados para empresas y organismos en el ámbito de las relaciones entre España, Unión Europea, México y América.  </string>
+                                <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azh-SZ-I3Y">
+                                <rect key="frame" x="323" y="597" width="429" height="304"/>
+                                <string key="text">•	Por nuestra experiencia y grado de especialización en la internacionalización y apertura de nuevos mercados de empresas de diversos sectores.
+•	Porque tenemos experiencia en los sectores más estratégicos como lo son ingeniería, infraestructuras, energías renovables, tecnologías de la información, inversión inmobiliaria y tecnologías para la salud.
+•	Porque minimizamos el riesgo y nos comprometemos en optimizar la rentabilidad de nuestros clientes para tener precisión en el retorno de inversión.
+•	Por ser un equipo binacional altamente especializado en temas legales, fiscales, administrativos y comerciales.
+•	Somos un equipo bicultural, puesto que conocemos la idiosincrasia de ambos países porque hablamos el mismo idioma pero no el mismo lenguaje.
+•	Porque somos la primera firma con estructura propia en España para atender el mercado europeo y en México para América.</string>
+                                <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" text="Porqué DP" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwK-61-wfg">
+                                <rect key="frame" x="323" y="553" width="197" height="45"/>
+                                <color key="textColor" red="0.081328734429999994" green="0.4694272733" blue="0.88699473510000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logofinal_gdp.png" translatesAutoresizingMaskIntoConstraints="NO" id="K7I-UD-KsH">
+                                <rect key="frame" x="15" y="80" width="234" height="149"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dl-sb-S1o">
+                                <rect key="frame" x="273" y="125" width="145" height="30"/>
+                                <color key="backgroundColor" red="0.56745489979999997" green="0.76762445410000002" blue="0.94639521059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Servicios Jurídicos">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CGP-8A-3ST" kind="popover" popoverAnchorView="1dl-sb-S1o" id="PgE-Se-Kgh">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voC-uf-ywf">
+                                <rect key="frame" x="426" y="125" width="177" height="30"/>
+                                <color key="backgroundColor" red="0.26683725870000002" green="0.63968443289999999" blue="0.88699473510000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Consultoría Empresarial">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Cxl-0e-JFG" kind="popover" popoverAnchorView="voC-uf-ywf" id="akN-5F-bq0">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vlw-eA-iMJ">
+                                <rect key="frame" x="611" y="125" width="137" height="30"/>
+                                <color key="backgroundColor" red="0.023529411764705882" green="0.14509803921568629" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Soluciones">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oqa-tZ-HoG" kind="popover" popoverAnchorView="Vlw-eA-iMJ" id="aeu-RJ-HJ4">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="DP" image="logoGDP.png" id="KKn-ac-Smi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1293" y="576"/>
+        </scene>
+        <!--Contrato-->
+        <scene sceneID="gsp-Fy-0Vs">
+            <objects>
+                <viewController id="g6i-vq-TtX" customClass="DPContratosViewController" customModule="AppCoreData_GDP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qls-7O-DN5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Svx-jI-vm7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TEc-SE-6RH">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8af-ry-Rnp">
+                                <rect key="frame" x="269" y="910" width="228" height="48"/>
+                                <color key="backgroundColor" red="0.13737346052098592" green="0.45702130822954196" blue="0.79320549242424243" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="41"/>
+                                <state key="normal" title="Finalizar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="salvarDatosEnCoreData:" destination="g6i-vq-TtX" eventType="touchUpInside" id="NEl-pk-68f"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fondo_comentarios_usuarios.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-O5-o3d">
+                                <rect key="frame" x="12" y="330" width="743" height="89"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" text="En Madrid, a ____ DE _______________________ DE  2014" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCM-dP-CXs">
+                                <rect key="frame" x="276" y="143" width="413" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8P6-Hj-N40">
+                                <rect key="frame" x="21" y="225" width="734" height="99"/>
+                                <string key="text">D. ________________________________________  en nombre y representación de la mercantil ___________________, S.L. con domicilio a efectos de notificaciones en ___________________________________________,  encarga profesionalmente al DESPACHO LEGAL_______________________, (colegiados n.º _______ y _______ del Ilustre Colegio de Abogados de Madrid), con domicilio profesional en Madrid, calle Zurbano 45, 1ª planta, la realización de los siguientes trabajos profesionales:</string>
+                                <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8J-g7-5Ye">
+                                <rect key="frame" x="21" y="502" width="734" height="82"/>
+                                <string key="text">En consecuencia, con carácter indicativo, al margen de incidencias que puedan plantearse y sin incluir los honorarios de otros profesionales que deban intervenir, gastos por desplazamientos o de otra naturaleza y suplidos que puedan ocasionarse en la ejecución de los trabajos objeto de este encargo, los honorarios se presupuestan en:
+</string>
+                                <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3s-i2-5j0">
+                                <rect key="frame" x="18038" y="730" width="734" height="151"/>
+                                <string key="text">La minuta de honorarios definitiva estará sujeta al régimen fiscal de retenciones e I.V.A. procedente. En caso de disconformidad del cliente con su importe, podrá optar por ejercitar las acciones judiciales que le asistan o por impugnarla ante la Junta de Gobierno del Ilustre Colegio de Abogados de Madrid, sometiéndose a su decisión arbitral, que el Letrado desde este momento acepta, obligándose a acatar y cumplir su resolución. Así mismo se le informa que sus datos personales serán tratados conforme a la Ley Orgánica de Protección de datos de carácter Personal 15/1999, formando parte de un fichero automatizado y reconociendo sus derechos de acceso, rectificación, modificación y cancelación conforme a la normativa vigente. El cliente reconoce haber sido informado en lo relativo a las costas del procedimiento judicial (art. 394 y ss LEC)</string>
+                                <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjw-N7-3cH">
+                                <rect key="frame" x="21" y="580" width="734" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Honorarios: Presupuesto...........................................	120 € y 300 € fase judicial</string>
+                                <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFb-U6-Cf6">
+                                <rect key="frame" x="21" y="612" width="734" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Provisión de fondos …………………..................	120 € + % IVA</string>
+                                <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHa-hH-hKQ">
+                                <rect key="frame" x="22" y="650" width="734" height="53"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">*NOTA: La forma de pago será mediante transferencia bancaria de la totalidad de lo presupuestado antes del inicio de cada fase. (ccc: _____________________ : Caja _________c/ Recoletos 21 de Madrid: </string>
+                                <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" text="Titular: _________________________________) " selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmB-fs-tal">
+                                <rect key="frame" x="22" y="699" width="734" height="37"/>
+                                <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yf-Vs-o1t">
+                                <rect key="frame" x="30" y="324" width="711" height="96"/>
+                                <string key="text" base64-UTF8="YES">
+DQ
+</string>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre y Apellido" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ydn-88-5s9">
+                                <rect key="frame" x="41" y="228" width="286" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IMt-Cs-WgQ">
+                                <rect key="frame" x="439" y="146" width="173" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="# " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VnB-81-fsF">
+                                <rect key="frame" x="219" y="670" width="167" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="#" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cec-Z6-Vik">
+                                <rect key="frame" x="429" y="669" width="71" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre del Titular" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="70A-Rc-f0i">
+                                <rect key="frame" x="79" y="703" width="257" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Dirección" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r5H-a2-rMv">
+                                <rect key="frame" x="330" y="245" width="304" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Despacho" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYO-nO-TEM">
+                                <rect key="frame" x="276" y="262" width="160" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="#" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xIe-Cu-uWe">
+                                <rect key="frame" x="541" y="262" width="53" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="#" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VEe-To-RAT">
+                                <rect key="frame" x="378" y="148" width="34" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="#" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tsp-my-RGv">
+                                <rect key="frame" x="606" y="262" width="53" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Empresa" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b9i-Gt-HDF">
+                                <rect key="frame" x="607" y="228" width="134" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logofinal_gdp.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vn8-pv-zaU">
+                                <rect key="frame" x="30" y="128" width="147" height="81"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAV-25-bNb">
+                                <rect key="frame" x="21" y="418" width="734" height="101"/>
+                                <string key="text">La ejecución de dichos trabajos profesionales se efectuará en régimen de arrendamiento de servicio, con arreglo a las normas deontológicas de la Abogacía y con honorarios profesionales fijados, sobre una cuantía inicial base de la minutación que se fija en la cantidad de 120 euros fase extrajudicial y 300 fase judicial, (impuestos no incluidos), sin perjuicio de lo que posteriormente resulte, aplicando los honorarios establecidos como orientadores en los Criterios del Ilustre Colegio de Abogados de Madrid, aprobados el 24 de julio de 2001.                                                                               
+
+</string>
+                                <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contrato" id="fSC-b4-qy8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cxe-5w-2tG">
+                            <connections>
+                                <segue destination="qVn-qW-MY8" kind="push" id="KMT-Pk-WwC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myDespachoEmpresaTF" destination="AYO-nO-TEM" id="YOz-yf-DW1"/>
+                        <outlet property="myDireccionEmpresaTF" destination="r5H-a2-rMv" id="BhX-dP-zfn"/>
+                        <outlet property="myMesFechaTF" destination="IMt-Cs-WgQ" id="Gpb-oL-H6a"/>
+                        <outlet property="myNombreEmpresaTF" destination="b9i-Gt-HDF" id="7tW-HS-tgc"/>
+                        <outlet property="myNombreTitularCuentaTF" destination="70A-Rc-f0i" id="EL0-f5-JNW"/>
+                        <outlet property="myNombreYApellidoTF" destination="ydn-88-5s9" id="Qo2-rs-dGb"/>
+                        <outlet property="myNumeroCajaTF" destination="cec-Z6-Vik" id="LpU-8I-a1E"/>
+                        <outlet property="myNumeroColegiadoDosTF" destination="tsp-my-RGv" id="4k1-qq-YaW"/>
+                        <outlet property="myNumeroColegiadoUnoTF" destination="xIe-Cu-uWe" id="rc3-La-I5Q"/>
+                        <outlet property="myNumeroCuentaCorrienteTF" destination="VnB-81-fsF" id="sCH-92-hXY"/>
+                        <outlet property="myNumeroFechaTF" destination="VEe-To-RAT" id="DJ7-NH-H3k"/>
+                        <outlet property="myObservacionesGeneralesTF" destination="2yf-Vs-o1t" id="y39-el-3jc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WWw-1d-U19" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2273" y="1822"/>
+        </scene>
+        <!--Lista de Clientes-->
+        <scene sceneID="PPN-Dk-Yiu">
+            <objects>
+                <tableViewController id="qVn-qW-MY8" customClass="DPListaContratosViewController" customModule="AppCoreData_GDP" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="reL-LB-MYV">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="pOC-tU-rIh">
+                                <rect key="frame" x="0.0" y="92" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pOC-tU-rIh" id="0Fm-ex-tPE">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qVn-qW-MY8" id="o9i-At-HD6"/>
+                            <outlet property="delegate" destination="qVn-qW-MY8" id="K5D-vC-wj3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Lista de Clientes" id="Zzv-Ja-oTt"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0v2-YI-Kde" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3128" y="1822"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xHS-Wa-NUX">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="mXA-Oy-g30" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="bAX-SC-Ilu">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="pKD-F1-LDX"/>
+                        <segue destination="1hd-W7-Sqv" kind="relationship" relationship="viewControllers" id="Atf-Yf-6DP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MLK-B3-Q8z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313" y="576"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RqM-Cp-bqg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1hd-W7-Sqv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="gO3-Va-VGu"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8ij-u3-Siz">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="g6i-vq-TtX" kind="relationship" relationship="rootViewController" id="UXt-Ct-zef"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vu1-UO-dI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1293" y="1822"/>
+        </scene>
+        <!--Consultoria Empresarial View Controller-->
+        <scene sceneID="1EX-77-Spe">
+            <objects>
+                <viewController id="Cxl-0e-JFG" customClass="DPConsultoriaEmpresarialViewController" customModule="AppCoreData_GDP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u1a-IF-WrL"/>
+                        <viewControllerLayoutGuide type="bottom" id="plO-Ye-T2i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YkC-fc-9ga">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0m3-Rq-exg">
+                                <rect key="frame" x="0.0" y="28" width="540" height="352"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="S8J-Kd-hSl">
+                                <rect key="frame" x="98" y="370" width="349" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="540" height="400"/>
+                    <connections>
+                        <outlet property="myCustomPageControll" destination="S8J-Kd-hSl" id="NSV-73-ASY"/>
+                        <outlet property="myCustomScrollView" destination="0m3-Rq-exg" id="chB-Za-jlU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j10-fF-KLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2652" y="-340"/>
+        </scene>
+        <!--Soluciones View Controller-->
+        <scene sceneID="4hT-rZ-LSb">
+            <objects>
+                <viewController id="oqa-tZ-HoG" customClass="DPSolucionesViewController" customModule="AppCoreData_GDP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iUp-uZ-mkf"/>
+                        <viewControllerLayoutGuide type="bottom" id="uLh-ZA-Thu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cHm-7v-Yi7">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="550"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logofinal_gdp.png" translatesAutoresizingMaskIntoConstraints="NO" id="k8a-l3-TEC">
+                                <rect key="frame" x="5" y="20" width="116" height="68"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpB-sq-Us7">
+                                <rect key="frame" x="129" y="20" width="265" height="101"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute </string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2r-Bm-zC5">
+                                <rect key="frame" x="9" y="257" width="115" height="258"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute </string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdu-Na-fK0">
+                                <rect key="frame" x="141" y="257" width="115" height="258"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute </string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3a-Hb-0xM">
+                                <rect key="frame" x="9" y="138" width="115" height="68"/>
+                                <state key="normal" backgroundImage="S_1.jpg"/>
+                                <connections>
+                                    <action selector="enviaMailNegociosInmobiliarios:" destination="oqa-tZ-HoG" eventType="touchUpInside" id="pad-iZ-Efs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7U-ep-xUV">
+                                <rect key="frame" x="141" y="138" width="115" height="68"/>
+                                <state key="normal" backgroundImage="S_2.jpg"/>
+                                <connections>
+                                    <action selector="enviaMailBackOffice:" destination="oqa-tZ-HoG" eventType="touchUpInside" id="o1K-nv-sI3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IR-LJ-FDf">
+                                <rect key="frame" x="277" y="138" width="115" height="68"/>
+                                <state key="normal" backgroundImage="S_3.jpg"/>
+                                <connections>
+                                    <action selector="enviaMailOficinaDeProyectos:" destination="oqa-tZ-HoG" eventType="touchUpInside" id="ZPI-V7-3lw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DP Negocios Inmobiliarios" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7H-77-hAc">
+                                <rect key="frame" x="9" y="209" width="115" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DP Backoffice" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ym3-nf-mDL">
+                                <rect key="frame" x="141" y="209" width="115" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DP Oficina de Proyectos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rS-Je-QOe">
+                                <rect key="frame" x="277" y="209" width="115" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvH-vJ-mJg">
+                                <rect key="frame" x="277" y="257" width="115" height="258"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute </string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="550"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sev-5N-2ZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3186" y="-265"/>
+        </scene>
+        <!--Contrato-->
+        <scene sceneID="FUA-Bx-jTS">
+            <objects>
+                <viewController id="whM-Id-T7G" customClass="DPContratosViewController" customModule="AppCoreData_GDP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KBk-9x-FxD"/>
+                        <viewControllerLayoutGuide type="bottom" id="qvb-N2-H3H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7N5-oq-sBn">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQb-ne-peA">
+                                <rect key="frame" x="269" y="910" width="228" height="48"/>
+                                <color key="backgroundColor" red="0.13737346049999999" green="0.45702130819999998" blue="0.79320549240000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="41"/>
+                                <state key="normal" title="Finalizar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="salvarDatosEnCoreData:" destination="whM-Id-T7G" eventType="touchUpInside" id="VFk-dY-Hd4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fondo_comentarios_usuarios.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BwI-xm-ycY">
+                                <rect key="frame" x="12" y="330" width="743" height="89"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" text="En Madrid, a ____ DE _______________________ DE  2014" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVw-G7-mXq">
+                                <rect key="frame" x="276" y="143" width="413" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slN-XW-Vz5">
+                                <rect key="frame" x="21" y="225" width="734" height="99"/>
+                                <string key="text">D. ________________________________________  en nombre y representación de la mercantil ___________________, S.L. con domicilio a efectos de notificaciones en ___________________________________________,  encarga profesionalmente al DESPACHO LEGAL_______________________, (colegiados n.º _______ y _______ del Ilustre Colegio de Abogados de Madrid), con domicilio profesional en Madrid, calle Zurbano 45, 1ª planta, la realización de los siguientes trabajos profesionales:</string>
+                                <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8QG-Cw-zcd">
+                                <rect key="frame" x="21" y="502" width="734" height="82"/>
+                                <string key="text">En consecuencia, con carácter indicativo, al margen de incidencias que puedan plantearse y sin incluir los honorarios de otros profesionales que deban intervenir, gastos por desplazamientos o de otra naturaleza y suplidos que puedan ocasionarse en la ejecución de los trabajos objeto de este encargo, los honorarios se presupuestan en:
+</string>
+                                <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJ2-FO-76e">
+                                <rect key="frame" x="18038" y="730" width="734" height="151"/>
+                                <string key="text">La minuta de honorarios definitiva estará sujeta al régimen fiscal de retenciones e I.V.A. procedente. En caso de disconformidad del cliente con su importe, podrá optar por ejercitar las acciones judiciales que le asistan o por impugnarla ante la Junta de Gobierno del Ilustre Colegio de Abogados de Madrid, sometiéndose a su decisión arbitral, que el Letrado desde este momento acepta, obligándose a acatar y cumplir su resolución. Así mismo se le informa que sus datos personales serán tratados conforme a la Ley Orgánica de Protección de datos de carácter Personal 15/1999, formando parte de un fichero automatizado y reconociendo sus derechos de acceso, rectificación, modificación y cancelación conforme a la normativa vigente. El cliente reconoce haber sido informado en lo relativo a las costas del procedimiento judicial (art. 394 y ss LEC)</string>
+                                <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5A-iE-Lop">
+                                <rect key="frame" x="21" y="580" width="734" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Honorarios: Presupuesto...........................................	120 € y 300 € fase judicial</string>
+                                <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxl-E9-3Rs">
+                                <rect key="frame" x="21" y="612" width="734" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Provisión de fondos …………………..................	120 € + % IVA</string>
+                                <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qd3-OF-9Mb">
+                                <rect key="frame" x="22" y="650" width="734" height="53"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">*NOTA: La forma de pago será mediante transferencia bancaria de la totalidad de lo presupuestado antes del inicio de cada fase. (ccc: _____________________ : Caja _________c/ Recoletos 21 de Madrid: </string>
+                                <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" text="Titular: _________________________________) " selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXH-1F-4bI">
+                                <rect key="frame" x="22" y="699" width="734" height="37"/>
+                                <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6D-JI-UQG">
+                                <rect key="frame" x="30" y="324" width="711" height="96"/>
+                                <string key="text" base64-UTF8="YES">
+DQ
+</string>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre y Apellido" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DgP-yY-B0e">
+                                <rect key="frame" x="41" y="228" width="286" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YGd-Cy-BUH">
+                                <rect key="frame" x="439" y="146" width="173" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="# " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2AA-FY-Sio">
+                                <rect key="frame" x="219" y="670" width="167" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="#" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GbW-3S-ahe">
+                                <rect key="frame" x="429" y="669" width="71" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre del Titular" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4w5-hS-VhI">
+                                <rect key="frame" x="79" y="703" width="257" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Dirección" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4mk-lB-54O">
+                                <rect key="frame" x="330" y="245" width="304" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Despacho" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S9F-tm-VVk">
+                                <rect key="frame" x="276" y="262" width="160" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="#" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bfc-Vz-piE">
+                                <rect key="frame" x="541" y="262" width="53" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="#" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dTQ-L8-HvN">
+                                <rect key="frame" x="378" y="148" width="34" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="#" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xfv-vW-4Hh">
+                                <rect key="frame" x="606" y="262" width="53" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Empresa" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ljG-SX-Ohr">
+                                <rect key="frame" x="607" y="228" width="134" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logofinal_gdp.png" translatesAutoresizingMaskIntoConstraints="NO" id="jWH-Yg-PVf">
+                                <rect key="frame" x="30" y="128" width="147" height="81"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8l-ki-Thl">
+                                <rect key="frame" x="21" y="418" width="734" height="101"/>
+                                <string key="text">La ejecución de dichos trabajos profesionales se efectuará en régimen de arrendamiento de servicio, con arreglo a las normas deontológicas de la Abogacía y con honorarios profesionales fijados, sobre una cuantía inicial base de la minutación que se fija en la cantidad de 120 euros fase extrajudicial y 300 fase judicial, (impuestos no incluidos), sin perjuicio de lo que posteriormente resulte, aplicando los honorarios establecidos como orientadores en los Criterios del Ilustre Colegio de Abogados de Madrid, aprobados el 24 de julio de 2001.                                                                               
+
+</string>
+                                <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contrato" id="ACG-b6-ryM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8Od-eY-SCj"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myDespachoEmpresaTF" destination="S9F-tm-VVk" id="EGZ-0p-vbn"/>
+                        <outlet property="myDireccionEmpresaTF" destination="4mk-lB-54O" id="Kmd-9J-HBC"/>
+                        <outlet property="myMesFechaTF" destination="YGd-Cy-BUH" id="n05-iY-jv4"/>
+                        <outlet property="myNombreEmpresaTF" destination="ljG-SX-Ohr" id="unw-nC-Mbr"/>
+                        <outlet property="myNombreTitularCuentaTF" destination="4w5-hS-VhI" id="K6E-WT-gdF"/>
+                        <outlet property="myNombreYApellidoTF" destination="DgP-yY-B0e" id="TSh-0g-HSW"/>
+                        <outlet property="myNumeroCajaTF" destination="GbW-3S-ahe" id="r90-nj-il9"/>
+                        <outlet property="myNumeroColegiadoDosTF" destination="Xfv-vW-4Hh" id="VNi-bA-0TV"/>
+                        <outlet property="myNumeroColegiadoUnoTF" destination="bfc-Vz-piE" id="hay-zK-chg"/>
+                        <outlet property="myNumeroCuentaCorrienteTF" destination="2AA-FY-Sio" id="BKP-wR-s42"/>
+                        <outlet property="myNumeroFechaTF" destination="dTQ-L8-HvN" id="bFy-g4-wfr"/>
+                        <outlet property="myObservacionesGeneralesTF" destination="l6D-JI-UQG" id="4pE-Nz-NHz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nBB-3q-EZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2273" y="1822"/>
+        </scene>
+        <!--Contrato-->
+        <scene sceneID="hPC-6f-B9j">
+            <objects>
+                <viewController storyboardIdentifier="DetalleContrato" id="yVe-tX-oyh" customClass="DPDetalleContratoViewController" customModule="AppCoreData_GDP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rvU-IS-vjV"/>
+                        <viewControllerLayoutGuide type="bottom" id="iVY-qI-2vs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lPZ-bC-vNM">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fondo_comentarios_usuarios.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RqO-9A-0ej">
+                                <rect key="frame" x="12" y="330" width="743" height="89"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" text="En Madrid, a ____ DE _______________________ DE  2014" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvP-Fd-CGs">
+                                <rect key="frame" x="276" y="143" width="413" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2O-6E-f82">
+                                <rect key="frame" x="21" y="225" width="734" height="99"/>
+                                <string key="text">D. ________________________________________  en nombre y representación de la mercantil ___________________, S.L. con domicilio a efectos de notificaciones en ___________________________________________,  encarga profesionalmente al DESPACHO LEGAL_______________________, (colegiados n.º _______ y _______ del Ilustre Colegio de Abogados de Madrid), con domicilio profesional en Madrid, calle Zurbano 45, 1ª planta, la realización de los siguientes trabajos profesionales:</string>
+                                <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJ5-WT-O6V">
+                                <rect key="frame" x="21" y="502" width="734" height="82"/>
+                                <string key="text">En consecuencia, con carácter indicativo, al margen de incidencias que puedan plantearse y sin incluir los honorarios de otros profesionales que deban intervenir, gastos por desplazamientos o de otra naturaleza y suplidos que puedan ocasionarse en la ejecución de los trabajos objeto de este encargo, los honorarios se presupuestan en:
+</string>
+                                <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAF-Hk-1Gc">
+                                <rect key="frame" x="18038" y="730" width="734" height="151"/>
+                                <string key="text">La minuta de honorarios definitiva estará sujeta al régimen fiscal de retenciones e I.V.A. procedente. En caso de disconformidad del cliente con su importe, podrá optar por ejercitar las acciones judiciales que le asistan o por impugnarla ante la Junta de Gobierno del Ilustre Colegio de Abogados de Madrid, sometiéndose a su decisión arbitral, que el Letrado desde este momento acepta, obligándose a acatar y cumplir su resolución. Así mismo se le informa que sus datos personales serán tratados conforme a la Ley Orgánica de Protección de datos de carácter Personal 15/1999, formando parte de un fichero automatizado y reconociendo sus derechos de acceso, rectificación, modificación y cancelación conforme a la normativa vigente. El cliente reconoce haber sido informado en lo relativo a las costas del procedimiento judicial (art. 394 y ss LEC)</string>
+                                <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eta-mR-6vB">
+                                <rect key="frame" x="21" y="580" width="734" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Honorarios: Presupuesto...........................................	120 € y 300 € fase judicial</string>
+                                <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jy8-Fi-i2r">
+                                <rect key="frame" x="21" y="612" width="734" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Provisión de fondos …………………..................	120 € + % IVA</string>
+                                <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvB-Pi-e05">
+                                <rect key="frame" x="22" y="650" width="734" height="53"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">*NOTA: La forma de pago será mediante transferencia bancaria de la totalidad de lo presupuestado antes del inicio de cada fase. (ccc: _____________________ : Caja _________c/ Recoletos 21 de Madrid: </string>
+                                <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" text="Titular: _________________________________) " selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRV-bW-r3J">
+                                <rect key="frame" x="22" y="699" width="734" height="37"/>
+                                <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fV1-Oh-llG">
+                                <rect key="frame" x="30" y="324" width="711" height="96"/>
+                                <string key="text" base64-UTF8="YES">
+DQ
+</string>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre y Apellido" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R8d-JF-ApI">
+                                <rect key="frame" x="41" y="228" width="286" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZBG-eL-jPs">
+                                <rect key="frame" x="439" y="146" width="173" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="# " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DrL-FN-eEh">
+                                <rect key="frame" x="219" y="670" width="167" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="#" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BWB-0H-SXR">
+                                <rect key="frame" x="429" y="669" width="71" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre del Titular" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l7i-52-NVV">
+                                <rect key="frame" x="79" y="703" width="257" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Dirección" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MlE-vm-t5d">
+                                <rect key="frame" x="330" y="245" width="304" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Despacho" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0A2-Qx-A1b">
+                                <rect key="frame" x="276" y="262" width="160" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="#" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDN-MT-MKp">
+                                <rect key="frame" x="541" y="262" width="53" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="#" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zw5-cH-mza">
+                                <rect key="frame" x="378" y="148" width="34" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="#" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lPe-HQ-57j">
+                                <rect key="frame" x="606" y="262" width="53" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Empresa" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VFE-3R-xfC">
+                                <rect key="frame" x="607" y="228" width="134" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logofinal_gdp.png" translatesAutoresizingMaskIntoConstraints="NO" id="akR-4S-UC3">
+                                <rect key="frame" x="30" y="128" width="147" height="81"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ge-0p-LPh">
+                                <rect key="frame" x="21" y="418" width="734" height="101"/>
+                                <string key="text">La ejecución de dichos trabajos profesionales se efectuará en régimen de arrendamiento de servicio, con arreglo a las normas deontológicas de la Abogacía y con honorarios profesionales fijados, sobre una cuantía inicial base de la minutación que se fija en la cantidad de 120 euros fase extrajudicial y 300 fase judicial, (impuestos no incluidos), sin perjuicio de lo que posteriormente resulte, aplicando los honorarios establecidos como orientadores en los Criterios del Ilustre Colegio de Abogados de Madrid, aprobados el 24 de julio de 2001.                                                                               
+
+</string>
+                                <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contrato" id="tgV-w2-Igg">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Nn2-kx-2qW"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myDespachoEmpresaTF" destination="0A2-Qx-A1b" id="SSD-K1-fn8"/>
+                        <outlet property="myDireccionEmpresaTF" destination="MlE-vm-t5d" id="hNL-5a-4Ny"/>
+                        <outlet property="myMesFechaTF" destination="ZBG-eL-jPs" id="WNc-UM-gO3"/>
+                        <outlet property="myNombreEmpresaTF" destination="VFE-3R-xfC" id="4Te-k7-U9G"/>
+                        <outlet property="myNombreTitularCuentaTF" destination="l7i-52-NVV" id="PHF-zb-G2l"/>
+                        <outlet property="myNombreYApellidoTF" destination="R8d-JF-ApI" id="41A-nk-K4V"/>
+                        <outlet property="myNumeroCajaTF" destination="BWB-0H-SXR" id="RNo-Xp-uGu"/>
+                        <outlet property="myNumeroColegiadoDosTF" destination="lPe-HQ-57j" id="pra-1h-w89"/>
+                        <outlet property="myNumeroColegiadoUnoTF" destination="DDN-MT-MKp" id="dk7-pM-ykw"/>
+                        <outlet property="myNumeroCuentaCorrienteTF" destination="DrL-FN-eEh" id="9pQ-LU-Pvc"/>
+                        <outlet property="myNumeroFechaTF" destination="Zw5-cH-mza" id="wJK-mv-05Z"/>
+                        <outlet property="myObservacionesGeneralesTF" destination="fV1-Oh-llG" id="hYh-1W-lfL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="490-dZ-xdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3997" y="1822"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="S_1.jpg" width="212" height="105"/>
+        <image name="S_2.jpg" width="213" height="107"/>
+        <image name="S_3.jpg" width="213" height="106"/>
+        <image name="fondo_comentarios_usuarios.jpg" width="728" height="80"/>
+        <image name="logoGDP.png" width="30" height="30"/>
+        <image name="logofinal_gdp.png" width="640" height="405"/>
+        <image name="porque_pic3.jpg" width="336" height="480"/>
+        <image name="slide.jpg" width="940" height="320"/>
+    </resources>
+</document>
