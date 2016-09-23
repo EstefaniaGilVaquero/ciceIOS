@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dameValor()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -28,11 +30,17 @@ class ViewController: UIViewController {
     }
     
     func dameValor(){
-        myTextoLBL.text ="Hola mundo"
+        myTextoLBL.text = NSLocalizedString("GOOD_MORNING", comment: "Indicar que estoy gestionando diccionario")
         myNumeroLBL.text = "\(9.999)"
         myMonedaLBL.text = "\(50.001)"
         myFechaLBL.text = "\(NSDate())"
     }
+    
+//    func dameMensajeConAlertViewController(){
+//        let alertVC = UIAlertController(title: NSLocalizedString("TITLE_DATA", comment: ""), message: NSLocalizedString("MESSAGE_DATA", comment: ""), preferredStyle: .Alert)
+//        alertVC.addAction((UIAlertController))
+//    
+//    }
 
 
 }

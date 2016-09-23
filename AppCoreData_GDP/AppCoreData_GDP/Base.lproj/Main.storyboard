@@ -494,19 +494,31 @@ DQ
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DP Negocios Inmobiliarios" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7H-77-hAc">
                                 <rect key="frame" x="9" y="209" width="115" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
+<<<<<<< HEAD
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+=======
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+>>>>>>> d39033a7b7647a3042833eeddd49130ca112dfbc
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DP Backoffice" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ym3-nf-mDL">
                                 <rect key="frame" x="141" y="209" width="115" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
+<<<<<<< HEAD
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+=======
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+>>>>>>> d39033a7b7647a3042833eeddd49130ca112dfbc
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DP Oficina de Proyectos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rS-Je-QOe">
                                 <rect key="frame" x="277" y="209" width="115" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
+<<<<<<< HEAD
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+=======
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+>>>>>>> d39033a7b7647a3042833eeddd49130ca112dfbc
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvH-vJ-mJg">
@@ -717,7 +729,11 @@ DQ
         <!--Contrato-->
         <scene sceneID="hPC-6f-B9j">
             <objects>
+<<<<<<< HEAD
                 <viewController storyboardIdentifier="DetalleContrato" id="yVe-tX-oyh" customClass="DPDetalleContratoViewController" customModule="AppCoreData_GDP" customModuleProvider="target" sceneMemberID="viewController">
+=======
+                <viewController id="yVe-tX-oyh" sceneMemberID="viewController">
+>>>>>>> d39033a7b7647a3042833eeddd49130ca112dfbc
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rvU-IS-vjV"/>
                         <viewControllerLayoutGuide type="bottom" id="iVY-qI-2vs"/>
@@ -872,6 +888,7 @@ DQ
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Nn2-kx-2qW"/>
                     </navigationItem>
                     <connections>
+<<<<<<< HEAD
                         <outlet property="myDespachoEmpresaTF" destination="0A2-Qx-A1b" id="SSD-K1-fn8"/>
                         <outlet property="myDireccionEmpresaTF" destination="MlE-vm-t5d" id="hNL-5a-4Ny"/>
                         <outlet property="myMesFechaTF" destination="ZBG-eL-jPs" id="WNc-UM-gO3"/>
@@ -884,6 +901,20 @@ DQ
                         <outlet property="myNumeroCuentaCorrienteTF" destination="DrL-FN-eEh" id="9pQ-LU-Pvc"/>
                         <outlet property="myNumeroFechaTF" destination="Zw5-cH-mza" id="wJK-mv-05Z"/>
                         <outlet property="myObservacionesGeneralesTF" destination="fV1-Oh-llG" id="hYh-1W-lfL"/>
+=======
+                        <outlet property="myDespachoEmpresaTF" destination="0A2-Qx-A1b" id="iSs-kz-DlV"/>
+                        <outlet property="myDireccionEmpresaTF" destination="MlE-vm-t5d" id="VLk-Dp-HPc"/>
+                        <outlet property="myMesFechaTF" destination="ZBG-eL-jPs" id="a6l-5N-onc"/>
+                        <outlet property="myNombreEmpresaTF" destination="VFE-3R-xfC" id="Nai-uR-MQ6"/>
+                        <outlet property="myNombreTitularCuentaTF" destination="l7i-52-NVV" id="FOc-ID-1Or"/>
+                        <outlet property="myNombreYApellidoTF" destination="R8d-JF-ApI" id="mnu-i0-hxb"/>
+                        <outlet property="myNumeroCajaTF" destination="BWB-0H-SXR" id="Miu-d1-SwU"/>
+                        <outlet property="myNumeroColegiadoDosTF" destination="lPe-HQ-57j" id="1gl-8E-Lld"/>
+                        <outlet property="myNumeroColegiadoUnoTF" destination="DDN-MT-MKp" id="aSz-e1-6TK"/>
+                        <outlet property="myNumeroCuentaCorrienteTF" destination="DrL-FN-eEh" id="sRA-Wj-pG8"/>
+                        <outlet property="myNumeroFechaTF" destination="Zw5-cH-mza" id="9Of-ai-0rH"/>
+                        <outlet property="myObservacionesGeneralesTF" destination="fV1-Oh-llG" id="6CJ-BC-JaU"/>
+>>>>>>> d39033a7b7647a3042833eeddd49130ca112dfbc
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="490-dZ-xdE" userLabel="First Responder" sceneMemberID="firstResponder"/>

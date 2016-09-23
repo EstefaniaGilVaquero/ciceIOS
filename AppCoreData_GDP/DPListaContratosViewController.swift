@@ -43,12 +43,18 @@ class DPListaContratosViewController: UITableViewController {
         
         let contrato : Contratos = fetchArrayContratos[indexPath.row] as! Contratos
         
+<<<<<<< HEAD
         cell.textLabel?.text = NSString(format: "Nombre Cliente: %@ / Empresa: %@", contrato.nombreYApellido!, contrato.nombreEmpresa!) as String
         cell.detailTextLabel?.text = NSString(format: "Fecha: %@ de %@ - 2016", contrato.numeroFecha!, contrato.mesFecha!) as String
+=======
+        cell.textLabel?.text = contrato.nombreYApellido
+        cell.detailTextLabel?.text = contrato.nombreEmpresa
+>>>>>>> d39033a7b7647a3042833eeddd49130ca112dfbc
         
         return cell
     }
     
+<<<<<<< HEAD
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let detalleVC = self.storyboard?.instantiateViewControllerWithIdentifier("DetalleContrato") as! DPDetalleContratoViewController
         
@@ -56,5 +62,7 @@ class DPListaContratosViewController: UITableViewController {
         self.navigationController?.pushViewController(detalleVC, animated: true)
     }
     
+=======
+>>>>>>> d39033a7b7647a3042833eeddd49130ca112dfbc
 
 }

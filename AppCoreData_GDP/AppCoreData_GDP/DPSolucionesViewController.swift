@@ -65,7 +65,11 @@ class DPSolucionesViewController: UIViewController {
         presentViewController(alertVC, animated: true, completion: nil)
     }
     
+<<<<<<< HEAD
     // Nivel de optimizacion JEDI
+=======
+    // Nivel de optimizacion JADI
+>>>>>>> d39033a7b7647a3042833eeddd49130ca112dfbc
     func configuracionMailComposeVC(mailTorecipient : [String], mailSubject : String, nombreFichero : String, extensionFichero : String, mimeTypeData : String, fileNameData : String, mailMessageBody : String, myBoolean : Bool) -> MFMailComposeViewController{
         
         let mailComposeVC = MFMailComposeViewController()
@@ -73,6 +77,7 @@ class DPSolucionesViewController: UIViewController {
         mailComposeVC.setToRecipients(mailTorecipient)
         mailComposeVC.setSubject(mailSubject)
         let pathData = NSBundle.mainBundle().pathForResource(nombreFichero, ofType: extensionFichero)
+<<<<<<< HEAD
         
         let myDataPDF = NSData(contentsOfFile: pathData!)
         
@@ -85,6 +90,16 @@ class DPSolucionesViewController: UIViewController {
 //        }
         
         mailComposeVC.addAttachmentData(myDataPDF!, mimeType: mimeTypeData, fileName: fileNameData)
+=======
+        var myDataPdf : NSData?
+        
+        do{
+            myDataPdf = try NSData(contentsOfFile: pathData!, options: .UncachedRead)
+        }catch let error as NSError{
+            print(error.description)
+        }
+                mailComposeVC.addAttachmentData(myDataPdf!, mimeType: mimeTypeData, fileName: fileNameData)
+>>>>>>> d39033a7b7647a3042833eeddd49130ca112dfbc
         mailComposeVC.setMessageBody(mailMessageBody, isHTML: myBoolean)
         return mailComposeVC
         
