@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09AA7C931D99267900F60F52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA7C921D99267900F60F52 /* AppDelegate.swift */; };
+		09AA7C951D99267900F60F52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA7C941D99267900F60F52 /* ViewController.swift */; };
+		09AA7C981D99267900F60F52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09AA7C961D99267900F60F52 /* Main.storyboard */; };
+		09AA7C9A1D99267900F60F52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09AA7C991D99267900F60F52 /* Assets.xcassets */; };
+		09AA7C9D1D99267900F60F52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09AA7C9B1D99267900F60F52 /* LaunchScreen.storyboard */; };
+		09AA7CA71D9927BE00F60F52 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA7CA41D9927BE00F60F52 /* Bolts.framework */; };
+		09AA7CA81D9927BE00F60F52 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA7CA51D9927BE00F60F52 /* Parse.framework */; };
+		09AA7CA91D9927BE00F60F52 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA7CA61D9927BE00F60F52 /* ParseUI.framework */; };
+		09AA7CAC1D9927EB00F60F52 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA7CAB1D9927EB00F60F52 /* Security.framework */; };
+		09AA7CAE1D9927F100F60F52 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA7CAD1D9927F100F60F52 /* AudioToolbox.framework */; };
+		09AA7CB01D9927FB00F60F52 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA7CAF1D9927FB00F60F52 /* QuartzCore.framework */; };
+		09AA7CB21D99280800F60F52 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA7CB11D99280800F60F52 /* CFNetwork.framework */; };
+		09AA7CB41D99282100F60F52 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA7CB31D99282100F60F52 /* libsqlite3.tbd */; };
+		09AA7CB61D99285700F60F52 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA7CB51D99285700F60F52 /* libz.tbd */; };
+		09AA7CB81D99286200F60F52 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA7CB71D99286200F60F52 /* CoreLocation.framework */; };
+		09AA7CBA1D99287000F60F52 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA7CB91D99287000F60F52 /* StoreKit.framework */; };
+		09AA7CBC1D99288A00F60F52 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA7CBB1D99288A00F60F52 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09AA7C8F1D99267900F60F52 /* AppInstagramEstefy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppInstagramEstefy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09AA7C921D99267900F60F52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09AA7C941D99267900F60F52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09AA7C971D99267900F60F52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09AA7C991D99267900F60F52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09AA7C9C1D99267900F60F52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09AA7C9E1D99267900F60F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09AA7CA41D9927BE00F60F52 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		09AA7CA51D9927BE00F60F52 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		09AA7CA61D9927BE00F60F52 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		09AA7CAB1D9927EB00F60F52 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		09AA7CAD1D9927F100F60F52 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		09AA7CAF1D9927FB00F60F52 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		09AA7CB11D99280800F60F52 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		09AA7CB31D99282100F60F52 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		09AA7CB51D99285700F60F52 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		09AA7CB71D99286200F60F52 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		09AA7CB91D99287000F60F52 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		09AA7CBB1D99288A00F60F52 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09AA7C8C1D99267900F60F52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AA7CBC1D99288A00F60F52 /* SystemConfiguration.framework in Frameworks */,
+				09AA7CBA1D99287000F60F52 /* StoreKit.framework in Frameworks */,
+				09AA7CB81D99286200F60F52 /* CoreLocation.framework in Frameworks */,
+				09AA7CB61D99285700F60F52 /* libz.tbd in Frameworks */,
+				09AA7CB41D99282100F60F52 /* libsqlite3.tbd in Frameworks */,
+				09AA7CB21D99280800F60F52 /* CFNetwork.framework in Frameworks */,
+				09AA7CB01D9927FB00F60F52 /* QuartzCore.framework in Frameworks */,
+				09AA7CAE1D9927F100F60F52 /* AudioToolbox.framework in Frameworks */,
+				09AA7CAC1D9927EB00F60F52 /* Security.framework in Frameworks */,
+				09AA7CA91D9927BE00F60F52 /* ParseUI.framework in Frameworks */,
+				09AA7CA81D9927BE00F60F52 /* Parse.framework in Frameworks */,
+				09AA7CA71D9927BE00F60F52 /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09AA7C861D99267900F60F52 = {
+			isa = PBXGroup;
+			children = (
+				09AA7CBD1D9928A300F60F52 /* FRAMEWORK_APPLE */,
+				09AA7C911D99267900F60F52 /* AppInstagramEstefy */,
+				09AA7C901D99267900F60F52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09AA7C901D99267900F60F52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09AA7C8F1D99267900F60F52 /* AppInstagramEstefy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09AA7C911D99267900F60F52 /* AppInstagramEstefy */ = {
+			isa = PBXGroup;
+			children = (
+				09AA7CAA1D9927C500F60F52 /* frameworkParse */,
+				09AA7C921D99267900F60F52 /* AppDelegate.swift */,
+				09AA7C941D99267900F60F52 /* ViewController.swift */,
+				09AA7C961D99267900F60F52 /* Main.storyboard */,
+				09AA7C991D99267900F60F52 /* Assets.xcassets */,
+				09AA7C9B1D99267900F60F52 /* LaunchScreen.storyboard */,
+				09AA7C9E1D99267900F60F52 /* Info.plist */,
+			);
+			path = AppInstagramEstefy;
+			sourceTree = "<group>";
+		};
+		09AA7CAA1D9927C500F60F52 /* frameworkParse */ = {
+			isa = PBXGroup;
+			children = (
+				09AA7CA41D9927BE00F60F52 /* Bolts.framework */,
+				09AA7CA51D9927BE00F60F52 /* Parse.framework */,
+				09AA7CA61D9927BE00F60F52 /* ParseUI.framework */,
+			);
+			name = frameworkParse;
+			sourceTree = "<group>";
+		};
+		09AA7CBD1D9928A300F60F52 /* FRAMEWORK_APPLE */ = {
+			isa = PBXGroup;
+			children = (
+				09AA7CBB1D99288A00F60F52 /* SystemConfiguration.framework */,
+				09AA7CB91D99287000F60F52 /* StoreKit.framework */,
+				09AA7CB71D99286200F60F52 /* CoreLocation.framework */,
+				09AA7CB51D99285700F60F52 /* libz.tbd */,
+				09AA7CB31D99282100F60F52 /* libsqlite3.tbd */,
+				09AA7CB11D99280800F60F52 /* CFNetwork.framework */,
+				09AA7CAF1D9927FB00F60F52 /* QuartzCore.framework */,
+				09AA7CAD1D9927F100F60F52 /* AudioToolbox.framework */,
+				09AA7CAB1D9927EB00F60F52 /* Security.framework */,
+			);
+			name = FRAMEWORK_APPLE;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09AA7C8E1D99267900F60F52 /* AppInstagramEstefy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09AA7CA11D99267900F60F52 /* Build configuration list for PBXNativeTarget "AppInstagramEstefy" */;
+			buildPhases = (
+				09AA7C8B1D99267900F60F52 /* Sources */,
+				09AA7C8C1D99267900F60F52 /* Frameworks */,
+				09AA7C8D1D99267900F60F52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppInstagramEstefy;
+			productName = AppInstagramEstefy;
+			productReference = 09AA7C8F1D99267900F60F52 /* AppInstagramEstefy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09AA7C871D99267900F60F52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = CICE;
+				TargetAttributes = {
+					09AA7C8E1D99267900F60F52 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 09AA7C8A1D99267900F60F52 /* Build configuration list for PBXProject "AppInstagramEstefy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09AA7C861D99267900F60F52;
+			productRefGroup = 09AA7C901D99267900F60F52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09AA7C8E1D99267900F60F52 /* AppInstagramEstefy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09AA7C8D1D99267900F60F52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AA7C9D1D99267900F60F52 /* LaunchScreen.storyboard in Resources */,
+				09AA7C9A1D99267900F60F52 /* Assets.xcassets in Resources */,
+				09AA7C981D99267900F60F52 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09AA7C8B1D99267900F60F52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AA7C951D99267900F60F52 /* ViewController.swift in Sources */,
+				09AA7C931D99267900F60F52 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		09AA7C961D99267900F60F52 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09AA7C971D99267900F60F52 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09AA7C9B1D99267900F60F52 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09AA7C9C1D99267900F60F52 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09AA7C9F1D99267900F60F52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		09AA7CA01D99267900F60F52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09AA7CA21D99267900F60F52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppInstagramEstefy",
+				);
+				INFOPLIST_FILE = AppInstagramEstefy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cice.AppInstagramEstefy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		09AA7CA31D99267900F60F52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppInstagramEstefy",
+				);
+				INFOPLIST_FILE = AppInstagramEstefy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cice.AppInstagramEstefy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09AA7C8A1D99267900F60F52 /* Build configuration list for PBXProject "AppInstagramEstefy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09AA7C9F1D99267900F60F52 /* Debug */,
+				09AA7CA01D99267900F60F52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09AA7CA11D99267900F60F52 /* Build configuration list for PBXNativeTarget "AppInstagramEstefy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09AA7CA21D99267900F60F52 /* Debug */,
+				09AA7CA31D99267900F60F52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09AA7C871D99267900F60F52 /* Project object */;
+}
