@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		092E6F8A1D4B4CC800E88CB7 /* ICODetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092E6F891D4B4CC800E88CB7 /* ICODetailViewController.swift */; };
+		6357575D1D489F1D00E18890 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6357575C1D489F1D00E18890 /* AppDelegate.swift */; };
+		635757621D489F1D00E18890 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635757601D489F1D00E18890 /* Main.storyboard */; };
+		635757641D489F1D00E18890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635757631D489F1D00E18890 /* Assets.xcassets */; };
+		635757671D489F1D00E18890 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635757651D489F1D00E18890 /* LaunchScreen.storyboard */; };
+		6357576F1D489FAA00E18890 /* ICOGeoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6357576E1D489FAA00E18890 /* ICOGeoModel.swift */; };
+		635757711D48A00B00E18890 /* ICOAddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635757701D48A00B00E18890 /* ICOAddressModel.swift */; };
+		635757731D48A0D000E18890 /* ICOCompanyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635757721D48A0D000E18890 /* ICOCompanyModel.swift */; };
+		635757751D48A13400E18890 /* ICOUsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635757741D48A13400E18890 /* ICOUsersModel.swift */; };
+		635757781D48A27A00E18890 /* ICOParserUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635757771D48A27A00E18890 /* ICOParserUsers.swift */; };
+		6357577A1D48A2B000E18890 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 635757791D48A2B000E18890 /* Podfile */; };
+		6357577C1D48A47F00E18890 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6357577B1D48A47F00E18890 /* SwiftyJSON.framework */; };
+		6357577F1D48A8B000E18890 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6357577E1D48A8B000E18890 /* APIManager.swift */; };
+		635757811D48A92500E18890 /* APIConstantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635757801D48A92500E18890 /* APIConstantes.swift */; };
+		635757841D48AC5D00E18890 /* ICOUsersDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635757831D48AC5D00E18890 /* ICOUsersDataTableViewController.swift */; };
+		635757861D48AC6F00E18890 /* ICOUsersCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635757851D48AC6E00E18890 /* ICOUsersCustomCell.swift */; };
+		B9D7E7304B484E53C61CD058 /* Pods_App_RetoMVCWS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E07A25C9DB5FDA2E6CF369 /* Pods_App_RetoMVCWS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		092E6F891D4B4CC800E88CB7 /* ICODetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICODetailViewController.swift; sourceTree = "<group>"; };
+		57E07A25C9DB5FDA2E6CF369 /* Pods_App_RetoMVCWS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_RetoMVCWS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		635757591D489F1D00E18890 /* App_RetoMVCWS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_RetoMVCWS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6357575C1D489F1D00E18890 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		635757611D489F1D00E18890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		635757631D489F1D00E18890 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		635757661D489F1D00E18890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		635757681D489F1D00E18890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6357576E1D489FAA00E18890 /* ICOGeoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOGeoModel.swift; sourceTree = "<group>"; };
+		635757701D48A00B00E18890 /* ICOAddressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOAddressModel.swift; sourceTree = "<group>"; };
+		635757721D48A0D000E18890 /* ICOCompanyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOCompanyModel.swift; sourceTree = "<group>"; };
+		635757741D48A13400E18890 /* ICOUsersModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOUsersModel.swift; sourceTree = "<group>"; };
+		635757771D48A27A00E18890 /* ICOParserUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOParserUsers.swift; sourceTree = "<group>"; };
+		635757791D48A2B000E18890 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		6357577B1D48A47F00E18890 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/App_RetoMVCWS-fonlpqpbvzateufowgilexvekxlv/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		6357577E1D48A8B000E18890 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		635757801D48A92500E18890 /* APIConstantes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstantes.swift; sourceTree = "<group>"; };
+		635757831D48AC5D00E18890 /* ICOUsersDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOUsersDataTableViewController.swift; sourceTree = "<group>"; };
+		635757851D48AC6E00E18890 /* ICOUsersCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICOUsersCustomCell.swift; sourceTree = "<group>"; };
+		B3C44DBA43AC03B0EC938EA0 /* Pods-App_RetoMVCWS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App_RetoMVCWS.release.xcconfig"; path = "Pods/Target Support Files/Pods-App_RetoMVCWS/Pods-App_RetoMVCWS.release.xcconfig"; sourceTree = "<group>"; };
+		F8807763331327A40E9EFDD7 /* Pods-App_RetoMVCWS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App_RetoMVCWS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App_RetoMVCWS/Pods-App_RetoMVCWS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		635757561D489F1D00E18890 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6357577C1D48A47F00E18890 /* SwiftyJSON.framework in Frameworks */,
+				B9D7E7304B484E53C61CD058 /* Pods_App_RetoMVCWS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28C7E259B3BBD5570E6F3B4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8807763331327A40E9EFDD7 /* Pods-App_RetoMVCWS.debug.xcconfig */,
+				B3C44DBA43AC03B0EC938EA0 /* Pods-App_RetoMVCWS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		635757501D489F1D00E18890 = {
+			isa = PBXGroup;
+			children = (
+				635757791D48A2B000E18890 /* Podfile */,
+				6357575B1D489F1D00E18890 /* App_RetoMVCWS */,
+				6357575A1D489F1D00E18890 /* Products */,
+				28C7E259B3BBD5570E6F3B4E /* Pods */,
+				6DDC740F8C0F71AB0CFF032A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6357575A1D489F1D00E18890 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				635757591D489F1D00E18890 /* App_RetoMVCWS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6357575B1D489F1D00E18890 /* App_RetoMVCWS */ = {
+			isa = PBXGroup;
+			children = (
+				6357575C1D489F1D00E18890 /* AppDelegate.swift */,
+				635757871D48AD5900E18890 /* VIEW_CONTROLLERS */,
+				635757821D48AC4700E18890 /* API */,
+				6357577D1D48A7E800E18890 /* PARSERS */,
+				635757761D48A19000E18890 /* MODELS */,
+				635757601D489F1D00E18890 /* Main.storyboard */,
+				635757631D489F1D00E18890 /* Assets.xcassets */,
+				635757651D489F1D00E18890 /* LaunchScreen.storyboard */,
+				635757681D489F1D00E18890 /* Info.plist */,
+			);
+			path = App_RetoMVCWS;
+			sourceTree = "<group>";
+		};
+		635757761D48A19000E18890 /* MODELS */ = {
+			isa = PBXGroup;
+			children = (
+				635757741D48A13400E18890 /* ICOUsersModel.swift */,
+				6357576E1D489FAA00E18890 /* ICOGeoModel.swift */,
+				635757701D48A00B00E18890 /* ICOAddressModel.swift */,
+				635757721D48A0D000E18890 /* ICOCompanyModel.swift */,
+			);
+			name = MODELS;
+			sourceTree = "<group>";
+		};
+		6357577D1D48A7E800E18890 /* PARSERS */ = {
+			isa = PBXGroup;
+			children = (
+				635757771D48A27A00E18890 /* ICOParserUsers.swift */,
+			);
+			name = PARSERS;
+			sourceTree = "<group>";
+		};
+		635757821D48AC4700E18890 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				635757801D48A92500E18890 /* APIConstantes.swift */,
+				6357577E1D48A8B000E18890 /* APIManager.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		635757871D48AD5900E18890 /* VIEW_CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+				092E6F891D4B4CC800E88CB7 /* ICODetailViewController.swift */,
+				635757831D48AC5D00E18890 /* ICOUsersDataTableViewController.swift */,
+				635757851D48AC6E00E18890 /* ICOUsersCustomCell.swift */,
+			);
+			name = VIEW_CONTROLLERS;
+			sourceTree = "<group>";
+		};
+		6DDC740F8C0F71AB0CFF032A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6357577B1D48A47F00E18890 /* SwiftyJSON.framework */,
+				57E07A25C9DB5FDA2E6CF369 /* Pods_App_RetoMVCWS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		635757581D489F1D00E18890 /* App_RetoMVCWS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6357576B1D489F1D00E18890 /* Build configuration list for PBXNativeTarget "App_RetoMVCWS" */;
+			buildPhases = (
+				D1F350AED8B1776B37384969 /* [CP] Check Pods Manifest.lock */,
+				635757551D489F1D00E18890 /* Sources */,
+				635757561D489F1D00E18890 /* Frameworks */,
+				635757571D489F1D00E18890 /* Resources */,
+				3F1785C0E340AB2FD7C4757C /* [CP] Embed Pods Frameworks */,
+				3FFDF63454BA475FB8DDECBF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = App_RetoMVCWS;
+			productName = App_RetoMVCWS;
+			productReference = 635757591D489F1D00E18890 /* App_RetoMVCWS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		635757511D489F1D00E18890 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = icologic;
+				TargetAttributes = {
+					635757581D489F1D00E18890 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = NZ9BB45RRX;
+					};
+				};
+			};
+			buildConfigurationList = 635757541D489F1D00E18890 /* Build configuration list for PBXProject "App_RetoMVCWS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 635757501D489F1D00E18890;
+			productRefGroup = 6357575A1D489F1D00E18890 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				635757581D489F1D00E18890 /* App_RetoMVCWS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		635757571D489F1D00E18890 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635757671D489F1D00E18890 /* LaunchScreen.storyboard in Resources */,
+				635757641D489F1D00E18890 /* Assets.xcassets in Resources */,
+				6357577A1D48A2B000E18890 /* Podfile in Resources */,
+				635757621D489F1D00E18890 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F1785C0E340AB2FD7C4757C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App_RetoMVCWS/Pods-App_RetoMVCWS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FFDF63454BA475FB8DDECBF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App_RetoMVCWS/Pods-App_RetoMVCWS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1F350AED8B1776B37384969 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		635757551D489F1D00E18890 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635757841D48AC5D00E18890 /* ICOUsersDataTableViewController.swift in Sources */,
+				6357577F1D48A8B000E18890 /* APIManager.swift in Sources */,
+				635757781D48A27A00E18890 /* ICOParserUsers.swift in Sources */,
+				635757861D48AC6F00E18890 /* ICOUsersCustomCell.swift in Sources */,
+				635757731D48A0D000E18890 /* ICOCompanyModel.swift in Sources */,
+				6357575D1D489F1D00E18890 /* AppDelegate.swift in Sources */,
+				092E6F8A1D4B4CC800E88CB7 /* ICODetailViewController.swift in Sources */,
+				635757711D48A00B00E18890 /* ICOAddressModel.swift in Sources */,
+				635757751D48A13400E18890 /* ICOUsersModel.swift in Sources */,
+				635757811D48A92500E18890 /* APIConstantes.swift in Sources */,
+				6357576F1D489FAA00E18890 /* ICOGeoModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		635757601D489F1D00E18890 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				635757611D489F1D00E18890 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		635757651D489F1D00E18890 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				635757661D489F1D00E18890 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		635757691D489F1D00E18890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6357576A1D489F1D00E18890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6357576C1D489F1D00E18890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8807763331327A40E9EFDD7 /* Pods-App_RetoMVCWS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = App_RetoMVCWS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icologic.App-RetoMVCWS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		6357576D1D489F1D00E18890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3C44DBA43AC03B0EC938EA0 /* Pods-App_RetoMVCWS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = App_RetoMVCWS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icologic.App-RetoMVCWS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		635757541D489F1D00E18890 /* Build configuration list for PBXProject "App_RetoMVCWS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				635757691D489F1D00E18890 /* Debug */,
+				6357576A1D489F1D00E18890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6357576B1D489F1D00E18890 /* Build configuration list for PBXNativeTarget "App_RetoMVCWS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6357576C1D489F1D00E18890 /* Debug */,
+				6357576D1D489F1D00E18890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 635757511D489F1D00E18890 /* Project object */;
+}
