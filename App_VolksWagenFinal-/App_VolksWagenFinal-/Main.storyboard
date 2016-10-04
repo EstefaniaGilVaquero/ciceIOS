@@ -74,8 +74,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="w53-JE-i9u" firstAttribute="top" secondItem="Wou-hM-VhN" secondAttribute="bottom" constant="13" id="LF9-0v-Vsx"/>
                             <constraint firstItem="w53-JE-i9u" firstAttribute="centerX" secondItem="j6x-wd-cKo" secondAttribute="centerX" id="QKy-BC-z6J"/>
-                            <constraint firstItem="w53-JE-i9u" firstAttribute="top" secondItem="Wou-hM-VhN" secondAttribute="bottom" constant="13" id="yqo-rr-jb6"/>
                         </constraints>
                     </view>
                     <connections>
