@@ -482,7 +482,7 @@
         <scene sceneID="oS7-B0-9kj">
             <objects>
                 <tableViewController id="SzM-VZ-8Z6" customClass="WWConcesionarioTableViewController" customModule="App_VolksWagenFinal_CICE" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="189" sectionHeaderHeight="22" sectionFooterHeight="22" id="S5r-cT-O2B">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="189" sectionHeaderHeight="22" sectionFooterHeight="22" id="S5r-cT-O2B">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -491,7 +491,7 @@
                                 <rect key="frame" x="0.0" y="86" width="320" height="189"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="utx-Az-vts" id="zTC-tI-Moc">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="188"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="189"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7xY-i2-LAV">
@@ -504,13 +504,13 @@
                                                 <constraint firstAttribute="height" constant="137" id="RPN-Kw-hpw"/>
                                             </constraints>
                                         </imageView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="degradado" translatesAutoresizingMaskIntoConstraints="NO" id="E5d-XA-Cbc">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="degradado" translatesAutoresizingMaskIntoConstraints="NO" id="E5d-XA-Cbc">
                                             <rect key="frame" x="0.0" y="43" width="320" height="94"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="94" id="N1l-7n-7Fr"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre Concesionario" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zB0-B5-EPY">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nombre Concesionario" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zB0-B5-EPY">
                                             <rect key="frame" x="10" y="107" width="302" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="302" id="5vC-8S-qAS"/>
@@ -520,18 +520,24 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Web" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToF-Nj-Nyw">
-                                            <rect key="frame" x="10" y="163" width="302" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Web" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToF-Nj-Nyw">
+                                            <rect key="frame" x="10" y="167" width="129" height="21"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direccion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Zy-k6-s0W">
-                                            <rect key="frame" x="9" y="144" width="303" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Direccion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Zy-k6-s0W">
+                                            <rect key="frame" x="9" y="144" width="130" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="IKH-y4-xTI"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Telefono" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luu-D4-Bsm">
+                                            <rect key="frame" x="237" y="163" width="83" height="21"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -555,10 +561,11 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="myDireccionLBL" destination="6Zy-k6-s0W" id="C8d-Gb-REs"/>
-                                    <outlet property="myImageAsociacionesIV" destination="0cF-NQ-a5q" id="LMB-MQ-9NJ"/>
-                                    <outlet property="myNombreAsociadoLBL" destination="zB0-B5-EPY" id="D7K-k6-DwK"/>
-                                    <outlet property="myWebLBL" destination="ToF-Nj-Nyw" id="8Oe-ep-MW1"/>
+                                    <outlet property="myDireccionConcesionario" destination="6Zy-k6-s0W" id="YHX-nW-2NE"/>
+                                    <outlet property="myImagenConcesionario" destination="0cF-NQ-a5q" id="HMZ-Dm-8kV"/>
+                                    <outlet property="myNombreConcesionario" destination="zB0-B5-EPY" id="fA3-kT-t58"/>
+                                    <outlet property="myTelefonoConcesionario" destination="luu-D4-Bsm" id="En7-KF-sTr"/>
+                                    <outlet property="myWebConcesionario" destination="ToF-Nj-Nyw" id="IB7-Fb-OqO"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1877,6 +1884,6 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
         <image name="qr2" width="165" height="181"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="A0N-wo-2wM"/>
+        <segue reference="Dx1-bD-Fyy"/>
     </inferredMetricsTieBreakers>
 </document>

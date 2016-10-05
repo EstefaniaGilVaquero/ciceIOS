@@ -7,19 +7,31 @@
 //
 
 import UIKit
+import Kingfisher
 
 class WWConcesionarioTableViewController: UITableViewController {
+    
+    //MARK: - VARIABLES LOCALES GLOBALES
+    var refreshTVC = UIRefreshControl()
+    var CONSTANTES = Constantes()
+    var arrayConcesionarios = [WWConcesionariosModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        //Alimentamos el array
+        arrayConcesionarios = WWApiManager.sharedInstance.getConcesionarioParse()
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        refreshTVC.backgroundColor = UIColor(red: 255 / 255, green: 128 / 255, blue: 0 / 255, alpha: 1.0)
+        refreshTVC.attributedTitle = NSAttributedString(string: CONSTANTES.TEXTO_RECARGA_TABLA)
+        refreshTVC.addTarget(self, action: Selector(refreshFunction(tableView,endRefreshTVC : refreshTVC)), forControlEvents: .ValueChanged)
+        tableView.addSubview(refreshTVC)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -29,58 +41,44 @@ class WWConcesionarioTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return arrayConcesionarios.count
     }
 
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! WWConcesoniarioCustomCell
+        
+        let concesionariosData = arrayConcesionarios[indexPath.row]
+        
+        cell.myNombreConcesionario.text = concesionariosData.Nombre
+        cell.myDireccionConcesionario.text = concesionariosData.Ubicacion
+        cell.myWebConcesionario.text = concesionariosData.Provincia_Nombre
+        cell.myTelefonoConcesionario.text = "\(concesionariosData.telefono)"
+        cell.myTelefonoConcesionario.tag = indexPath.row
+        
+        let gesRe = UITapGestureRecognizer(target: self, action: #selector(WWConcesionarioTableViewController.muestraTelefono(_:)))
+        cell.myTelefonoConcesionario.addGestureRecognizer(gesRe)
+        
+        cell.myImagenConcesionario.kf_setImageWithURL(NSURL(string: getImagePath(concesionariosData.Imagen!)))
+        
         return cell
+        
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    func muestraTelefono(sender : UILabel) {
+        
+        let telefonoData = arrayConcesionarios[sender.tag].telefono
+        let url = NSURL(string: "tel://\(telefonoData)")
+        UIApplication.sharedApplication().openURL(url!)
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+   
+    func getImagePath(nombreImagen : String) ->String {
+        return  CONSTANTES.BASE_FOTO_URL + nombreImagen
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     /*
     // MARK: - Navigation

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09258FA41DA4DE1200299377 /* WWApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09258FA31DA4DE1200299377 /* WWApiManager.swift */; };
+		09258FA61DA4DE2500299377 /* WWConstantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09258FA51DA4DE2500299377 /* WWConstantes.swift */; };
+		09258FA81DA4DE4200299377 /* WWUtilidades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09258FA71DA4DE4200299377 /* WWUtilidades.swift */; };
+		09258FAB1DA4E22600299377 /* WWConcesionariosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09258FAA1DA4E22600299377 /* WWConcesionariosModel.swift */; };
+		09258FB01DA4E62100299377 /* WWConcesionariosParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09258FAF1DA4E62100299377 /* WWConcesionariosParser.swift */; };
 		093DE3171DA243E600CE4F32 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE3131DA243E600CE4F32 /* Bolts.framework */; };
 		093DE3181DA243E600CE4F32 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE3141DA243E600CE4F32 /* Parse.framework */; };
 		093DE3191DA243E600CE4F32 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE3151DA243E600CE4F32 /* ParseFacebookUtils.framework */; };
@@ -35,6 +40,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09258FA31DA4DE1200299377 /* WWApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWApiManager.swift; sourceTree = "<group>"; };
+		09258FA51DA4DE2500299377 /* WWConstantes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWConstantes.swift; sourceTree = "<group>"; };
+		09258FA71DA4DE4200299377 /* WWUtilidades.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWUtilidades.swift; sourceTree = "<group>"; };
+		09258FAA1DA4E22600299377 /* WWConcesionariosModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWConcesionariosModel.swift; sourceTree = "<group>"; };
+		09258FAF1DA4E62100299377 /* WWConcesionariosParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWConcesionariosParser.swift; sourceTree = "<group>"; };
 		093DE3131DA243E600CE4F32 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		093DE3141DA243E600CE4F32 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		093DE3151DA243E600CE4F32 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
@@ -92,6 +102,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09258FA91DA4DE7500299377 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				09258FA31DA4DE1200299377 /* WWApiManager.swift */,
+				09258FA51DA4DE2500299377 /* WWConstantes.swift */,
+				09258FA71DA4DE4200299377 /* WWUtilidades.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		09258FAC1DA4E54000299377 /* MODELOS */ = {
+			isa = PBXGroup;
+			children = (
+				09258FAA1DA4E22600299377 /* WWConcesionariosModel.swift */,
+			);
+			name = MODELOS;
+			sourceTree = "<group>";
+		};
+		09258FB11DA4E62800299377 /* PARSEOS */ = {
+			isa = PBXGroup;
+			children = (
+				09258FAF1DA4E62100299377 /* WWConcesionariosParser.swift */,
+			);
+			name = PARSEOS;
+			sourceTree = "<group>";
+		};
 		093DE31B1DA2441C00CE4F32 /* FRAMEWORK/PARSE */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,10 +182,13 @@
 		63B3607C1DA11B0D00E3A711 /* App_VolksWagenFinal- */ = {
 			isa = PBXGroup;
 			children = (
-				093DE3291DA2444500CE4F32 /* VC_CONCESIONARIO */,
-				093DE3231DA2443D00CE4F32 /* VC_LOGIN_REGISTRO */,
 				093DE31B1DA2441C00CE4F32 /* FRAMEWORK/PARSE */,
 				63B3607D1DA11B0D00E3A711 /* AppDelegate.swift */,
+				09258FB11DA4E62800299377 /* PARSEOS */,
+				093DE3291DA2444500CE4F32 /* VC_CONCESIONARIO */,
+				093DE3231DA2443D00CE4F32 /* VC_LOGIN_REGISTRO */,
+				09258FAC1DA4E54000299377 /* MODELOS */,
+				09258FA91DA4DE7500299377 /* API */,
 				63B360841DA11B0D00E3A711 /* Assets.xcassets */,
 				093DE3551DA25A0B00CE4F32 /* Main.storyboard */,
 				63B360861DA11B0D00E3A711 /* LaunchScreen.storyboard */,
@@ -313,9 +352,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				093DE3401DA244EC00CE4F32 /* WWRegistroNuevoUsuarioViewController.swift in Sources */,
+				09258FA81DA4DE4200299377 /* WWUtilidades.swift in Sources */,
+				09258FAB1DA4E22600299377 /* WWConcesionariosModel.swift in Sources */,
 				093DE33C1DA244EC00CE4F32 /* WWConcesionarioTableViewController.swift in Sources */,
+				09258FB01DA4E62100299377 /* WWConcesionariosParser.swift in Sources */,
 				093DE33F1DA244EC00CE4F32 /* WWLoginViewController.swift in Sources */,
 				093DE33D1DA244EC00CE4F32 /* WWConcesoniarioCustomCell.swift in Sources */,
+				09258FA41DA4DE1200299377 /* WWApiManager.swift in Sources */,
+				09258FA61DA4DE2500299377 /* WWConstantes.swift in Sources */,
 				63B3607E1DA11B0D00E3A711 /* AppDelegate.swift in Sources */,
 				093DE33E1DA244EC00CE4F32 /* WWDetalleConcesaionarioViewController.swift in Sources */,
 			);
