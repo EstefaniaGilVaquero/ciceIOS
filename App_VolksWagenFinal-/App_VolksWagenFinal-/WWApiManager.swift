@@ -13,6 +13,7 @@ class WWApiManager: NSObject {
     //MARK: - VARIABLES LOCALES GLOBALES
     private let CONSTANTES = Constantes()
     private let concesionarios = WWConcesionariosParser()
+    private let catalogoPruebas = WWCatalogoPruebasParser()
     
     //MARK: - SINGLETON
     class var sharedInstance : WWApiManager{
@@ -28,6 +29,14 @@ class WWApiManager: NSObject {
         let jsonData = NSData(contentsOfURL: url!)
         let arrayConcesionarios = concesionarios.getConcesionariosModel(jsonData!)
         return arrayConcesionarios
+    }
+    
+    //MARK: - CATALOGO PRUEBAS
+    func getCatalogoPruebasParse() -> [WWCatalogoPruebas]{
+        let url = NSURL(string: CONSTANTES.BASE_URL_CATALOGO_PRUEBAS)
+        let jsonData = NSData(contentsOfURL: url!)
+        let arrayCatalogoPruebas = catalogoPruebas.getCatalogoPruebasModel(jsonData!)
+        return arrayCatalogoPruebas
     }
 
 }

@@ -38,7 +38,7 @@ public func dimeDouble(j : JSON, nombre : String) ->Double{
 }
 
 //MARK: - GET FLOAT
-public func floatDouble(j : JSON, nombre : String) ->Float{
+public func dimeFloat(j : JSON, nombre : String) ->Float{
     if let floatResult = j[nombre].float{
         return floatResult
     }else{

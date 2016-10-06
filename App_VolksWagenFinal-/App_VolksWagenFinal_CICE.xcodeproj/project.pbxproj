@@ -32,6 +32,11 @@
 		093DE3521DA245B100CE4F32 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE3511DA245B100CE4F32 /* libsqlite3.tbd */; };
 		093DE3541DA245BB00CE4F32 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE3531DA245BB00CE4F32 /* libz.tbd */; };
 		093DE3561DA25A0B00CE4F32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093DE3551DA25A0B00CE4F32 /* Main.storyboard */; settings = {ASSET_TAGS = (saltarTabBarController, ); }; };
+		09E593051DA649870097481E /* WWCatalogoPruebas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E593041DA649870097481E /* WWCatalogoPruebas.swift */; };
+		09E593071DA64AC40097481E /* WWCatalogoPruebasParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E593061DA64AC40097481E /* WWCatalogoPruebasParser.swift */; };
+		09E593091DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E593081DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift */; };
+		09E5930B1DA64DFD0097481E /* WWCatalogoCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E5930A1DA64DFD0097481E /* WWCatalogoCustomCell.swift */; };
+		09E5930D1DA64E120097481E /* WWCatalogoPruebasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E5930C1DA64E120097481E /* WWCatalogoPruebasViewController.swift */; };
 		63B3607E1DA11B0D00E3A711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B3607D1DA11B0D00E3A711 /* AppDelegate.swift */; };
 		63B360851DA11B0D00E3A711 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B360841DA11B0D00E3A711 /* Assets.xcassets */; };
 		63B360881DA11B0D00E3A711 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B360861DA11B0D00E3A711 /* LaunchScreen.storyboard */; };
@@ -65,6 +70,11 @@
 		093DE3511DA245B100CE4F32 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		093DE3531DA245BB00CE4F32 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		093DE3551DA25A0B00CE4F32 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		09E593041DA649870097481E /* WWCatalogoPruebas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCatalogoPruebas.swift; sourceTree = "<group>"; };
+		09E593061DA64AC40097481E /* WWCatalogoPruebasParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCatalogoPruebasParser.swift; sourceTree = "<group>"; };
+		09E593081DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCatalogoPruebasTableViewController.swift; sourceTree = "<group>"; };
+		09E5930A1DA64DFD0097481E /* WWCatalogoCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCatalogoCustomCell.swift; sourceTree = "<group>"; };
+		09E5930C1DA64E120097481E /* WWCatalogoPruebasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCatalogoPruebasViewController.swift; sourceTree = "<group>"; };
 		0D37B9F291860F57F8A36A7C /* Pods-App_VolksWagenFinal_CICE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App_VolksWagenFinal_CICE.release.xcconfig"; path = "Pods/Target Support Files/Pods-App_VolksWagenFinal_CICE/Pods-App_VolksWagenFinal_CICE.release.xcconfig"; sourceTree = "<group>"; };
 		3175BDC361A3B9CE62994AD6 /* Pods_App_VolksWagenFinal_CICE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_VolksWagenFinal_CICE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B3607A1DA11B0B00E3A711 /* App_VolksWagenFinal_CICE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_VolksWagenFinal_CICE.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				09258FAA1DA4E22600299377 /* WWConcesionariosModel.swift */,
+				09E593041DA649870097481E /* WWCatalogoPruebas.swift */,
 			);
 			name = MODELOS;
 			sourceTree = "<group>";
@@ -124,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				09258FAF1DA4E62100299377 /* WWConcesionariosParser.swift */,
+				09E593061DA64AC40097481E /* WWCatalogoPruebasParser.swift */,
 			);
 			name = PARSEOS;
 			sourceTree = "<group>";
@@ -184,6 +196,9 @@
 			children = (
 				093DE31B1DA2441C00CE4F32 /* FRAMEWORK/PARSE */,
 				63B3607D1DA11B0D00E3A711 /* AppDelegate.swift */,
+				09E593081DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift */,
+				09E5930A1DA64DFD0097481E /* WWCatalogoCustomCell.swift */,
+				09E5930C1DA64E120097481E /* WWCatalogoPruebasViewController.swift */,
 				09258FB11DA4E62800299377 /* PARSEOS */,
 				093DE3291DA2444500CE4F32 /* VC_CONCESIONARIO */,
 				093DE3231DA2443D00CE4F32 /* VC_LOGIN_REGISTRO */,
@@ -351,16 +366,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E593051DA649870097481E /* WWCatalogoPruebas.swift in Sources */,
 				093DE3401DA244EC00CE4F32 /* WWRegistroNuevoUsuarioViewController.swift in Sources */,
 				09258FA81DA4DE4200299377 /* WWUtilidades.swift in Sources */,
 				09258FAB1DA4E22600299377 /* WWConcesionariosModel.swift in Sources */,
+				09E5930B1DA64DFD0097481E /* WWCatalogoCustomCell.swift in Sources */,
 				093DE33C1DA244EC00CE4F32 /* WWConcesionarioTableViewController.swift in Sources */,
 				09258FB01DA4E62100299377 /* WWConcesionariosParser.swift in Sources */,
 				093DE33F1DA244EC00CE4F32 /* WWLoginViewController.swift in Sources */,
 				093DE33D1DA244EC00CE4F32 /* WWConcesoniarioCustomCell.swift in Sources */,
+				09E5930D1DA64E120097481E /* WWCatalogoPruebasViewController.swift in Sources */,
 				09258FA41DA4DE1200299377 /* WWApiManager.swift in Sources */,
 				09258FA61DA4DE2500299377 /* WWConstantes.swift in Sources */,
 				63B3607E1DA11B0D00E3A711 /* AppDelegate.swift in Sources */,
+				09E593071DA64AC40097481E /* WWCatalogoPruebasParser.swift in Sources */,
+				09E593091DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift in Sources */,
 				093DE33E1DA244EC00CE4F32 /* WWDetalleConcesaionarioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
