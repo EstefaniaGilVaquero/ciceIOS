@@ -18,7 +18,7 @@ class WWCatalogoPruebasParser: NSObject {
         let readableJson = JSON(data: dataFromNetwork, options: .MutableContainers, error: nil)
         //3.
         for index in 0...readableJson.count - 1{
-            let catalogoModel = WWCatalogoPruebas(pIdCatalogo: dimeString(readableJson[index], nombre: "idCatalogo"),
+            let catalogoModel = WWCatalogoPruebas(pIdCatalogo: dimeInt(readableJson[index], nombre: "idCatalogo"),
                                                   pNombreModelo: dimeString(readableJson[index], nombre: "idCatalogo"),
                                                   pCilindrada: dimeFloat(readableJson[index], nombre: "Cilindrada"),
                                                   pKW: dimeFloat(readableJson[index], nombre: "KW"),
@@ -26,7 +26,7 @@ class WWCatalogoPruebasParser: NSObject {
                                                   pCombustible: dimeString(readableJson[index], nombre: "Combustible"),
                                                   pImagen: dimeString(readableJson[index], nombre: "Imagen"))
             
-            arrayConcesionariosModel.append(catalogoModel)
+            arrayCatalogoModel.append(catalogoModel)
             
         }
         

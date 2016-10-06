@@ -172,6 +172,16 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		09E5930E1DA64ED50097481E /* VC_CATALOGO_PRUEBAS */ = {
+			isa = PBXGroup;
+			children = (
+				09E593081DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift */,
+				09E5930A1DA64DFD0097481E /* WWCatalogoCustomCell.swift */,
+				09E5930C1DA64E120097481E /* WWCatalogoPruebasViewController.swift */,
+			);
+			name = VC_CATALOGO_PRUEBAS;
+			sourceTree = "<group>";
+		};
 		63B360711DA11B0A00E3A711 = {
 			isa = PBXGroup;
 			children = (
@@ -196,10 +206,8 @@
 			children = (
 				093DE31B1DA2441C00CE4F32 /* FRAMEWORK/PARSE */,
 				63B3607D1DA11B0D00E3A711 /* AppDelegate.swift */,
-				09E593081DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift */,
-				09E5930A1DA64DFD0097481E /* WWCatalogoCustomCell.swift */,
-				09E5930C1DA64E120097481E /* WWCatalogoPruebasViewController.swift */,
 				09258FB11DA4E62800299377 /* PARSEOS */,
+				09E5930E1DA64ED50097481E /* VC_CATALOGO_PRUEBAS */,
 				093DE3291DA2444500CE4F32 /* VC_CONCESIONARIO */,
 				093DE3231DA2443D00CE4F32 /* VC_LOGIN_REGISTRO */,
 				09258FAC1DA4E54000299377 /* MODELOS */,

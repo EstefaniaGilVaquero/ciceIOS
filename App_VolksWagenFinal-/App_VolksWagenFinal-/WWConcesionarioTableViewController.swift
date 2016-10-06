@@ -13,7 +13,6 @@ class WWConcesionarioTableViewController: UITableViewController {
     
     //MARK: - VARIABLES LOCALES GLOBALES
     var refreshTVC = UIRefreshControl()
-    var CONSTANTES = Constantes()
     var arrayConcesionarios = [WWConcesionariosModel]()
 
     override func viewDidLoad() {
@@ -73,10 +72,6 @@ class WWConcesionarioTableViewController: UITableViewController {
         let telefonoData = arrayConcesionarios[sender.tag].telefono
         let url = NSURL(string: "tel://\(telefonoData)")
         UIApplication.sharedApplication().openURL(url!)
-    }
-   
-    func getImagePath(nombreImagen : String) ->String {
-        return  CONSTANTES.BASE_FOTO_URL + nombreImagen
     }
     
     

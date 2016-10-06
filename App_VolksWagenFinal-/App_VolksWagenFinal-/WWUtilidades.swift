@@ -9,6 +9,8 @@
 import Foundation
 import SwiftyJSON
 
+let CONSTANTES = Constantes()
+
 //MARK: - GET STRING
 
 public func dimeString(j : JSON, nombre : String) ->String{
@@ -52,4 +54,8 @@ public func dimeFloat(j : JSON, nombre : String) ->Float{
 func refreshFunction(tableView : UITableView, endRefreshTVC : UIRefreshControl){
     tableView.reloadData()
     endRefreshTVC.endRefreshing()
+}
+
+func getImagePath(nombreImagen : String) ->String {
+    return  CONSTANTES.BASE_FOTO_URL + nombreImagen
 }

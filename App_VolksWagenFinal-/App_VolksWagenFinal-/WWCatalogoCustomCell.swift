@@ -9,7 +9,14 @@
 import UIKit
 
 class WWCatalogoCustomCell: UITableViewCell {
-
+    
+    
+//MARK: - IBOUTLET
+    @IBOutlet weak var myImagenCatalogoPruebas: UIImageView!
+    @IBOutlet weak var myNombreModelo: UILabel!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
