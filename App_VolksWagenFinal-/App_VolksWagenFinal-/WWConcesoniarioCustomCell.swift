@@ -16,9 +16,8 @@ class WWConcesoniarioCustomCell: UITableViewCell {
     @IBOutlet weak var myNombreConcesionario: UILabel!
     @IBOutlet weak var myDireccionConcesionario: UILabel!
     @IBOutlet weak var myWebConcesionario: UILabel!
-    @IBOutlet weak var myTelefonoConcesionario: UILabel!
-    
-    
+    @IBOutlet weak var myTelefonoBTN: UIButton!
+
 
     override func awakeFromNib() {
         super.awakeFromNib()

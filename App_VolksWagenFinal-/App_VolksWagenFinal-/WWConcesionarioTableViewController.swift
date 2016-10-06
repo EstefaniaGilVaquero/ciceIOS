@@ -57,11 +57,10 @@ class WWConcesionarioTableViewController: UITableViewController {
         cell.myNombreConcesionario.text = concesionariosData.Nombre
         cell.myDireccionConcesionario.text = concesionariosData.Ubicacion
         cell.myWebConcesionario.text = concesionariosData.Provincia_Nombre
-        cell.myTelefonoConcesionario.text = "\(concesionariosData.telefono)"
-        cell.myTelefonoConcesionario.tag = indexPath.row
+        cell.myTelefonoBTN.setTitle("\(concesionariosData.telefono!)", forState: .Normal)
+        cell.myTelefonoBTN.tag = indexPath.row
         
-        let gesRe = UITapGestureRecognizer(target: self, action: #selector(WWConcesionarioTableViewController.muestraTelefono(_:)))
-        cell.myTelefonoConcesionario.addGestureRecognizer(gesRe)
+        cell.myTelefonoBTN.addTarget(self, action: #selector(WWConcesionarioTableViewController.muestraTelefono(_:)), forControlEvents: .TouchUpInside)
         
         cell.myImagenConcesionario.kf_setImageWithURL(NSURL(string: getImagePath(concesionariosData.Imagen!)))
         
@@ -69,7 +68,7 @@ class WWConcesionarioTableViewController: UITableViewController {
         
     }
     
-    func muestraTelefono(sender : UILabel) {
+    func muestraTelefono(sender : UIButton) {
         
         let telefonoData = arrayConcesionarios[sender.tag].telefono
         let url = NSURL(string: "tel://\(telefonoData)")
@@ -78,6 +77,16 @@ class WWConcesionarioTableViewController: UITableViewController {
    
     func getImagePath(nombreImagen : String) ->String {
         return  CONSTANTES.BASE_FOTO_URL + nombreImagen
+    }
+    
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let detalleConcesionarioVC = self.storyboard?.instantiateViewControllerWithIdentifier("detalleConcesionarios") as! WWDetalleConcesaionarioViewController
+        
+        detalleConcesionarioVC.arrayConcesionariosData = arrayConcesionarios[indexPath.row]
+        navigationController?.pushViewController(detalleConcesionarioVC, animated: true)
+        
+    
     }
 
     /*
