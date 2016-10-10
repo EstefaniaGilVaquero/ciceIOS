@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import SwiftyJSON
 
 let CONSTANTES = Constantes()
@@ -49,6 +50,13 @@ public func dimeFloat(j : JSON, nombre : String) ->Float{
 }
 
 //MARK: - ALERT/VC
+
+func showAlartVC(titleData : String, messageData : String) -> UIAlertController{
+    
+    let alertVC = UIAlertController(title: titleData, message: messageData, preferredStyle: .Alert)
+    alertVC.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
+    return alertVC
+}
 
 //MARK: - REFRESH
 func refreshFunction(tableView : UITableView, endRefreshTVC : UIRefreshControl){

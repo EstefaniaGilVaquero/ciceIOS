@@ -61,18 +61,14 @@ class WWCatalogoPruebasTableViewController: UITableViewController {
         return 242
     }
     
-    
-   
-    
-    
-//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        let detalleConcesionarioVC = self.storyboard?.instantiateViewControllerWithIdentifier("detalleConcesionarios") as! WWDetalleConcesaionarioViewController
-//        
-//        detalleConcesionarioVC.arrayConcesionariosData = arrayCatalogoPruebas[indexPath.row]
-//        navigationController?.pushViewController(detalleConcesionarioVC, animated: true)
-//        
-//        
-//    }
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let detalleCatalogoPruebasVC = self.storyboard?.instantiateViewControllerWithIdentifier("detalleCatalogoPruebas") as! WWCatalogoPruebasViewController
+        
+        detalleCatalogoPruebasVC.arrayCatalogoPruebasData = arrayCatalogoPruebas[indexPath.row]
+        navigationController?.pushViewController(detalleCatalogoPruebasVC, animated: true)
+        
+        
+    }
     
     /*
      // MARK: - Navigation

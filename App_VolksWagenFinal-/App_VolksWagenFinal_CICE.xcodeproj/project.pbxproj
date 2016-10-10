@@ -37,6 +37,7 @@
 		09E593091DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E593081DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift */; };
 		09E5930B1DA64DFD0097481E /* WWCatalogoCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E5930A1DA64DFD0097481E /* WWCatalogoCustomCell.swift */; };
 		09E5930D1DA64E120097481E /* WWCatalogoPruebasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E5930C1DA64E120097481E /* WWCatalogoPruebasViewController.swift */; };
+		09EA6AA11DAB8AEB00C09A76 /* WWGaleriaImagenesCochesViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA6AA01DAB8AEB00C09A76 /* WWGaleriaImagenesCochesViewControllerViewController.swift */; };
 		63B3607E1DA11B0D00E3A711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B3607D1DA11B0D00E3A711 /* AppDelegate.swift */; };
 		63B360851DA11B0D00E3A711 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B360841DA11B0D00E3A711 /* Assets.xcassets */; };
 		63B360881DA11B0D00E3A711 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B360861DA11B0D00E3A711 /* LaunchScreen.storyboard */; };
@@ -75,6 +76,7 @@
 		09E593081DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCatalogoPruebasTableViewController.swift; sourceTree = "<group>"; };
 		09E5930A1DA64DFD0097481E /* WWCatalogoCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCatalogoCustomCell.swift; sourceTree = "<group>"; };
 		09E5930C1DA64E120097481E /* WWCatalogoPruebasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCatalogoPruebasViewController.swift; sourceTree = "<group>"; };
+		09EA6AA01DAB8AEB00C09A76 /* WWGaleriaImagenesCochesViewControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWGaleriaImagenesCochesViewControllerViewController.swift; sourceTree = "<group>"; };
 		0D37B9F291860F57F8A36A7C /* Pods-App_VolksWagenFinal_CICE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App_VolksWagenFinal_CICE.release.xcconfig"; path = "Pods/Target Support Files/Pods-App_VolksWagenFinal_CICE/Pods-App_VolksWagenFinal_CICE.release.xcconfig"; sourceTree = "<group>"; };
 		3175BDC361A3B9CE62994AD6 /* Pods_App_VolksWagenFinal_CICE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_VolksWagenFinal_CICE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B3607A1DA11B0B00E3A711 /* App_VolksWagenFinal_CICE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_VolksWagenFinal_CICE.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +184,14 @@
 			name = VC_CATALOGO_PRUEBAS;
 			sourceTree = "<group>";
 		};
+		09EA6AA21DAB8B0000C09A76 /* HELPERS */ = {
+			isa = PBXGroup;
+			children = (
+				09EA6AA01DAB8AEB00C09A76 /* WWGaleriaImagenesCochesViewControllerViewController.swift */,
+			);
+			name = HELPERS;
+			sourceTree = "<group>";
+		};
 		63B360711DA11B0A00E3A711 = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +216,7 @@
 			children = (
 				093DE31B1DA2441C00CE4F32 /* FRAMEWORK/PARSE */,
 				63B3607D1DA11B0D00E3A711 /* AppDelegate.swift */,
+				09EA6AA21DAB8B0000C09A76 /* HELPERS */,
 				09258FB11DA4E62800299377 /* PARSEOS */,
 				09E5930E1DA64ED50097481E /* VC_CATALOGO_PRUEBAS */,
 				093DE3291DA2444500CE4F32 /* VC_CONCESIONARIO */,
@@ -380,6 +391,7 @@
 				09258FAB1DA4E22600299377 /* WWConcesionariosModel.swift in Sources */,
 				09E5930B1DA64DFD0097481E /* WWCatalogoCustomCell.swift in Sources */,
 				093DE33C1DA244EC00CE4F32 /* WWConcesionarioTableViewController.swift in Sources */,
+				09EA6AA11DAB8AEB00C09A76 /* WWGaleriaImagenesCochesViewControllerViewController.swift in Sources */,
 				09258FB01DA4E62100299377 /* WWConcesionariosParser.swift in Sources */,
 				093DE33F1DA244EC00CE4F32 /* WWLoginViewController.swift in Sources */,
 				093DE33D1DA244EC00CE4F32 /* WWConcesoniarioCustomCell.swift in Sources */,
@@ -502,7 +514,7 @@
 				);
 				INFOPLIST_FILE = "App_VolksWagenFinal-/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.icologic.App-VolksWagenFinal-CICE";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icologic.App-VolksWagenFinal-CICE.cice";
 				PRODUCT_NAME = App_VolksWagenFinal_CICE;
 			};
 			name = Debug;
@@ -519,7 +531,7 @@
 				);
 				INFOPLIST_FILE = "App_VolksWagenFinal-/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.icologic.App-VolksWagenFinal-CICE";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icologic.App-VolksWagenFinal-CICE.cice";
 				PRODUCT_NAME = App_VolksWagenFinal_CICE;
 			};
 			name = Release;
