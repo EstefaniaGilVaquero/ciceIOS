@@ -38,6 +38,12 @@
 		09E5930B1DA64DFD0097481E /* WWCatalogoCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E5930A1DA64DFD0097481E /* WWCatalogoCustomCell.swift */; };
 		09E5930D1DA64E120097481E /* WWCatalogoPruebasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E5930C1DA64E120097481E /* WWCatalogoPruebasViewController.swift */; };
 		09EA6AA11DAB8AEB00C09A76 /* WWGaleriaImagenesCochesViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA6AA01DAB8AEB00C09A76 /* WWGaleriaImagenesCochesViewControllerViewController.swift */; };
+		09EA6AA81DAB8DB200C09A76 /* FOTO_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 09EA6AA31DAB8DB200C09A76 /* FOTO_0.png */; };
+		09EA6AA91DAB8DB200C09A76 /* FOTO_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 09EA6AA41DAB8DB200C09A76 /* FOTO_1.png */; };
+		09EA6AAA1DAB8DB200C09A76 /* FOTO_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09EA6AA51DAB8DB200C09A76 /* FOTO_2.png */; };
+		09EA6AAB1DAB8DB200C09A76 /* FOTO_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 09EA6AA61DAB8DB200C09A76 /* FOTO_3.png */; };
+		09EA6AAC1DAB8DB200C09A76 /* FOTO_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 09EA6AA71DAB8DB200C09A76 /* FOTO_4.png */; };
+		09EA6AAE1DAB989100C09A76 /* WWOfertasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA6AAD1DAB989100C09A76 /* WWOfertasModel.swift */; };
 		63B3607E1DA11B0D00E3A711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B3607D1DA11B0D00E3A711 /* AppDelegate.swift */; };
 		63B360851DA11B0D00E3A711 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B360841DA11B0D00E3A711 /* Assets.xcassets */; };
 		63B360881DA11B0D00E3A711 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B360861DA11B0D00E3A711 /* LaunchScreen.storyboard */; };
@@ -77,6 +83,12 @@
 		09E5930A1DA64DFD0097481E /* WWCatalogoCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCatalogoCustomCell.swift; sourceTree = "<group>"; };
 		09E5930C1DA64E120097481E /* WWCatalogoPruebasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCatalogoPruebasViewController.swift; sourceTree = "<group>"; };
 		09EA6AA01DAB8AEB00C09A76 /* WWGaleriaImagenesCochesViewControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWGaleriaImagenesCochesViewControllerViewController.swift; sourceTree = "<group>"; };
+		09EA6AA31DAB8DB200C09A76 /* FOTO_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FOTO_0.png; sourceTree = "<group>"; };
+		09EA6AA41DAB8DB200C09A76 /* FOTO_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FOTO_1.png; sourceTree = "<group>"; };
+		09EA6AA51DAB8DB200C09A76 /* FOTO_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FOTO_2.png; sourceTree = "<group>"; };
+		09EA6AA61DAB8DB200C09A76 /* FOTO_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FOTO_3.png; sourceTree = "<group>"; };
+		09EA6AA71DAB8DB200C09A76 /* FOTO_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FOTO_4.png; sourceTree = "<group>"; };
+		09EA6AAD1DAB989100C09A76 /* WWOfertasModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWOfertasModel.swift; sourceTree = "<group>"; };
 		0D37B9F291860F57F8A36A7C /* Pods-App_VolksWagenFinal_CICE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App_VolksWagenFinal_CICE.release.xcconfig"; path = "Pods/Target Support Files/Pods-App_VolksWagenFinal_CICE/Pods-App_VolksWagenFinal_CICE.release.xcconfig"; sourceTree = "<group>"; };
 		3175BDC361A3B9CE62994AD6 /* Pods_App_VolksWagenFinal_CICE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_VolksWagenFinal_CICE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B3607A1DA11B0B00E3A711 /* App_VolksWagenFinal_CICE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_VolksWagenFinal_CICE.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +141,7 @@
 			children = (
 				09258FAA1DA4E22600299377 /* WWConcesionariosModel.swift */,
 				09E593041DA649870097481E /* WWCatalogoPruebas.swift */,
+				09EA6AAD1DAB989100C09A76 /* WWOfertasModel.swift */,
 			);
 			name = MODELOS;
 			sourceTree = "<group>";
@@ -214,6 +227,11 @@
 		63B3607C1DA11B0D00E3A711 /* App_VolksWagenFinal- */ = {
 			isa = PBXGroup;
 			children = (
+				09EA6AA31DAB8DB200C09A76 /* FOTO_0.png */,
+				09EA6AA41DAB8DB200C09A76 /* FOTO_1.png */,
+				09EA6AA51DAB8DB200C09A76 /* FOTO_2.png */,
+				09EA6AA61DAB8DB200C09A76 /* FOTO_3.png */,
+				09EA6AA71DAB8DB200C09A76 /* FOTO_4.png */,
 				093DE31B1DA2441C00CE4F32 /* FRAMEWORK/PARSE */,
 				63B3607D1DA11B0D00E3A711 /* AppDelegate.swift */,
 				09EA6AA21DAB8B0000C09A76 /* HELPERS */,
@@ -324,9 +342,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B360881DA11B0D00E3A711 /* LaunchScreen.storyboard in Resources */,
+				09EA6AA91DAB8DB200C09A76 /* FOTO_1.png in Resources */,
 				63B360851DA11B0D00E3A711 /* Assets.xcassets in Resources */,
+				09EA6AA81DAB8DB200C09A76 /* FOTO_0.png in Resources */,
+				09EA6AAC1DAB8DB200C09A76 /* FOTO_4.png in Resources */,
 				63B360901DA11E3700E3A711 /* Podfile in Resources */,
 				093DE3561DA25A0B00CE4F32 /* Main.storyboard in Resources */,
+				09EA6AAA1DAB8DB200C09A76 /* FOTO_2.png in Resources */,
+				09EA6AAB1DAB8DB200C09A76 /* FOTO_3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +418,7 @@
 				09258FB01DA4E62100299377 /* WWConcesionariosParser.swift in Sources */,
 				093DE33F1DA244EC00CE4F32 /* WWLoginViewController.swift in Sources */,
 				093DE33D1DA244EC00CE4F32 /* WWConcesoniarioCustomCell.swift in Sources */,
+				09EA6AAE1DAB989100C09A76 /* WWOfertasModel.swift in Sources */,
 				09E5930D1DA64E120097481E /* WWCatalogoPruebasViewController.swift in Sources */,
 				09258FA41DA4DE1200299377 /* WWApiManager.swift in Sources */,
 				09258FA61DA4DE2500299377 /* WWConstantes.swift in Sources */,

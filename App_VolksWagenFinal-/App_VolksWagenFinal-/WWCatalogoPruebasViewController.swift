@@ -26,6 +26,15 @@ class WWCatalogoPruebasViewController: UIViewController {
     
     //MARK: - IBACTION
     
+    
+    @IBAction func showVCGaleria(sender: AnyObject) {
+        let galeriaImagenes = self.storyboard?.instantiateViewControllerWithIdentifier("galeria") as! WWGaleriaImagenesCochesViewControllerViewController
+        
+        presentViewController((galeriaImagenes), animated: true, completion: nil)
+    }
+    
+    
+    
     @IBAction func showAlertConfirmacionPrueba(sender: AnyObject) {
         presentViewController(showAlartVC("Estimado usuario", messageData: "Su solicitud de prueba a sido confirmada"), animated: true, completion: nil)
     }

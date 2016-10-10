@@ -1116,10 +1116,10 @@
             </objects>
             <point key="canvasLocation" x="1687" y="-1646"/>
         </scene>
-        <!--View Controller-->
+        <!--Galeria Imagenes Coches View Controller View Controller-->
         <scene sceneID="u2e-5b-d0C">
             <objects>
-                <viewController id="9F8-LO-bMf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="galeria" id="9F8-LO-bMf" customClass="WWGaleriaImagenesCochesViewControllerViewController" customModule="App_VolksWagenFinal_CICE" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GNv-ou-Zm4"/>
                         <viewControllerLayoutGuide type="bottom" id="PQg-Ye-qA3"/>
@@ -1128,38 +1128,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XBh-PF-o75">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBh-PF-o75">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </scrollView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="emt-do-R4N">
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="emt-do-R4N">
                                 <rect key="frame" x="17" y="518" width="285" height="37"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="4zY-7G-GIt"/>
-                                    <constraint firstAttribute="width" constant="285" id="HQW-t3-BTN"/>
-                                </constraints>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLt-SO-lsR">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLt-SO-lsR">
                                 <rect key="frame" x="262" y="28" width="44" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="gCi-Mm-vlh"/>
-                                    <constraint firstAttribute="height" constant="44" id="yun-Q3-vVV"/>
-                                </constraints>
                                 <state key="normal" title="Button" image="cerrasX"/>
+                                <connections>
+                                    <action selector="hideVC:" destination="9F8-LO-bMf" eventType="touchUpInside" id="eF5-mA-pRf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="PQg-Ye-qA3" firstAttribute="top" secondItem="XBh-PF-o75" secondAttribute="bottom" id="BtP-4y-D7f"/>
-                            <constraint firstItem="emt-do-R4N" firstAttribute="centerX" secondItem="kye-1Y-WKa" secondAttribute="centerX" id="DK7-i9-Tpt"/>
-                            <constraint firstItem="PQg-Ye-qA3" firstAttribute="top" secondItem="emt-do-R4N" secondAttribute="bottom" constant="13" id="Odw-No-5Gq"/>
-                            <constraint firstItem="XBh-PF-o75" firstAttribute="leading" secondItem="kye-1Y-WKa" secondAttribute="leadingMargin" constant="-20" id="P2F-TS-LhP"/>
-                            <constraint firstAttribute="trailing" secondItem="HLt-SO-lsR" secondAttribute="trailing" constant="14" id="PaK-5e-Rgb"/>
-                            <constraint firstItem="HLt-SO-lsR" firstAttribute="top" secondItem="GNv-ou-Zm4" secondAttribute="bottom" constant="8" id="WMq-og-eol"/>
-                            <constraint firstItem="XBh-PF-o75" firstAttribute="top" secondItem="kye-1Y-WKa" secondAttribute="topMargin" id="eom-uV-YQ3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="XBh-PF-o75" secondAttribute="trailing" constant="-20" id="spZ-sF-aAG"/>
+                            <constraint firstAttribute="trailing" secondItem="XBh-PF-o75" secondAttribute="trailing" id="3b9-O4-p7K"/>
+                            <constraint firstItem="XBh-PF-o75" firstAttribute="top" secondItem="kye-1Y-WKa" secondAttribute="top" id="LX2-kw-vkx"/>
+                            <constraint firstItem="XBh-PF-o75" firstAttribute="leading" secondItem="kye-1Y-WKa" secondAttribute="leading" id="qHe-GI-avg"/>
+                            <constraint firstItem="PQg-Ye-qA3" firstAttribute="top" secondItem="XBh-PF-o75" secondAttribute="bottom" id="y6f-lm-pLZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myCustomPageControll" destination="emt-do-R4N" id="aEa-zR-3Bd"/>
+                        <outlet property="myCustomScrollView" destination="XBh-PF-o75" id="rvn-RN-2gp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I6F-qf-fV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1237,6 +1232,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7z-oo-4lq">
                                         <rect key="frame" x="292" y="164" width="22" height="22"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="showVCGaleria:" destination="R8d-VT-8EY" eventType="touchUpInside" id="1FL-5t-TaG"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Solicitar Prueba" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIB-39-QOx">
                                         <rect key="frame" x="9" y="232" width="105" height="22"/>
