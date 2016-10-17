@@ -14,6 +14,7 @@ class WWApiManager: NSObject {
     private let CONSTANTES = Constantes()
     private let concesionarios = WWConcesionariosParser()
     private let catalogoPruebas = WWCatalogoPruebasParser()
+    private let ofertas = VWOfertasParser()
     
     //MARK: - SINGLETON
     class var sharedInstance : WWApiManager{
@@ -37,6 +38,14 @@ class WWApiManager: NSObject {
         let jsonData = NSData(contentsOfURL: url!)
         let arrayCatalogoPruebas = catalogoPruebas.getCatalogoPruebasModel(jsonData!)
         return arrayCatalogoPruebas
+    }
+    
+    //MARK: - CATALOGO PRUEBAS
+    func getOfertasParse() -> [WWOfertasModel]{
+        let url = NSURL(string: CONSTANTES.BASE_URL_OFERTAS)
+        let jsonData = NSData(contentsOfURL: url!)
+        let arrayOfertas = ofertas.getOfertasModel(jsonData!)
+        return arrayOfertas
     }
 
 }

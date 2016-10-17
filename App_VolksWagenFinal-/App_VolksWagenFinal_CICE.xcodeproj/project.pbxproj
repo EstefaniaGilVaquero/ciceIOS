@@ -32,6 +32,13 @@
 		093DE3521DA245B100CE4F32 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE3511DA245B100CE4F32 /* libsqlite3.tbd */; };
 		093DE3541DA245BB00CE4F32 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE3531DA245BB00CE4F32 /* libz.tbd */; };
 		093DE3561DA25A0B00CE4F32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093DE3551DA25A0B00CE4F32 /* Main.storyboard */; settings = {ASSET_TAGS = (saltarTabBarController, ); }; };
+		09BD5D771DB4AFDB00BC43B3 /* VWOfertasParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD5D761DB4AFDB00BC43B3 /* VWOfertasParser.swift */; };
+		09BD5D791DB4B0EC00BC43B3 /* WWOfertasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD5D781DB4B0EC00BC43B3 /* WWOfertasTableViewController.swift */; };
+		09BD5D7B1DB4B10500BC43B3 /* WWOfertasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD5D7A1DB4B10500BC43B3 /* WWOfertasTableViewCell.swift */; };
+		09BD5D7D1DB4B11C00BC43B3 /* WWOfertasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD5D7C1DB4B11C00BC43B3 /* WWOfertasViewController.swift */; };
+		09BD5D7F1DB4B65100BC43B3 /* QR.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BD5D7E1DB4B65100BC43B3 /* QR.png */; };
+		09BD5D821DB4D07A00BC43B3 /* placeHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BD5D811DB4D07A00BC43B3 /* placeHolder.png */; };
+		09BD5D841DB4D09400BC43B3 /* WWPostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD5D831DB4D09400BC43B3 /* WWPostImageViewController.swift */; };
 		09E593051DA649870097481E /* WWCatalogoPruebas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E593041DA649870097481E /* WWCatalogoPruebas.swift */; };
 		09E593071DA64AC40097481E /* WWCatalogoPruebasParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E593061DA64AC40097481E /* WWCatalogoPruebasParser.swift */; };
 		09E593091DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E593081DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift */; };
@@ -77,6 +84,13 @@
 		093DE3511DA245B100CE4F32 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		093DE3531DA245BB00CE4F32 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		093DE3551DA25A0B00CE4F32 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		09BD5D761DB4AFDB00BC43B3 /* VWOfertasParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWOfertasParser.swift; sourceTree = "<group>"; };
+		09BD5D781DB4B0EC00BC43B3 /* WWOfertasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWOfertasTableViewController.swift; sourceTree = "<group>"; };
+		09BD5D7A1DB4B10500BC43B3 /* WWOfertasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWOfertasTableViewCell.swift; sourceTree = "<group>"; };
+		09BD5D7C1DB4B11C00BC43B3 /* WWOfertasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWOfertasViewController.swift; sourceTree = "<group>"; };
+		09BD5D7E1DB4B65100BC43B3 /* QR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QR.png; sourceTree = "<group>"; };
+		09BD5D811DB4D07A00BC43B3 /* placeHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeHolder.png; sourceTree = "<group>"; };
+		09BD5D831DB4D09400BC43B3 /* WWPostImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWPostImageViewController.swift; sourceTree = "<group>"; };
 		09E593041DA649870097481E /* WWCatalogoPruebas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCatalogoPruebas.swift; sourceTree = "<group>"; };
 		09E593061DA64AC40097481E /* WWCatalogoPruebasParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCatalogoPruebasParser.swift; sourceTree = "<group>"; };
 		09E593081DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCatalogoPruebasTableViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +163,7 @@
 		09258FB11DA4E62800299377 /* PARSEOS */ = {
 			isa = PBXGroup;
 			children = (
+				09BD5D761DB4AFDB00BC43B3 /* VWOfertasParser.swift */,
 				09258FAF1DA4E62100299377 /* WWConcesionariosParser.swift */,
 				09E593061DA64AC40097481E /* WWCatalogoPruebasParser.swift */,
 			);
@@ -185,6 +200,16 @@
 			);
 			name = VC_CONCESIONARIO;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		09BD5D801DB4B6B800BC43B3 /* VC_OFERTAS */ = {
+			isa = PBXGroup;
+			children = (
+				09BD5D781DB4B0EC00BC43B3 /* WWOfertasTableViewController.swift */,
+				09BD5D7A1DB4B10500BC43B3 /* WWOfertasTableViewCell.swift */,
+				09BD5D7C1DB4B11C00BC43B3 /* WWOfertasViewController.swift */,
+			);
+			name = VC_OFERTAS;
 			sourceTree = "<group>";
 		};
 		09E5930E1DA64ED50097481E /* VC_CATALOGO_PRUEBAS */ = {
@@ -227,6 +252,8 @@
 		63B3607C1DA11B0D00E3A711 /* App_VolksWagenFinal- */ = {
 			isa = PBXGroup;
 			children = (
+				09BD5D811DB4D07A00BC43B3 /* placeHolder.png */,
+				09BD5D7E1DB4B65100BC43B3 /* QR.png */,
 				09EA6AA31DAB8DB200C09A76 /* FOTO_0.png */,
 				09EA6AA41DAB8DB200C09A76 /* FOTO_1.png */,
 				09EA6AA51DAB8DB200C09A76 /* FOTO_2.png */,
@@ -234,6 +261,8 @@
 				09EA6AA71DAB8DB200C09A76 /* FOTO_4.png */,
 				093DE31B1DA2441C00CE4F32 /* FRAMEWORK/PARSE */,
 				63B3607D1DA11B0D00E3A711 /* AppDelegate.swift */,
+				09BD5D831DB4D09400BC43B3 /* WWPostImageViewController.swift */,
+				09BD5D801DB4B6B800BC43B3 /* VC_OFERTAS */,
 				09EA6AA21DAB8B0000C09A76 /* HELPERS */,
 				09258FB11DA4E62800299377 /* PARSEOS */,
 				09E5930E1DA64ED50097481E /* VC_CATALOGO_PRUEBAS */,
@@ -341,8 +370,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09BD5D7F1DB4B65100BC43B3 /* QR.png in Resources */,
 				63B360881DA11B0D00E3A711 /* LaunchScreen.storyboard in Resources */,
 				09EA6AA91DAB8DB200C09A76 /* FOTO_1.png in Resources */,
+				09BD5D821DB4D07A00BC43B3 /* placeHolder.png in Resources */,
 				63B360851DA11B0D00E3A711 /* Assets.xcassets in Resources */,
 				09EA6AA81DAB8DB200C09A76 /* FOTO_0.png in Resources */,
 				09EA6AAC1DAB8DB200C09A76 /* FOTO_4.png in Resources */,
@@ -409,12 +440,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				09E593051DA649870097481E /* WWCatalogoPruebas.swift in Sources */,
+				09BD5D771DB4AFDB00BC43B3 /* VWOfertasParser.swift in Sources */,
+				09BD5D841DB4D09400BC43B3 /* WWPostImageViewController.swift in Sources */,
 				093DE3401DA244EC00CE4F32 /* WWRegistroNuevoUsuarioViewController.swift in Sources */,
 				09258FA81DA4DE4200299377 /* WWUtilidades.swift in Sources */,
 				09258FAB1DA4E22600299377 /* WWConcesionariosModel.swift in Sources */,
+				09BD5D7B1DB4B10500BC43B3 /* WWOfertasTableViewCell.swift in Sources */,
 				09E5930B1DA64DFD0097481E /* WWCatalogoCustomCell.swift in Sources */,
 				093DE33C1DA244EC00CE4F32 /* WWConcesionarioTableViewController.swift in Sources */,
 				09EA6AA11DAB8AEB00C09A76 /* WWGaleriaImagenesCochesViewControllerViewController.swift in Sources */,
+				09BD5D7D1DB4B11C00BC43B3 /* WWOfertasViewController.swift in Sources */,
 				09258FB01DA4E62100299377 /* WWConcesionariosParser.swift in Sources */,
 				093DE33F1DA244EC00CE4F32 /* WWLoginViewController.swift in Sources */,
 				093DE33D1DA244EC00CE4F32 /* WWConcesoniarioCustomCell.swift in Sources */,
@@ -425,6 +460,7 @@
 				63B3607E1DA11B0D00E3A711 /* AppDelegate.swift in Sources */,
 				09E593071DA64AC40097481E /* WWCatalogoPruebasParser.swift in Sources */,
 				09E593091DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift in Sources */,
+				09BD5D791DB4B0EC00BC43B3 /* WWOfertasTableViewController.swift in Sources */,
 				093DE33E1DA244EC00CE4F32 /* WWDetalleConcesaionarioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

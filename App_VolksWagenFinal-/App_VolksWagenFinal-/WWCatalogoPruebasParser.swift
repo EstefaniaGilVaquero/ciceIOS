@@ -11,6 +11,9 @@ import SwiftyJSON
 
 class WWCatalogoPruebasParser: NSObject {
     
+
+
+    
     func getCatalogoPruebasModel(dataFromNetwork : NSData) -> [WWCatalogoPruebas]{
         //1. Creamos el array contenedor de datos
         var arrayCatalogoModel = [WWCatalogoPruebas]()
