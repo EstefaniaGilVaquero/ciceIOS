@@ -16,6 +16,11 @@ class WWPostImageViewController: UIViewController {
     @IBOutlet weak var myDescripcion: UITextField!
     @IBOutlet weak var myImagen: UIImageView!
     
+    @IBAction func cerrarSesion(sender: AnyObject) {
+        self.performSegueWithIdentifier("logout", sender: self)
+
+    }
+    
     @IBAction func publicarImagen(sender: AnyObject) {
     }
     
@@ -45,8 +50,7 @@ class WWPostImageViewController: UIViewController {
         pickerPhoto()
     }
     
-    @IBAction func cerrarSesion(sender: AnyObject) {
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -118,7 +122,7 @@ extension WWPostImageViewController : UIImagePickerControllerDelegate, UINavigat
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         
         fotoSeleccionada = true
-        myImagenPerfil.image = image
+        myImagen.image = image
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     

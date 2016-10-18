@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import ParseFacebookUtilsV4
 
 class WWLoginViewController: UIViewController {
     
@@ -17,6 +18,41 @@ class WWLoginViewController: UIViewController {
     @IBOutlet weak var myPasswordParseTF: UITextField!
     @IBOutlet weak var myActivityIndicator: UIActivityIndicatorView!
 
+    //LOGIN CON FB
+    @IBAction func loginConFB(sender: AnyObject) {
+        
+        let permissions = ["public_profile"]
+        
+        PFFacebookUtils.logInInBackgroundWithReadPermissions(permissions) {
+            (user: PFUser?, error: NSError?) -> Void in
+            if let user = user {
+                if user.isNew {
+                    print("User signed up and logged in through Facebook!")
+                    self.performSegueWithIdentifier("saltarTabBarControllerFromLogin", sender: self)
+                    
+                } else {
+                    print("User logged in through Facebook!")
+                }
+            } else {
+                print("Uh oh. The user cancelled the Facebook login.")
+            }
+        }
+
+    }
+    
+    //TODO: - LOGOUT
+    @IBAction func heHechoLogout(segue: UIStoryboardSegue){
+        PFUser.logOutInBackgroundWithBlock { (error) in
+            if error != nil{
+                print("Error al hacer logout")
+            }else{
+                print("Logout satisfactorio")
+            }
+        }
+        
+        
+        print ("El usuario")
+    }
     
     //MAARK: - IBACTION
     

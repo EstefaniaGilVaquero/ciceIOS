@@ -54,6 +54,13 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iso-RQ-MLf">
+                                        <rect key="frame" x="91" y="253" width="138" height="30"/>
+                                        <state key="normal" title="Login con Facebook"/>
+                                        <connections>
+                                            <action selector="loginConFB:" destination="Ql4-9a-Iv9" eventType="touchUpInside" id="7Th-Uk-qEy"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -85,6 +92,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ayF-hF-1az" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Bh5-aX-Mqm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-380.26666666666665" y="-952.34666666666669"/>
         </scene>
@@ -741,7 +749,7 @@
         <!--Editar mi Perfil-->
         <scene sceneID="q6W-kl-GQE">
             <objects>
-                <viewController id="aeM-Ov-JX5" customClass="VWEditarPerfilViewController" customModule="App_VolksWagenFinal_CICE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aeM-Ov-JX5" customClass="WWEditarPerfilViewController" customModule="App_VolksWagenFinal_CICE" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1U9-QU-zvs"/>
                         <viewControllerLayoutGuide type="bottom" id="2yC-Ik-bEU"/>
@@ -773,6 +781,9 @@
                                         <state key="normal" title="Actualizar datos">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actualizarDatosParse:" destination="aeM-Ov-JX5" eventType="touchUpInside" id="wj9-fv-B83"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Móvil (opcional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="inp-GF-j3q">
                                         <rect key="frame" x="16" y="181" width="280" height="30"/>
@@ -818,10 +829,6 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundMan" translatesAutoresizingMaskIntoConstraints="NO" id="FjN-NN-oik">
                                         <rect key="frame" x="16" y="14" width="56" height="56"/>
                                     </imageView>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J01-MV-ASx">
-                                        <rect key="frame" x="89" y="52" width="53" height="18"/>
-                                        <state key="normal" title="Editar"/>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="eDL-uS-jGr"/>
@@ -836,8 +843,21 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Editar mi Perfil" id="Cfj-f2-BTa">
-                        <barButtonItem key="leftBarButtonItem" title="OK" id="f7r-TB-afv"/>
+                        <barButtonItem key="leftBarButtonItem" title="OK" id="f7r-TB-afv">
+                            <connections>
+                                <action selector="cerrarVC:" destination="aeM-Ov-JX5" id="rzi-Iv-TgT"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="miMovil" destination="inp-GF-j3q" id="y9f-QX-IKe"/>
+                        <outlet property="myApellido" destination="Wpn-kX-2BY" id="8dR-i0-0Yp"/>
+                        <outlet property="myAsociacion" destination="hiX-hW-6Et" id="17Q-kV-FqM"/>
+                        <outlet property="myEmail" destination="H6y-TW-s6h" id="DSa-G6-O1Y"/>
+                        <outlet property="myImagenPerfil" destination="FjN-NN-oik" id="7ri-SD-wFP"/>
+                        <outlet property="myLocalidad" destination="RRA-Iq-MWH" id="qN0-Fq-EYA"/>
+                        <outlet property="myNombre" destination="B15-en-68g" id="UGE-cr-Smg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yTQ-st-qXF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1456,7 +1476,8 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                         <barButtonItem key="rightBarButtonItem" systemItem="reply" id="Xid-NU-5KT">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <action selector="cerrarSesion:" destination="ktS-md-TY7" id="YYO-qc-3ri"/>
+                                <action selector="cerrarSesion:" destination="ktS-md-TY7" id="K10-5x-u8B"/>
+                                <segue destination="Bh5-aX-Mqm" kind="unwind" identifier="logout" unwindAction="heHechoLogout:" id="ydg-RP-x8B"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
