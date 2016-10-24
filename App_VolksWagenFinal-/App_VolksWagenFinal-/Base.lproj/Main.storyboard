@@ -1501,11 +1501,8 @@ Ante cualquier conflicto, la Ley aplicable será la Peruana y la jurisdicción c
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="myDescripcionFoto" destination="elP-5w-XyD" id="Ihf-Hd-3fW"/>
-                                    <outlet property="myDescriptionPhoto" destination="elP-5w-XyD" id="CB2-S9-ofa"/>
-                                    <outlet property="myImageView" destination="9sH-ty-P08" id="RZl-Yb-EA0"/>
                                     <outlet property="myImagen" destination="9sH-ty-P08" id="Knh-I9-wZ4"/>
                                     <outlet property="myNombreUsuario" destination="2Xo-4V-d2X" id="Vh6-vV-AAM"/>
-                                    <outlet property="myUserName" destination="2Xo-4V-d2X" id="ARk-9h-rWx"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

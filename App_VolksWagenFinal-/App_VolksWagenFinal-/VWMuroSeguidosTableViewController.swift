@@ -20,14 +20,8 @@ class VWMuroSeguidosTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        getFollowingsQueryDDBB()
         
-        
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
     //MARK: - UTILS
@@ -38,7 +32,7 @@ class VWMuroSeguidosTableViewController: UITableViewController {
         getFollowersQuery.whereKey("follower", equalTo: (PFUser.currentUser()?.username)!)
         getFollowersQuery.findObjectsInBackgroundWithBlock { (objectUno, error) in
             
-        if error != nil{
+        if error == nil{
             if let objectUnoDes = objectUno{
                 var followedUser = ""
                 for objectData in objectUnoDes{
@@ -47,7 +41,7 @@ class VWMuroSeguidosTableViewController: UITableViewController {
                     let query = PFQuery(className: "PostImagenVW")
                     query.whereKey("username", equalTo: followedUser)
                     query.findObjectsInBackgroundWithBlock({ (objectDos, errorDos) in
-                        if errorDos != nil{
+                        if errorDos == nil{
                             if let objectDosDes = objectDos{
                                 for objectDataDos in objectDosDes{
                                     let postImagenFinal = VWUserDataModel(pdescripcionData: objectDataDos["descripcionImagen"] as! String,
