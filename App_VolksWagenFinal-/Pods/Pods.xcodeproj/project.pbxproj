@@ -356,11 +356,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					A14D8BA6703C474E6BC2E4686663CD68 = {
-						DevelopmentTeam = NZ9BB45RRX;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -474,7 +469,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EE6F317D2A2063B74FE2CA6452E82A4B /* Kingfisher.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -610,7 +604,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EE6F317D2A2063B74FE2CA6452E82A4B /* Kingfisher.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";

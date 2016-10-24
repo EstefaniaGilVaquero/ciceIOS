@@ -7,127 +7,129 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		090145F41DB6083C00CC90EB /* FacebookSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 090145ED1DB6083C00CC90EB /* FacebookSDKStrings.bundle */; };
-		090145F51DB6083C00CC90EB /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090145EE1DB6083C00CC90EB /* FBAudienceNetwork.framework */; };
-		090145F61DB6083C00CC90EB /* FBNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090145EF1DB6083C00CC90EB /* FBNotifications.framework */; };
-		090145F71DB6083C00CC90EB /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090145F01DB6083C00CC90EB /* FBSDKCoreKit.framework */; };
-		090145F81DB6083C00CC90EB /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090145F11DB6083C00CC90EB /* FBSDKLoginKit.framework */; };
-		090145F91DB6083C00CC90EB /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090145F21DB6083C00CC90EB /* FBSDKMessengerShareKit.framework */; };
-		090145FA1DB6083C00CC90EB /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090145F31DB6083C00CC90EB /* FBSDKShareKit.framework */; };
-		090145FD1DB60F6200CC90EB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 090145FC1DB60F6200CC90EB /* Default-568h@2x.png */; };
-		090145FF1DB6241D00CC90EB /* WWEditarPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090145FE1DB6241D00CC90EB /* WWEditarPerfilViewController.swift */; };
-		09258FA41DA4DE1200299377 /* WWApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09258FA31DA4DE1200299377 /* WWApiManager.swift */; };
-		09258FA61DA4DE2500299377 /* WWConstantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09258FA51DA4DE2500299377 /* WWConstantes.swift */; };
-		09258FA81DA4DE4200299377 /* WWUtilidades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09258FA71DA4DE4200299377 /* WWUtilidades.swift */; };
-		09258FAB1DA4E22600299377 /* WWConcesionariosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09258FAA1DA4E22600299377 /* WWConcesionariosModel.swift */; };
-		09258FB01DA4E62100299377 /* WWConcesionariosParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09258FAF1DA4E62100299377 /* WWConcesionariosParser.swift */; };
-		093DE3171DA243E600CE4F32 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE3131DA243E600CE4F32 /* Bolts.framework */; };
-		093DE3181DA243E600CE4F32 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE3141DA243E600CE4F32 /* Parse.framework */; };
-		093DE31A1DA243E600CE4F32 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE3161DA243E600CE4F32 /* ParseFacebookUtilsV4.framework */; };
-		093DE33C1DA244EC00CE4F32 /* WWConcesionarioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093DE3371DA244EC00CE4F32 /* WWConcesionarioTableViewController.swift */; };
-		093DE33D1DA244EC00CE4F32 /* WWConcesoniarioCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093DE3381DA244EC00CE4F32 /* WWConcesoniarioCustomCell.swift */; };
-		093DE33E1DA244EC00CE4F32 /* WWDetalleConcesaionarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093DE3391DA244EC00CE4F32 /* WWDetalleConcesaionarioViewController.swift */; };
-		093DE33F1DA244EC00CE4F32 /* WWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093DE33A1DA244EC00CE4F32 /* WWLoginViewController.swift */; };
-		093DE3401DA244EC00CE4F32 /* WWRegistroNuevoUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093DE33B1DA244EC00CE4F32 /* WWRegistroNuevoUsuarioViewController.swift */; };
-		093DE3431DA2453900CE4F32 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE3411DA2453900CE4F32 /* Kingfisher.framework */; };
-		093DE3441DA2453900CE4F32 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE3421DA2453900CE4F32 /* SwiftyJSON.framework */; };
-		093DE3461DA2454600CE4F32 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE3451DA2454600CE4F32 /* AudioToolbox.framework */; };
-		093DE3481DA2455000CE4F32 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE3471DA2455000CE4F32 /* CFNetwork.framework */; };
-		093DE34A1DA2455B00CE4F32 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE3491DA2455B00CE4F32 /* CoreLocation.framework */; };
-		093DE34C1DA2456D00CE4F32 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE34B1DA2456D00CE4F32 /* QuartzCore.framework */; };
-		093DE34E1DA2457600CE4F32 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE34D1DA2457600CE4F32 /* StoreKit.framework */; };
-		093DE3501DA2458000CE4F32 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE34F1DA2458000CE4F32 /* SystemConfiguration.framework */; };
-		093DE3521DA245B100CE4F32 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE3511DA245B100CE4F32 /* libsqlite3.tbd */; };
-		093DE3541DA245BB00CE4F32 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DE3531DA245BB00CE4F32 /* libz.tbd */; };
-		093DE3561DA25A0B00CE4F32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093DE3551DA25A0B00CE4F32 /* Main.storyboard */; settings = {ASSET_TAGS = (saltarTabBarController, ); }; };
-		09BD5D771DB4AFDB00BC43B3 /* VWOfertasParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD5D761DB4AFDB00BC43B3 /* VWOfertasParser.swift */; };
-		09BD5D791DB4B0EC00BC43B3 /* WWOfertasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD5D781DB4B0EC00BC43B3 /* WWOfertasTableViewController.swift */; };
-		09BD5D7B1DB4B10500BC43B3 /* WWOfertasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD5D7A1DB4B10500BC43B3 /* WWOfertasTableViewCell.swift */; };
-		09BD5D7D1DB4B11C00BC43B3 /* WWOfertasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD5D7C1DB4B11C00BC43B3 /* WWOfertasViewController.swift */; };
-		09BD5D7F1DB4B65100BC43B3 /* QR.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BD5D7E1DB4B65100BC43B3 /* QR.png */; };
-		09BD5D821DB4D07A00BC43B3 /* placeHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BD5D811DB4D07A00BC43B3 /* placeHolder.png */; };
-		09BD5D841DB4D09400BC43B3 /* WWPostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD5D831DB4D09400BC43B3 /* WWPostImageViewController.swift */; };
-		09E593051DA649870097481E /* WWCatalogoPruebas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E593041DA649870097481E /* WWCatalogoPruebas.swift */; };
-		09E593071DA64AC40097481E /* WWCatalogoPruebasParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E593061DA64AC40097481E /* WWCatalogoPruebasParser.swift */; };
-		09E593091DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E593081DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift */; };
-		09E5930B1DA64DFD0097481E /* WWCatalogoCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E5930A1DA64DFD0097481E /* WWCatalogoCustomCell.swift */; };
-		09E5930D1DA64E120097481E /* WWCatalogoPruebasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E5930C1DA64E120097481E /* WWCatalogoPruebasViewController.swift */; };
-		09EA6AA11DAB8AEB00C09A76 /* WWGaleriaImagenesCochesViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA6AA01DAB8AEB00C09A76 /* WWGaleriaImagenesCochesViewControllerViewController.swift */; };
-		09EA6AA81DAB8DB200C09A76 /* FOTO_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 09EA6AA31DAB8DB200C09A76 /* FOTO_0.png */; };
-		09EA6AA91DAB8DB200C09A76 /* FOTO_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 09EA6AA41DAB8DB200C09A76 /* FOTO_1.png */; };
-		09EA6AAA1DAB8DB200C09A76 /* FOTO_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09EA6AA51DAB8DB200C09A76 /* FOTO_2.png */; };
-		09EA6AAB1DAB8DB200C09A76 /* FOTO_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 09EA6AA61DAB8DB200C09A76 /* FOTO_3.png */; };
-		09EA6AAC1DAB8DB200C09A76 /* FOTO_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 09EA6AA71DAB8DB200C09A76 /* FOTO_4.png */; };
-		09EA6AAE1DAB989100C09A76 /* WWOfertasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EA6AAD1DAB989100C09A76 /* WWOfertasModel.swift */; };
+		0915B0AB1DBDEFB7006558E6 /* VWMuroSeguidosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0915B0AA1DBDEFB7006558E6 /* VWMuroSeguidosTableViewController.swift */; };
+		0915B0AD1DBDEFE1006558E6 /* VWMuroCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0915B0AC1DBDEFE1006558E6 /* VWMuroCustomCell.swift */; };
 		63B3607E1DA11B0D00E3A711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B3607D1DA11B0D00E3A711 /* AppDelegate.swift */; };
+		63B360831DA11B0D00E3A711 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B360811DA11B0D00E3A711 /* Main.storyboard */; };
 		63B360851DA11B0D00E3A711 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B360841DA11B0D00E3A711 /* Assets.xcassets */; };
 		63B360881DA11B0D00E3A711 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B360861DA11B0D00E3A711 /* LaunchScreen.storyboard */; };
 		63B360901DA11E3700E3A711 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 63B3608F1DA11E3700E3A711 /* Podfile */; };
+		8B2192911DA64904003F6386 /* VWCatalogoPruebasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2192901DA64903003F6386 /* VWCatalogoPruebasModel.swift */; };
+		8B2192931DA64ABE003F6386 /* VWCatalogoPruebasParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2192921DA64ABE003F6386 /* VWCatalogoPruebasParser.swift */; };
+		8B2192951DA64DD7003F6386 /* VWCatalogoPruebasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2192941DA64DD7003F6386 /* VWCatalogoPruebasTableViewController.swift */; };
+		8B2192971DA64DED003F6386 /* VWCatalogoCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2192961DA64DED003F6386 /* VWCatalogoCustomCell.swift */; };
+		8B2192991DA64E05003F6386 /* VWDetalleCatalogoPruebasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2192981DA64E05003F6386 /* VWDetalleCatalogoPruebasViewController.swift */; };
+		8B2CC8B61DAB8AEB00F33DE3 /* VWGaleriaImagenesCochesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CC8B51DAB8AEB00F33DE3 /* VWGaleriaImagenesCochesViewController.swift */; };
+		8B2CC8BD1DAB8D2F00F33DE3 /* FOTO_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2CC8B81DAB8D2F00F33DE3 /* FOTO_0.png */; };
+		8B2CC8BE1DAB8D2F00F33DE3 /* FOTO_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2CC8B91DAB8D2F00F33DE3 /* FOTO_1.png */; };
+		8B2CC8BF1DAB8D2F00F33DE3 /* FOTO_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2CC8BA1DAB8D2F00F33DE3 /* FOTO_2.png */; };
+		8B2CC8C01DAB8D2F00F33DE3 /* FOTO_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2CC8BB1DAB8D2F00F33DE3 /* FOTO_3.png */; };
+		8B2CC8C11DAB8D2F00F33DE3 /* FOTO_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B2CC8BC1DAB8D2F00F33DE3 /* FOTO_4.png */; };
+		8B2CC8C41DAB988600F33DE3 /* VWOfertasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2CC8C31DAB988600F33DE3 /* VWOfertasModel.swift */; };
+		8B31A7371DA240A7006DE2E6 /* VWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31A7361DA240A7006DE2E6 /* VWLoginViewController.swift */; };
+		8B31A7391DA240C0006DE2E6 /* VWRegistroNuevoUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31A7381DA240C0006DE2E6 /* VWRegistroNuevoUsuarioViewController.swift */; };
+		8B31A73C1DA24118006DE2E6 /* VWConcesionarioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31A73B1DA24118006DE2E6 /* VWConcesionarioTableViewController.swift */; };
+		8B31A73E1DA24143006DE2E6 /* VWConcesionarioCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31A73D1DA24143006DE2E6 /* VWConcesionarioCustomCell.swift */; };
+		8B31A7401DA2415C006DE2E6 /* VWDetalleConcesionarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B31A73F1DA2415C006DE2E6 /* VWDetalleConcesionarioViewController.swift */; };
+		8B31A7461DA24391006DE2E6 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31A7421DA24391006DE2E6 /* Bolts.framework */; };
+		8B31A7471DA24391006DE2E6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31A7431DA24391006DE2E6 /* Parse.framework */; };
+		8B31A7491DA24391006DE2E6 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31A7451DA24391006DE2E6 /* ParseFacebookUtilsV4.framework */; };
+		8B31A74D1DA24449006DE2E6 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31A74B1DA24449006DE2E6 /* Kingfisher.framework */; };
+		8B31A74E1DA24449006DE2E6 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31A74C1DA24449006DE2E6 /* SwiftyJSON.framework */; };
+		8B31A7551DA24470006DE2E6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31A74F1DA24470006DE2E6 /* AudioToolbox.framework */; };
+		8B31A7561DA24470006DE2E6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31A7501DA24470006DE2E6 /* CFNetwork.framework */; };
+		8B31A7571DA24470006DE2E6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31A7511DA24470006DE2E6 /* CoreLocation.framework */; };
+		8B31A7581DA24470006DE2E6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31A7521DA24470006DE2E6 /* QuartzCore.framework */; };
+		8B31A7591DA24470006DE2E6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31A7531DA24470006DE2E6 /* StoreKit.framework */; };
+		8B31A75A1DA24470006DE2E6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31A7541DA24470006DE2E6 /* SystemConfiguration.framework */; };
+		8B31A75C1DA24476006DE2E6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31A75B1DA24476006DE2E6 /* libz.tbd */; };
+		8B31A75E1DA2447D006DE2E6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B31A75D1DA2447D006DE2E6 /* libsqlite3.tbd */; };
+		8B3F4E0F1DA4DE0600736E97 /* VWAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3F4E0E1DA4DE0600736E97 /* VWAPIManager.swift */; };
+		8B3F4E111DA4DE2200736E97 /* VWConstantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3F4E101DA4DE2200736E97 /* VWConstantes.swift */; };
+		8B3F4E131DA4DE4000736E97 /* VWUtilidades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3F4E121DA4DE4000736E97 /* VWUtilidades.swift */; };
+		8B3F4E161DA4E1FF00736E97 /* VWConcesionariosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3F4E151DA4E1FF00736E97 /* VWConcesionariosModel.swift */; };
+		8B3F4E191DA4E5F000736E97 /* VWConcesionariosParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3F4E181DA4E5F000736E97 /* VWConcesionariosParser.swift */; };
+		8B50A6C71DB4AFB6004DF69E /* VWOfertasParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B50A6C61DB4AFB6004DF69E /* VWOfertasParser.swift */; };
+		8B50A6C91DB4B05D004DF69E /* VWOfertasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B50A6C81DB4B05D004DF69E /* VWOfertasTableViewController.swift */; };
+		8B50A6CB1DB4B070004DF69E /* VWOfertasCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B50A6CA1DB4B070004DF69E /* VWOfertasCustomCell.swift */; };
+		8B50A6CD1DB4B081004DF69E /* VWDetalleOfertasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B50A6CC1DB4B081004DF69E /* VWDetalleOfertasViewController.swift */; };
+		8B50A6D01DB4CFC4004DF69E /* VWPostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B50A6CF1DB4CFC4004DF69E /* VWPostImageViewController.swift */; };
+		8B59D1CE1DB6064600D5205B /* FacebookSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8B59D1C71DB6064600D5205B /* FacebookSDKStrings.bundle */; };
+		8B59D1CF1DB6064600D5205B /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B59D1C81DB6064600D5205B /* FBAudienceNetwork.framework */; };
+		8B59D1D01DB6064600D5205B /* FBNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B59D1C91DB6064600D5205B /* FBNotifications.framework */; };
+		8B59D1D11DB6064600D5205B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B59D1CA1DB6064600D5205B /* FBSDKCoreKit.framework */; };
+		8B59D1D21DB6064600D5205B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B59D1CB1DB6064600D5205B /* FBSDKLoginKit.framework */; };
+		8B59D1D31DB6064600D5205B /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B59D1CC1DB6064600D5205B /* FBSDKMessengerShareKit.framework */; };
+		8B59D1D41DB6064600D5205B /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B59D1CD1DB6064600D5205B /* FBSDKShareKit.framework */; };
+		8B59D1D71DB6240400D5205B /* VWEditarPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B59D1D61DB6240400D5205B /* VWEditarPerfilViewController.swift */; };
+		8B6160261DB759260021EA96 /* VWUsersParseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6160251DB759260021EA96 /* VWUsersParseTableViewController.swift */; };
+		8B6160281DB75CB90021EA96 /* VWUserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6160271DB75CB90021EA96 /* VWUserDataModel.swift */; };
 		F8512C3653BD74A418C7A1EA /* Pods_App_VolksWagenFinal_CICE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3175BDC361A3B9CE62994AD6 /* Pods_App_VolksWagenFinal_CICE.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		090145ED1DB6083C00CC90EB /* FacebookSDKStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKStrings.bundle; sourceTree = "<group>"; };
-		090145EE1DB6083C00CC90EB /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
-		090145EF1DB6083C00CC90EB /* FBNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBNotifications.framework; sourceTree = "<group>"; };
-		090145F01DB6083C00CC90EB /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		090145F11DB6083C00CC90EB /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		090145F21DB6083C00CC90EB /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
-		090145F31DB6083C00CC90EB /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
-		090145FC1DB60F6200CC90EB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		090145FE1DB6241D00CC90EB /* WWEditarPerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWEditarPerfilViewController.swift; sourceTree = "<group>"; };
-		09258FA31DA4DE1200299377 /* WWApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWApiManager.swift; sourceTree = "<group>"; };
-		09258FA51DA4DE2500299377 /* WWConstantes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWConstantes.swift; sourceTree = "<group>"; };
-		09258FA71DA4DE4200299377 /* WWUtilidades.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWUtilidades.swift; sourceTree = "<group>"; };
-		09258FAA1DA4E22600299377 /* WWConcesionariosModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWConcesionariosModel.swift; sourceTree = "<group>"; };
-		09258FAF1DA4E62100299377 /* WWConcesionariosParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWConcesionariosParser.swift; sourceTree = "<group>"; };
-		093DE3131DA243E600CE4F32 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		093DE3141DA243E600CE4F32 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		093DE3161DA243E600CE4F32 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
-		093DE3371DA244EC00CE4F32 /* WWConcesionarioTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWConcesionarioTableViewController.swift; path = "App_VolksWagenFinal-/WWConcesionarioTableViewController.swift"; sourceTree = "<group>"; };
-		093DE3381DA244EC00CE4F32 /* WWConcesoniarioCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWConcesoniarioCustomCell.swift; path = "App_VolksWagenFinal-/WWConcesoniarioCustomCell.swift"; sourceTree = "<group>"; };
-		093DE3391DA244EC00CE4F32 /* WWDetalleConcesaionarioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWDetalleConcesaionarioViewController.swift; path = "App_VolksWagenFinal-/WWDetalleConcesaionarioViewController.swift"; sourceTree = "<group>"; };
-		093DE33A1DA244EC00CE4F32 /* WWLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWLoginViewController.swift; path = "App_VolksWagenFinal-/WWLoginViewController.swift"; sourceTree = "<group>"; };
-		093DE33B1DA244EC00CE4F32 /* WWRegistroNuevoUsuarioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWRegistroNuevoUsuarioViewController.swift; path = "App_VolksWagenFinal-/WWRegistroNuevoUsuarioViewController.swift"; sourceTree = "<group>"; };
-		093DE3411DA2453900CE4F32 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = "../../../../../../../Users/cice/Library/Developer/Xcode/DerivedData/App_VolksWagenFinal_CICE-akvczzgankzowdcnmypgcqvtfpbf/Build/Products/Debug-iphoneos/Kingfisher/Kingfisher.framework"; sourceTree = "<group>"; };
-		093DE3421DA2453900CE4F32 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../../../../Users/cice/Library/Developer/Xcode/DerivedData/App_VolksWagenFinal_CICE-akvczzgankzowdcnmypgcqvtfpbf/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
-		093DE3451DA2454600CE4F32 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		093DE3471DA2455000CE4F32 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		093DE3491DA2455B00CE4F32 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		093DE34B1DA2456D00CE4F32 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		093DE34D1DA2457600CE4F32 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		093DE34F1DA2458000CE4F32 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		093DE3511DA245B100CE4F32 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		093DE3531DA245BB00CE4F32 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		093DE3551DA25A0B00CE4F32 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		09BD5D761DB4AFDB00BC43B3 /* VWOfertasParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWOfertasParser.swift; sourceTree = "<group>"; };
-		09BD5D781DB4B0EC00BC43B3 /* WWOfertasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWOfertasTableViewController.swift; sourceTree = "<group>"; };
-		09BD5D7A1DB4B10500BC43B3 /* WWOfertasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWOfertasTableViewCell.swift; sourceTree = "<group>"; };
-		09BD5D7C1DB4B11C00BC43B3 /* WWOfertasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWOfertasViewController.swift; sourceTree = "<group>"; };
-		09BD5D7E1DB4B65100BC43B3 /* QR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QR.png; sourceTree = "<group>"; };
-		09BD5D811DB4D07A00BC43B3 /* placeHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeHolder.png; sourceTree = "<group>"; };
-		09BD5D831DB4D09400BC43B3 /* WWPostImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWPostImageViewController.swift; sourceTree = "<group>"; };
-		09E593041DA649870097481E /* WWCatalogoPruebas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCatalogoPruebas.swift; sourceTree = "<group>"; };
-		09E593061DA64AC40097481E /* WWCatalogoPruebasParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCatalogoPruebasParser.swift; sourceTree = "<group>"; };
-		09E593081DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCatalogoPruebasTableViewController.swift; sourceTree = "<group>"; };
-		09E5930A1DA64DFD0097481E /* WWCatalogoCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCatalogoCustomCell.swift; sourceTree = "<group>"; };
-		09E5930C1DA64E120097481E /* WWCatalogoPruebasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCatalogoPruebasViewController.swift; sourceTree = "<group>"; };
-		09EA6AA01DAB8AEB00C09A76 /* WWGaleriaImagenesCochesViewControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWGaleriaImagenesCochesViewControllerViewController.swift; sourceTree = "<group>"; };
-		09EA6AA31DAB8DB200C09A76 /* FOTO_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FOTO_0.png; sourceTree = "<group>"; };
-		09EA6AA41DAB8DB200C09A76 /* FOTO_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FOTO_1.png; sourceTree = "<group>"; };
-		09EA6AA51DAB8DB200C09A76 /* FOTO_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FOTO_2.png; sourceTree = "<group>"; };
-		09EA6AA61DAB8DB200C09A76 /* FOTO_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FOTO_3.png; sourceTree = "<group>"; };
-		09EA6AA71DAB8DB200C09A76 /* FOTO_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FOTO_4.png; sourceTree = "<group>"; };
-		09EA6AAD1DAB989100C09A76 /* WWOfertasModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWOfertasModel.swift; sourceTree = "<group>"; };
+		0915B0AA1DBDEFB7006558E6 /* VWMuroSeguidosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWMuroSeguidosTableViewController.swift; sourceTree = "<group>"; };
+		0915B0AC1DBDEFE1006558E6 /* VWMuroCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWMuroCustomCell.swift; sourceTree = "<group>"; };
 		0D37B9F291860F57F8A36A7C /* Pods-App_VolksWagenFinal_CICE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App_VolksWagenFinal_CICE.release.xcconfig"; path = "Pods/Target Support Files/Pods-App_VolksWagenFinal_CICE/Pods-App_VolksWagenFinal_CICE.release.xcconfig"; sourceTree = "<group>"; };
 		3175BDC361A3B9CE62994AD6 /* Pods_App_VolksWagenFinal_CICE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_VolksWagenFinal_CICE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B3607A1DA11B0B00E3A711 /* App_VolksWagenFinal_CICE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_VolksWagenFinal_CICE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B3607D1DA11B0D00E3A711 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63B360821DA11B0D00E3A711 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63B360841DA11B0D00E3A711 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63B360871DA11B0D00E3A711 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63B360891DA11B0D00E3A711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63B3608F1DA11E3700E3A711 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6D9A910CC8754F2E051C17BA /* Pods-App_VolksWagenFinal_CICE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App_VolksWagenFinal_CICE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App_VolksWagenFinal_CICE/Pods-App_VolksWagenFinal_CICE.debug.xcconfig"; sourceTree = "<group>"; };
+		8B2192901DA64903003F6386 /* VWCatalogoPruebasModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWCatalogoPruebasModel.swift; sourceTree = "<group>"; };
+		8B2192921DA64ABE003F6386 /* VWCatalogoPruebasParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWCatalogoPruebasParser.swift; sourceTree = "<group>"; };
+		8B2192941DA64DD7003F6386 /* VWCatalogoPruebasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWCatalogoPruebasTableViewController.swift; sourceTree = "<group>"; };
+		8B2192961DA64DED003F6386 /* VWCatalogoCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWCatalogoCustomCell.swift; sourceTree = "<group>"; };
+		8B2192981DA64E05003F6386 /* VWDetalleCatalogoPruebasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWDetalleCatalogoPruebasViewController.swift; sourceTree = "<group>"; };
+		8B2CC8B51DAB8AEB00F33DE3 /* VWGaleriaImagenesCochesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWGaleriaImagenesCochesViewController.swift; sourceTree = "<group>"; };
+		8B2CC8B81DAB8D2F00F33DE3 /* FOTO_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FOTO_0.png; sourceTree = "<group>"; };
+		8B2CC8B91DAB8D2F00F33DE3 /* FOTO_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FOTO_1.png; sourceTree = "<group>"; };
+		8B2CC8BA1DAB8D2F00F33DE3 /* FOTO_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FOTO_2.png; sourceTree = "<group>"; };
+		8B2CC8BB1DAB8D2F00F33DE3 /* FOTO_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FOTO_3.png; sourceTree = "<group>"; };
+		8B2CC8BC1DAB8D2F00F33DE3 /* FOTO_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FOTO_4.png; sourceTree = "<group>"; };
+		8B2CC8C31DAB988600F33DE3 /* VWOfertasModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWOfertasModel.swift; sourceTree = "<group>"; };
+		8B31A7361DA240A7006DE2E6 /* VWLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWLoginViewController.swift; sourceTree = "<group>"; };
+		8B31A7381DA240C0006DE2E6 /* VWRegistroNuevoUsuarioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWRegistroNuevoUsuarioViewController.swift; sourceTree = "<group>"; };
+		8B31A73B1DA24118006DE2E6 /* VWConcesionarioTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWConcesionarioTableViewController.swift; sourceTree = "<group>"; };
+		8B31A73D1DA24143006DE2E6 /* VWConcesionarioCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWConcesionarioCustomCell.swift; sourceTree = "<group>"; };
+		8B31A73F1DA2415C006DE2E6 /* VWDetalleConcesionarioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWDetalleConcesionarioViewController.swift; sourceTree = "<group>"; };
+		8B31A7421DA24391006DE2E6 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		8B31A7431DA24391006DE2E6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		8B31A7451DA24391006DE2E6 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		8B31A74B1DA24449006DE2E6 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = "../../../../../../../../Users/formador/Library/Developer/Xcode/DerivedData/App_VolksWagenFinal_CICE-audthiyjxpurjmdnvkdkeztocgks/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework"; sourceTree = "<group>"; };
+		8B31A74C1DA24449006DE2E6 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../../../../../Users/formador/Library/Developer/Xcode/DerivedData/App_VolksWagenFinal_CICE-audthiyjxpurjmdnvkdkeztocgks/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		8B31A74F1DA24470006DE2E6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8B31A7501DA24470006DE2E6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8B31A7511DA24470006DE2E6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8B31A7521DA24470006DE2E6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8B31A7531DA24470006DE2E6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		8B31A7541DA24470006DE2E6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8B31A75B1DA24476006DE2E6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		8B31A75D1DA2447D006DE2E6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		8B3F4E0E1DA4DE0600736E97 /* VWAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWAPIManager.swift; sourceTree = "<group>"; };
+		8B3F4E101DA4DE2200736E97 /* VWConstantes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWConstantes.swift; sourceTree = "<group>"; };
+		8B3F4E121DA4DE4000736E97 /* VWUtilidades.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWUtilidades.swift; sourceTree = "<group>"; };
+		8B3F4E151DA4E1FF00736E97 /* VWConcesionariosModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWConcesionariosModel.swift; sourceTree = "<group>"; };
+		8B3F4E181DA4E5F000736E97 /* VWConcesionariosParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWConcesionariosParser.swift; sourceTree = "<group>"; };
+		8B50A6C61DB4AFB6004DF69E /* VWOfertasParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWOfertasParser.swift; sourceTree = "<group>"; };
+		8B50A6C81DB4B05D004DF69E /* VWOfertasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWOfertasTableViewController.swift; sourceTree = "<group>"; };
+		8B50A6CA1DB4B070004DF69E /* VWOfertasCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWOfertasCustomCell.swift; sourceTree = "<group>"; };
+		8B50A6CC1DB4B081004DF69E /* VWDetalleOfertasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWDetalleOfertasViewController.swift; sourceTree = "<group>"; };
+		8B50A6CF1DB4CFC4004DF69E /* VWPostImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWPostImageViewController.swift; sourceTree = "<group>"; };
+		8B59D1C71DB6064600D5205B /* FacebookSDKStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKStrings.bundle; sourceTree = "<group>"; };
+		8B59D1C81DB6064600D5205B /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		8B59D1C91DB6064600D5205B /* FBNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBNotifications.framework; sourceTree = "<group>"; };
+		8B59D1CA1DB6064600D5205B /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		8B59D1CB1DB6064600D5205B /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		8B59D1CC1DB6064600D5205B /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		8B59D1CD1DB6064600D5205B /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		8B59D1D61DB6240400D5205B /* VWEditarPerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWEditarPerfilViewController.swift; sourceTree = "<group>"; };
+		8B6160251DB759260021EA96 /* VWUsersParseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWUsersParseTableViewController.swift; sourceTree = "<group>"; };
+		8B6160271DB75CB90021EA96 /* VWUserDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VWUserDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,140 +137,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				093DE3541DA245BB00CE4F32 /* libz.tbd in Frameworks */,
-				093DE3521DA245B100CE4F32 /* libsqlite3.tbd in Frameworks */,
-				093DE3501DA2458000CE4F32 /* SystemConfiguration.framework in Frameworks */,
-				093DE34E1DA2457600CE4F32 /* StoreKit.framework in Frameworks */,
-				093DE34C1DA2456D00CE4F32 /* QuartzCore.framework in Frameworks */,
-				093DE34A1DA2455B00CE4F32 /* CoreLocation.framework in Frameworks */,
-				090145F61DB6083C00CC90EB /* FBNotifications.framework in Frameworks */,
-				090145F71DB6083C00CC90EB /* FBSDKCoreKit.framework in Frameworks */,
-				093DE3481DA2455000CE4F32 /* CFNetwork.framework in Frameworks */,
-				090145F51DB6083C00CC90EB /* FBAudienceNetwork.framework in Frameworks */,
-				093DE3461DA2454600CE4F32 /* AudioToolbox.framework in Frameworks */,
-				093DE3431DA2453900CE4F32 /* Kingfisher.framework in Frameworks */,
-				090145F91DB6083C00CC90EB /* FBSDKMessengerShareKit.framework in Frameworks */,
-				093DE3441DA2453900CE4F32 /* SwiftyJSON.framework in Frameworks */,
-				090145F81DB6083C00CC90EB /* FBSDKLoginKit.framework in Frameworks */,
+				8B31A75E1DA2447D006DE2E6 /* libsqlite3.tbd in Frameworks */,
+				8B31A75C1DA24476006DE2E6 /* libz.tbd in Frameworks */,
+				8B31A7551DA24470006DE2E6 /* AudioToolbox.framework in Frameworks */,
+				8B31A7561DA24470006DE2E6 /* CFNetwork.framework in Frameworks */,
+				8B31A7571DA24470006DE2E6 /* CoreLocation.framework in Frameworks */,
+				8B31A7581DA24470006DE2E6 /* QuartzCore.framework in Frameworks */,
+				8B59D1D01DB6064600D5205B /* FBNotifications.framework in Frameworks */,
+				8B59D1D11DB6064600D5205B /* FBSDKCoreKit.framework in Frameworks */,
+				8B31A7591DA24470006DE2E6 /* StoreKit.framework in Frameworks */,
+				8B59D1CF1DB6064600D5205B /* FBAudienceNetwork.framework in Frameworks */,
+				8B31A75A1DA24470006DE2E6 /* SystemConfiguration.framework in Frameworks */,
+				8B31A74D1DA24449006DE2E6 /* Kingfisher.framework in Frameworks */,
+				8B59D1D31DB6064600D5205B /* FBSDKMessengerShareKit.framework in Frameworks */,
+				8B31A74E1DA24449006DE2E6 /* SwiftyJSON.framework in Frameworks */,
+				8B59D1D21DB6064600D5205B /* FBSDKLoginKit.framework in Frameworks */,
 				F8512C3653BD74A418C7A1EA /* Pods_App_VolksWagenFinal_CICE.framework in Frameworks */,
-				093DE3181DA243E600CE4F32 /* Parse.framework in Frameworks */,
-				090145FA1DB6083C00CC90EB /* FBSDKShareKit.framework in Frameworks */,
-				093DE3171DA243E600CE4F32 /* Bolts.framework in Frameworks */,
-				093DE31A1DA243E600CE4F32 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				8B31A7471DA24391006DE2E6 /* Parse.framework in Frameworks */,
+				8B59D1D41DB6064600D5205B /* FBSDKShareKit.framework in Frameworks */,
+				8B31A7461DA24391006DE2E6 /* Bolts.framework in Frameworks */,
+				8B31A7491DA24391006DE2E6 /* ParseFacebookUtilsV4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		090145FB1DB6084E00CC90EB /* FRAMEWORK/FB */ = {
-			isa = PBXGroup;
-			children = (
-				090145ED1DB6083C00CC90EB /* FacebookSDKStrings.bundle */,
-				090145EE1DB6083C00CC90EB /* FBAudienceNetwork.framework */,
-				090145EF1DB6083C00CC90EB /* FBNotifications.framework */,
-				090145F01DB6083C00CC90EB /* FBSDKCoreKit.framework */,
-				090145F11DB6083C00CC90EB /* FBSDKLoginKit.framework */,
-				090145F21DB6083C00CC90EB /* FBSDKMessengerShareKit.framework */,
-				090145F31DB6083C00CC90EB /* FBSDKShareKit.framework */,
-			);
-			name = FRAMEWORK/FB;
-			sourceTree = "<group>";
-		};
-		09258FA91DA4DE7500299377 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				09258FA31DA4DE1200299377 /* WWApiManager.swift */,
-				09258FA51DA4DE2500299377 /* WWConstantes.swift */,
-				09258FA71DA4DE4200299377 /* WWUtilidades.swift */,
-			);
-			name = API;
-			sourceTree = "<group>";
-		};
-		09258FAC1DA4E54000299377 /* MODELOS */ = {
-			isa = PBXGroup;
-			children = (
-				09258FAA1DA4E22600299377 /* WWConcesionariosModel.swift */,
-				09E593041DA649870097481E /* WWCatalogoPruebas.swift */,
-				09EA6AAD1DAB989100C09A76 /* WWOfertasModel.swift */,
-			);
-			name = MODELOS;
-			sourceTree = "<group>";
-		};
-		09258FB11DA4E62800299377 /* PARSEOS */ = {
-			isa = PBXGroup;
-			children = (
-				09BD5D761DB4AFDB00BC43B3 /* VWOfertasParser.swift */,
-				09258FAF1DA4E62100299377 /* WWConcesionariosParser.swift */,
-				09E593061DA64AC40097481E /* WWCatalogoPruebasParser.swift */,
-			);
-			name = PARSEOS;
-			sourceTree = "<group>";
-		};
-		093DE31B1DA2441C00CE4F32 /* FRAMEWORK/PARSE */ = {
-			isa = PBXGroup;
-			children = (
-				093DE3131DA243E600CE4F32 /* Bolts.framework */,
-				093DE3141DA243E600CE4F32 /* Parse.framework */,
-				093DE3161DA243E600CE4F32 /* ParseFacebookUtilsV4.framework */,
-			);
-			name = FRAMEWORK/PARSE;
-			sourceTree = "<group>";
-		};
-		093DE3231DA2443D00CE4F32 /* VC_LOGIN_REGISTRO */ = {
-			isa = PBXGroup;
-			children = (
-				093DE33A1DA244EC00CE4F32 /* WWLoginViewController.swift */,
-				090145FE1DB6241D00CC90EB /* WWEditarPerfilViewController.swift */,
-				093DE33B1DA244EC00CE4F32 /* WWRegistroNuevoUsuarioViewController.swift */,
-			);
-			name = VC_LOGIN_REGISTRO;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		093DE3291DA2444500CE4F32 /* VC_CONCESIONARIO */ = {
-			isa = PBXGroup;
-			children = (
-				093DE3371DA244EC00CE4F32 /* WWConcesionarioTableViewController.swift */,
-				093DE3381DA244EC00CE4F32 /* WWConcesoniarioCustomCell.swift */,
-				093DE3391DA244EC00CE4F32 /* WWDetalleConcesaionarioViewController.swift */,
-			);
-			name = VC_CONCESIONARIO;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		09BD5D801DB4B6B800BC43B3 /* VC_OFERTAS */ = {
-			isa = PBXGroup;
-			children = (
-				09BD5D781DB4B0EC00BC43B3 /* WWOfertasTableViewController.swift */,
-				09BD5D7A1DB4B10500BC43B3 /* WWOfertasTableViewCell.swift */,
-				09BD5D7C1DB4B11C00BC43B3 /* WWOfertasViewController.swift */,
-			);
-			name = VC_OFERTAS;
-			sourceTree = "<group>";
-		};
-		09E5930E1DA64ED50097481E /* VC_CATALOGO_PRUEBAS */ = {
-			isa = PBXGroup;
-			children = (
-				09E593081DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift */,
-				09E5930A1DA64DFD0097481E /* WWCatalogoCustomCell.swift */,
-				09E5930C1DA64E120097481E /* WWCatalogoPruebasViewController.swift */,
-			);
-			name = VC_CATALOGO_PRUEBAS;
-			sourceTree = "<group>";
-		};
-		09EA6AA21DAB8B0000C09A76 /* HELPERS */ = {
-			isa = PBXGroup;
-			children = (
-				09EA6AA01DAB8AEB00C09A76 /* WWGaleriaImagenesCochesViewControllerViewController.swift */,
-			);
-			name = HELPERS;
-			sourceTree = "<group>";
-		};
 		63B360711DA11B0A00E3A711 = {
 			isa = PBXGroup;
 			children = (
-				090145FC1DB60F6200CC90EB /* Default-568h@2x.png */,
 				63B3608F1DA11E3700E3A711 /* Podfile */,
 				63B3607C1DA11B0D00E3A711 /* App_VolksWagenFinal- */,
 				63B3607B1DA11B0B00E3A711 /* Products */,
@@ -288,46 +185,166 @@
 		63B3607C1DA11B0D00E3A711 /* App_VolksWagenFinal- */ = {
 			isa = PBXGroup;
 			children = (
-				090145FB1DB6084E00CC90EB /* FRAMEWORK/FB */,
-				093DE31B1DA2441C00CE4F32 /* FRAMEWORK/PARSE */,
-				09BD5D811DB4D07A00BC43B3 /* placeHolder.png */,
-				09BD5D7E1DB4B65100BC43B3 /* QR.png */,
-				09EA6AA31DAB8DB200C09A76 /* FOTO_0.png */,
-				09EA6AA41DAB8DB200C09A76 /* FOTO_1.png */,
-				09EA6AA51DAB8DB200C09A76 /* FOTO_2.png */,
-				09EA6AA61DAB8DB200C09A76 /* FOTO_3.png */,
-				09EA6AA71DAB8DB200C09A76 /* FOTO_4.png */,
+				8B59D1D51DB6065300D5205B /* FRAMEWORK FACEBOOK */,
+				8B31A74A1DA24395006DE2E6 /* FRAMEWORK/PARSE */,
 				63B3607D1DA11B0D00E3A711 /* AppDelegate.swift */,
-				09BD5D831DB4D09400BC43B3 /* WWPostImageViewController.swift */,
-				09BD5D801DB4B6B800BC43B3 /* VC_OFERTAS */,
-				09EA6AA21DAB8B0000C09A76 /* HELPERS */,
-				09258FB11DA4E62800299377 /* PARSEOS */,
-				09E5930E1DA64ED50097481E /* VC_CATALOGO_PRUEBAS */,
-				093DE3291DA2444500CE4F32 /* VC_CONCESIONARIO */,
-				093DE3231DA2443D00CE4F32 /* VC_LOGIN_REGISTRO */,
-				09258FAC1DA4E54000299377 /* MODELOS */,
-				09258FA91DA4DE7500299377 /* API */,
+				8B6160241DB758DC0021EA96 /* VC_POST/USERS/INFOPOST */,
+				8B50A6CE1DB4B085004DF69E /* VC_OFERTAS */,
+				8B2CC8C21DAB8D3300F33DE3 /* IMAGES */,
+				8B2CC8B71DAB8AF300F33DE3 /* HELPERS */,
+				8B21929A1DA64E2F003F6386 /* VC_CATALOGO */,
+				8B3F4E1A1DA4E5F500736E97 /* PARSERS */,
+				8B3F4E171DA4E4DA00736E97 /* MODELOS */,
+				8B3F4E141DA4DE6700736E97 /* API */,
+				8B31A7411DA24188006DE2E6 /* VC_CONCESIONARIO */,
+				8B31A73A1DA240E4006DE2E6 /* VC_LOGIN/REGISTRO */,
+				63B360811DA11B0D00E3A711 /* Main.storyboard */,
 				63B360841DA11B0D00E3A711 /* Assets.xcassets */,
-				093DE3551DA25A0B00CE4F32 /* Main.storyboard */,
 				63B360861DA11B0D00E3A711 /* LaunchScreen.storyboard */,
 				63B360891DA11B0D00E3A711 /* Info.plist */,
 			);
 			path = "App_VolksWagenFinal-";
 			sourceTree = "<group>";
 		};
+		8B21929A1DA64E2F003F6386 /* VC_CATALOGO */ = {
+			isa = PBXGroup;
+			children = (
+				8B2192941DA64DD7003F6386 /* VWCatalogoPruebasTableViewController.swift */,
+				8B2192961DA64DED003F6386 /* VWCatalogoCustomCell.swift */,
+				8B2192981DA64E05003F6386 /* VWDetalleCatalogoPruebasViewController.swift */,
+			);
+			name = VC_CATALOGO;
+			sourceTree = "<group>";
+		};
+		8B2CC8B71DAB8AF300F33DE3 /* HELPERS */ = {
+			isa = PBXGroup;
+			children = (
+				8B2CC8B51DAB8AEB00F33DE3 /* VWGaleriaImagenesCochesViewController.swift */,
+			);
+			name = HELPERS;
+			sourceTree = "<group>";
+		};
+		8B2CC8C21DAB8D3300F33DE3 /* IMAGES */ = {
+			isa = PBXGroup;
+			children = (
+				8B2CC8B81DAB8D2F00F33DE3 /* FOTO_0.png */,
+				8B2CC8B91DAB8D2F00F33DE3 /* FOTO_1.png */,
+				8B2CC8BA1DAB8D2F00F33DE3 /* FOTO_2.png */,
+				8B2CC8BB1DAB8D2F00F33DE3 /* FOTO_3.png */,
+				8B2CC8BC1DAB8D2F00F33DE3 /* FOTO_4.png */,
+			);
+			name = IMAGES;
+			sourceTree = "<group>";
+		};
+		8B31A73A1DA240E4006DE2E6 /* VC_LOGIN/REGISTRO */ = {
+			isa = PBXGroup;
+			children = (
+				8B31A7361DA240A7006DE2E6 /* VWLoginViewController.swift */,
+				8B31A7381DA240C0006DE2E6 /* VWRegistroNuevoUsuarioViewController.swift */,
+				8B59D1D61DB6240400D5205B /* VWEditarPerfilViewController.swift */,
+			);
+			name = VC_LOGIN/REGISTRO;
+			sourceTree = "<group>";
+		};
+		8B31A7411DA24188006DE2E6 /* VC_CONCESIONARIO */ = {
+			isa = PBXGroup;
+			children = (
+				8B31A73B1DA24118006DE2E6 /* VWConcesionarioTableViewController.swift */,
+				8B31A73D1DA24143006DE2E6 /* VWConcesionarioCustomCell.swift */,
+				8B31A73F1DA2415C006DE2E6 /* VWDetalleConcesionarioViewController.swift */,
+			);
+			name = VC_CONCESIONARIO;
+			sourceTree = "<group>";
+		};
+		8B31A74A1DA24395006DE2E6 /* FRAMEWORK/PARSE */ = {
+			isa = PBXGroup;
+			children = (
+				8B31A7421DA24391006DE2E6 /* Bolts.framework */,
+				8B31A7431DA24391006DE2E6 /* Parse.framework */,
+				8B31A7451DA24391006DE2E6 /* ParseFacebookUtilsV4.framework */,
+			);
+			name = FRAMEWORK/PARSE;
+			sourceTree = "<group>";
+		};
+		8B3F4E141DA4DE6700736E97 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8B3F4E101DA4DE2200736E97 /* VWConstantes.swift */,
+				8B3F4E121DA4DE4000736E97 /* VWUtilidades.swift */,
+				8B3F4E0E1DA4DE0600736E97 /* VWAPIManager.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		8B3F4E171DA4E4DA00736E97 /* MODELOS */ = {
+			isa = PBXGroup;
+			children = (
+				8B3F4E151DA4E1FF00736E97 /* VWConcesionariosModel.swift */,
+				8B2192901DA64903003F6386 /* VWCatalogoPruebasModel.swift */,
+				8B2CC8C31DAB988600F33DE3 /* VWOfertasModel.swift */,
+			);
+			name = MODELOS;
+			sourceTree = "<group>";
+		};
+		8B3F4E1A1DA4E5F500736E97 /* PARSERS */ = {
+			isa = PBXGroup;
+			children = (
+				8B50A6C61DB4AFB6004DF69E /* VWOfertasParser.swift */,
+				8B3F4E181DA4E5F000736E97 /* VWConcesionariosParser.swift */,
+				8B2192921DA64ABE003F6386 /* VWCatalogoPruebasParser.swift */,
+			);
+			name = PARSERS;
+			sourceTree = "<group>";
+		};
+		8B50A6CE1DB4B085004DF69E /* VC_OFERTAS */ = {
+			isa = PBXGroup;
+			children = (
+				8B50A6C81DB4B05D004DF69E /* VWOfertasTableViewController.swift */,
+				8B50A6CA1DB4B070004DF69E /* VWOfertasCustomCell.swift */,
+				8B50A6CC1DB4B081004DF69E /* VWDetalleOfertasViewController.swift */,
+			);
+			name = VC_OFERTAS;
+			sourceTree = "<group>";
+		};
+		8B59D1D51DB6065300D5205B /* FRAMEWORK FACEBOOK */ = {
+			isa = PBXGroup;
+			children = (
+				8B59D1C71DB6064600D5205B /* FacebookSDKStrings.bundle */,
+				8B59D1C81DB6064600D5205B /* FBAudienceNetwork.framework */,
+				8B59D1C91DB6064600D5205B /* FBNotifications.framework */,
+				8B59D1CA1DB6064600D5205B /* FBSDKCoreKit.framework */,
+				8B59D1CB1DB6064600D5205B /* FBSDKLoginKit.framework */,
+				8B59D1CC1DB6064600D5205B /* FBSDKMessengerShareKit.framework */,
+				8B59D1CD1DB6064600D5205B /* FBSDKShareKit.framework */,
+			);
+			name = "FRAMEWORK FACEBOOK";
+			sourceTree = "<group>";
+		};
+		8B6160241DB758DC0021EA96 /* VC_POST/USERS/INFOPOST */ = {
+			isa = PBXGroup;
+			children = (
+				8B50A6CF1DB4CFC4004DF69E /* VWPostImageViewController.swift */,
+				8B6160251DB759260021EA96 /* VWUsersParseTableViewController.swift */,
+				8B6160271DB75CB90021EA96 /* VWUserDataModel.swift */,
+				0915B0AA1DBDEFB7006558E6 /* VWMuroSeguidosTableViewController.swift */,
+				0915B0AC1DBDEFE1006558E6 /* VWMuroCustomCell.swift */,
+			);
+			name = VC_POST/USERS/INFOPOST;
+			sourceTree = "<group>";
+		};
 		C64FEE302D71C8A7B354AF20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				093DE3531DA245BB00CE4F32 /* libz.tbd */,
-				093DE3511DA245B100CE4F32 /* libsqlite3.tbd */,
-				093DE34F1DA2458000CE4F32 /* SystemConfiguration.framework */,
-				093DE34D1DA2457600CE4F32 /* StoreKit.framework */,
-				093DE34B1DA2456D00CE4F32 /* QuartzCore.framework */,
-				093DE3491DA2455B00CE4F32 /* CoreLocation.framework */,
-				093DE3471DA2455000CE4F32 /* CFNetwork.framework */,
-				093DE3451DA2454600CE4F32 /* AudioToolbox.framework */,
-				093DE3411DA2453900CE4F32 /* Kingfisher.framework */,
-				093DE3421DA2453900CE4F32 /* SwiftyJSON.framework */,
+				8B31A75D1DA2447D006DE2E6 /* libsqlite3.tbd */,
+				8B31A75B1DA24476006DE2E6 /* libz.tbd */,
+				8B31A74F1DA24470006DE2E6 /* AudioToolbox.framework */,
+				8B31A7501DA24470006DE2E6 /* CFNetwork.framework */,
+				8B31A7511DA24470006DE2E6 /* CoreLocation.framework */,
+				8B31A7521DA24470006DE2E6 /* QuartzCore.framework */,
+				8B31A7531DA24470006DE2E6 /* StoreKit.framework */,
+				8B31A7541DA24470006DE2E6 /* SystemConfiguration.framework */,
+				8B31A74B1DA24449006DE2E6 /* Kingfisher.framework */,
+				8B31A74C1DA24449006DE2E6 /* SwiftyJSON.framework */,
 				3175BDC361A3B9CE62994AD6 /* Pods_App_VolksWagenFinal_CICE.framework */,
 			);
 			name = Frameworks;
@@ -371,16 +388,12 @@
 		63B360721DA11B0B00E3A711 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				KnownAssetTags = (
-					saltarTabBarController,
-				);
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = icologic;
 				TargetAttributes = {
 					63B360791DA11B0B00E3A711 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = NZ9BB45RRX;
 					};
 				};
 			};
@@ -407,19 +420,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09BD5D7F1DB4B65100BC43B3 /* QR.png in Resources */,
 				63B360881DA11B0D00E3A711 /* LaunchScreen.storyboard in Resources */,
-				09EA6AA91DAB8DB200C09A76 /* FOTO_1.png in Resources */,
-				090145F41DB6083C00CC90EB /* FacebookSDKStrings.bundle in Resources */,
-				09BD5D821DB4D07A00BC43B3 /* placeHolder.png in Resources */,
+				8B59D1CE1DB6064600D5205B /* FacebookSDKStrings.bundle in Resources */,
+				8B2CC8BE1DAB8D2F00F33DE3 /* FOTO_1.png in Resources */,
 				63B360851DA11B0D00E3A711 /* Assets.xcassets in Resources */,
-				09EA6AA81DAB8DB200C09A76 /* FOTO_0.png in Resources */,
-				09EA6AAC1DAB8DB200C09A76 /* FOTO_4.png in Resources */,
+				8B2CC8BD1DAB8D2F00F33DE3 /* FOTO_0.png in Resources */,
+				8B2CC8C11DAB8D2F00F33DE3 /* FOTO_4.png in Resources */,
 				63B360901DA11E3700E3A711 /* Podfile in Resources */,
-				090145FD1DB60F6200CC90EB /* Default-568h@2x.png in Resources */,
-				093DE3561DA25A0B00CE4F32 /* Main.storyboard in Resources */,
-				09EA6AAA1DAB8DB200C09A76 /* FOTO_2.png in Resources */,
-				09EA6AAB1DAB8DB200C09A76 /* FOTO_3.png in Resources */,
+				63B360831DA11B0D00E3A711 /* Main.storyboard in Resources */,
+				8B2CC8BF1DAB8D2F00F33DE3 /* FOTO_2.png in Resources */,
+				8B2CC8C01DAB8D2F00F33DE3 /* FOTO_3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,36 +488,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09E593051DA649870097481E /* WWCatalogoPruebas.swift in Sources */,
-				09BD5D771DB4AFDB00BC43B3 /* VWOfertasParser.swift in Sources */,
-				09BD5D841DB4D09400BC43B3 /* WWPostImageViewController.swift in Sources */,
-				093DE3401DA244EC00CE4F32 /* WWRegistroNuevoUsuarioViewController.swift in Sources */,
-				09258FA81DA4DE4200299377 /* WWUtilidades.swift in Sources */,
-				09258FAB1DA4E22600299377 /* WWConcesionariosModel.swift in Sources */,
-				09BD5D7B1DB4B10500BC43B3 /* WWOfertasTableViewCell.swift in Sources */,
-				09E5930B1DA64DFD0097481E /* WWCatalogoCustomCell.swift in Sources */,
-				093DE33C1DA244EC00CE4F32 /* WWConcesionarioTableViewController.swift in Sources */,
-				09EA6AA11DAB8AEB00C09A76 /* WWGaleriaImagenesCochesViewControllerViewController.swift in Sources */,
-				09BD5D7D1DB4B11C00BC43B3 /* WWOfertasViewController.swift in Sources */,
-				09258FB01DA4E62100299377 /* WWConcesionariosParser.swift in Sources */,
-				093DE33F1DA244EC00CE4F32 /* WWLoginViewController.swift in Sources */,
-				093DE33D1DA244EC00CE4F32 /* WWConcesoniarioCustomCell.swift in Sources */,
-				09EA6AAE1DAB989100C09A76 /* WWOfertasModel.swift in Sources */,
-				09E5930D1DA64E120097481E /* WWCatalogoPruebasViewController.swift in Sources */,
-				09258FA41DA4DE1200299377 /* WWApiManager.swift in Sources */,
-				090145FF1DB6241D00CC90EB /* WWEditarPerfilViewController.swift in Sources */,
-				09258FA61DA4DE2500299377 /* WWConstantes.swift in Sources */,
 				63B3607E1DA11B0D00E3A711 /* AppDelegate.swift in Sources */,
-				09E593071DA64AC40097481E /* WWCatalogoPruebasParser.swift in Sources */,
-				09E593091DA64DDD0097481E /* WWCatalogoPruebasTableViewController.swift in Sources */,
-				09BD5D791DB4B0EC00BC43B3 /* WWOfertasTableViewController.swift in Sources */,
-				093DE33E1DA244EC00CE4F32 /* WWDetalleConcesaionarioViewController.swift in Sources */,
+				8B50A6C91DB4B05D004DF69E /* VWOfertasTableViewController.swift in Sources */,
+				8B50A6C71DB4AFB6004DF69E /* VWOfertasParser.swift in Sources */,
+				8B31A73E1DA24143006DE2E6 /* VWConcesionarioCustomCell.swift in Sources */,
+				8B3F4E191DA4E5F000736E97 /* VWConcesionariosParser.swift in Sources */,
+				8B3F4E131DA4DE4000736E97 /* VWUtilidades.swift in Sources */,
+				8B3F4E0F1DA4DE0600736E97 /* VWAPIManager.swift in Sources */,
+				8B2192951DA64DD7003F6386 /* VWCatalogoPruebasTableViewController.swift in Sources */,
+				8B2192911DA64904003F6386 /* VWCatalogoPruebasModel.swift in Sources */,
+				0915B0AB1DBDEFB7006558E6 /* VWMuroSeguidosTableViewController.swift in Sources */,
+				8B50A6CB1DB4B070004DF69E /* VWOfertasCustomCell.swift in Sources */,
+				8B31A7401DA2415C006DE2E6 /* VWDetalleConcesionarioViewController.swift in Sources */,
+				0915B0AD1DBDEFE1006558E6 /* VWMuroCustomCell.swift in Sources */,
+				8B2CC8B61DAB8AEB00F33DE3 /* VWGaleriaImagenesCochesViewController.swift in Sources */,
+				8B6160261DB759260021EA96 /* VWUsersParseTableViewController.swift in Sources */,
+				8B59D1D71DB6240400D5205B /* VWEditarPerfilViewController.swift in Sources */,
+				8B2CC8C41DAB988600F33DE3 /* VWOfertasModel.swift in Sources */,
+				8B3F4E111DA4DE2200736E97 /* VWConstantes.swift in Sources */,
+				8B50A6D01DB4CFC4004DF69E /* VWPostImageViewController.swift in Sources */,
+				8B6160281DB75CB90021EA96 /* VWUserDataModel.swift in Sources */,
+				8B31A7371DA240A7006DE2E6 /* VWLoginViewController.swift in Sources */,
+				8B2192991DA64E05003F6386 /* VWDetalleCatalogoPruebasViewController.swift in Sources */,
+				8B50A6CD1DB4B081004DF69E /* VWDetalleOfertasViewController.swift in Sources */,
+				8B2192931DA64ABE003F6386 /* VWCatalogoPruebasParser.swift in Sources */,
+				8B2192971DA64DED003F6386 /* VWCatalogoCustomCell.swift in Sources */,
+				8B31A7391DA240C0006DE2E6 /* VWRegistroNuevoUsuarioViewController.swift in Sources */,
+				8B31A73C1DA24118006DE2E6 /* VWConcesionarioTableViewController.swift in Sources */,
+				8B3F4E161DA4E1FF00736E97 /* VWConcesionariosModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		63B360811DA11B0D00E3A711 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63B360821DA11B0D00E3A711 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		63B360861DA11B0D00E3A711 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -607,14 +629,13 @@
 			baseConfigurationReference = 6D9A910CC8754F2E051C17BA /* Pods-App_VolksWagenFinal_CICE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/App_VolksWagenFinal-",
 				);
 				INFOPLIST_FILE = "App_VolksWagenFinal-/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.icologic.App-VolksWagenFinal-CICE.cice";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icologic.App-VolksWagenFinal-CICE";
 				PRODUCT_NAME = App_VolksWagenFinal_CICE;
 			};
 			name = Debug;
@@ -624,14 +645,13 @@
 			baseConfigurationReference = 0D37B9F291860F57F8A36A7C /* Pods-App_VolksWagenFinal_CICE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/App_VolksWagenFinal-",
 				);
 				INFOPLIST_FILE = "App_VolksWagenFinal-/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.icologic.App-VolksWagenFinal-CICE.cice";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icologic.App-VolksWagenFinal-CICE";
 				PRODUCT_NAME = App_VolksWagenFinal_CICE;
 			};
 			name = Release;

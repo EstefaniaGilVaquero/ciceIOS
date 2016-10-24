@@ -10,13 +10,13 @@ import UIKit
 import SwiftyJSON
 
 class VWOfertasParser: NSObject {
-    func getOfertasModel(dataFromNetwork : NSData) -> [WWOfertasModel]{
+    func getOfertasModel(dataFromNetwork : NSData) -> [VWOfertasModel]{
         //1. creamos el array contenedor de datos
-        var arrayOfertasModel = [WWOfertasModel]()
+        var arrayOfertasModel = [VWOfertasModel]()
         //2. lectura del JSON
         let readableJSON = JSON(data: dataFromNetwork, options: .MutableContainers, error: nil)
         for index in 0...readableJSON.count - 1{
-            let ofertasModel = WWOfertasModel(pId: dimeInt(readableJSON[index], nombre: "id"),
+            let ofertasModel = VWOfertasModel(pId: dimeInt(readableJSON[index], nombre: "id"),
                                               pFechaInicio: dimeString(readableJSON[index],nombre: "fechaInicio"),
                                               pFechaFin: dimeString(readableJSON[index],nombre: "fechafin"),
                                               pNombre: dimeString(readableJSON[index],nombre: "nombre"),
