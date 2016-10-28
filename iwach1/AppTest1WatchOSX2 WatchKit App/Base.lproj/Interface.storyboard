@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AppTest1WatchOSX2_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Button" id="p4T-ya-r5b">
+                            <connections>
+                                <action selector="myBotonAction" destination="AgC-eL-Hgc" id="Xyz-Vg-ueI"/>
+                                <segue destination="9Rz-i6-rlK" kind="push" id="2Yy-bC-0Hg"/>
+                            </connections>
+                        </button>
+                        <switch width="1" alignment="left" value="YES" title="Switch" id="Sm1-Gu-7zv">
+                            <connections>
+                                <action selector="mySwitchAction:" destination="AgC-eL-Hgc" id="XNT-A6-kU7"/>
+                            </connections>
+                        </switch>
+                        <slider width="1" alignment="left" value="1" maximum="10" steps="10" id="r8G-fI-TQ0">
+                            <connections>
+                                <action selector="mySliderAction:" destination="AgC-eL-Hgc" id="BuP-90-MXZ"/>
+                            </connections>
+                        </slider>
+                        <label width="136" height="25.5" alignment="left" text="Label" id="zhn-s1-uTY"/>
+                    </items>
+                    <connections>
+                        <outlet property="myButton" destination="p4T-ya-r5b" id="t1l-zE-mkE"/>
+                        <outlet property="myLabel" destination="zhn-s1-uTY" id="qJr-Te-b6c"/>
+                        <outlet property="mySlider" destination="r8G-fI-TQ0" id="Ode-Xp-YcB"/>
+                        <outlet property="mySwitch" destination="Sm1-Gu-7zv" id="MCv-rv-lhz"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="347.5"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="pKG-5Y-vbQ">
+            <objects>
+                <controller id="9Rz-i6-rlK"/>
+            </objects>
+            <point key="canvasLocation" x="474" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="AppTest1WatchOSX2_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
