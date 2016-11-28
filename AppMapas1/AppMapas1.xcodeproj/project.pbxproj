@@ -97,6 +97,7 @@
 					091FF9DC1D4B3ADA002F03DC = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = NZ9BB45RRX;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -259,6 +260,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cice.AppMapas1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -273,6 +275,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cice.AppMapas1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -295,6 +298,7 @@
 				091FF9F11D4B3ADA002F03DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

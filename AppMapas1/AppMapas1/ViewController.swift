@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myInfoLBL: UILabel!
     
     
-    @IBAction func myShowMap(sender: AnyObject) {
+    @IBAction func myShowMap(_ sender: AnyObject) {
         
         //1 -> Creamos un punto en el mapa y este es nuestro centro del mapa
         let latitud : CLLocationDegrees = 40.389925
@@ -50,10 +50,10 @@ class ViewController: UIViewController {
         
     }
     
-    func actionGesture(gestureRecognizer : UIGestureRecognizer){
+    func actionGesture(_ gestureRecognizer : UIGestureRecognizer){
         
-        let puntoTocado = gestureRecognizer.locationInView(myPrimerMapa)
-        let nuevaCoordenada : CLLocationCoordinate2D = myPrimerMapa.convertPoint(puntoTocado, toCoordinateFromView: myPrimerMapa)
+        let puntoTocado = gestureRecognizer.location(in: myPrimerMapa)
+        let nuevaCoordenada : CLLocationCoordinate2D = myPrimerMapa.convert(puntoTocado, toCoordinateFrom: myPrimerMapa)
         let annotation = MKPointAnnotation()
         annotation.coordinate = nuevaCoordenada
         annotation.title = "Nuevo punto en el Mapa"
