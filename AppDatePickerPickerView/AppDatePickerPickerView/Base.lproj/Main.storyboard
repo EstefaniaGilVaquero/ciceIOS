@@ -1,7 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ucu-He-QXB">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="Ucu-He-QXB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,53 +19,56 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n8c-5n-0m3">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n8c-5n-0m3">
                                 <rect key="frame" x="20" y="107" width="280" height="166"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="166" id="Iu1-Sy-hoA"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo de Alimento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7q-x6-PvM">
-                                <rect key="frame" x="35" y="64" width="250" height="40"/>
+                                <rect key="frame" x="63" y="64" width="250" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="lFy-7d-4PF"/>
                                     <constraint firstAttribute="width" constant="250" id="vJ1-Lq-eHY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mozarella.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="asm-3F-7u1">
-                                <rect key="frame" x="20" y="305" width="280" height="128"/>
+                                <rect key="frame" x="48" y="404" width="280" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="dui-FB-42U"/>
                                     <constraint firstAttribute="height" constant="128" id="exI-2w-MOH"/>
                                 </constraints>
                             </imageView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1o-uX-aCq">
-                                <rect key="frame" x="0.0" y="441" width="320" height="127"/>
+                                <rect key="frame" x="28" y="540" width="320" height="127"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="127" id="Jvm-9W-pgM"/>
                                     <constraint firstAttribute="height" constant="127" id="bUP-q1-UQE"/>
                                 </constraints>
                             </pickerView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="o1o-uX-aCq" secondAttribute="bottom" id="15g-Le-UcI"/>
                             <constraint firstItem="T7q-x6-PvM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Ay-FU-vPg"/>
                             <constraint firstItem="o1o-uX-aCq" firstAttribute="top" secondItem="asm-3F-7u1" secondAttribute="bottom" constant="8" id="80u-D1-AO3"/>
-                            <constraint firstItem="n8c-5n-0m3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DN3-R7-GKl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n8c-5n-0m3" secondAttribute="trailing" constant="59" id="F0d-WA-53h"/>
                             <constraint firstItem="o1o-uX-aCq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FYR-S7-jrf"/>
                             <constraint firstItem="o1o-uX-aCq" firstAttribute="top" secondItem="asm-3F-7u1" secondAttribute="bottom" constant="8" id="HxL-MY-ZgQ"/>
-                            <constraint firstItem="asm-3F-7u1" firstAttribute="top" secondItem="n8c-5n-0m3" secondAttribute="bottom" constant="2" id="Kf5-BP-W1u"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="o1o-uX-aCq" secondAttribute="bottom" id="MvI-K0-YSo"/>
-                            <constraint firstItem="n8c-5n-0m3" firstAttribute="top" secondItem="T7q-x6-PvM" secondAttribute="bottom" constant="2" id="Opv-WQ-HZw"/>
                             <constraint firstItem="T7q-x6-PvM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="SuC-KS-kPj"/>
+                            <constraint firstItem="n8c-5n-0m3" firstAttribute="top" secondItem="T7q-x6-PvM" secondAttribute="bottom" constant="3" id="dFh-hN-ies"/>
+                            <constraint firstItem="n8c-5n-0m3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="pxe-Qa-Xzd"/>
                             <constraint firstItem="asm-3F-7u1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qDL-JW-Obg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="o1o-uX-aCq" secondAttribute="bottom" id="v0E-NC-0J8"/>
                             <constraint firstItem="o1o-uX-aCq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ybX-jD-WdA"/>
@@ -92,29 +101,33 @@
                         <viewControllerLayoutGuide type="bottom" id="LoD-Ly-l5w"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2ma-2K-YOi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="codigo postal de tu zona" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LbD-ck-LBu">
                                 <rect key="frame" x="28" y="125" width="265" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="prioridad de trabajo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="USg-Z5-Y98">
                                 <rect key="frame" x="28" y="169" width="265" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m8e-4o-TG4">
                                 <rect key="frame" x="20" y="214" width="273" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="localidad de madrid" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="USf-dA-KrQ">
                                 <rect key="frame" x="28" y="80" width="265" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="I4I-2H-U5G"/>
                     <connections>
@@ -150,4 +163,9 @@
     <resources>
         <image name="mozarella.jpg" width="259" height="194"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>

@@ -51,6 +51,8 @@ class ViewController: UIViewController {
         myPickerViewSeleccionaAlimento.delegate = self
         myPickerViewSeleccionaAlimento.dataSource = self
         
+
+        
         //MyTituloAlimentoLBL.text = pickerArrayData[0]
         //self.title = pickerArrayData[0]
         //myTextViewDetalleAlimentoTV.text = pickerArrayData[0]
@@ -75,28 +77,38 @@ class ViewController: UIViewController {
 extension ViewController : UIPickerViewDelegate, UIPickerViewDataSource{
     
     //Numero de componentes
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
     //Numero de Fila
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) ->
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) ->
     Int {
         return pickerArrayData.count
         
     }
     
     //Que me pinte cada uno de los objetos de array
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerArrayData[row]
     }
     
-    func pickerView(pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         return 20
         
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    //Para cambiar el color de texto del pickerview
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        var attributedString: NSAttributedString!
+        
+   
+        attributedString = NSAttributedString(string: pickerArrayData[row], attributes: [NSForegroundColorAttributeName : UIColor.red])
+        
+        return attributedString
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         self.title = pickerArrayData[row]
         
@@ -122,6 +134,7 @@ extension ViewController : UIPickerViewDelegate, UIPickerViewDataSource{
             break
         }
     }
+    
     
 }
 

@@ -18,7 +18,7 @@ class CCPickerWithTextFieldViewController: UIViewController {
     var localidadesArrayData = ["Salamanca", "La Latina", "Centro", "Fuencarral", "PepitoPerez"]
     var codigoPostalArrayData = ["28001","28006","28010","28026"]
     var prioridadArrayData = ["ALTA","MEDIA","BAJA"]
-    var logoImage: [UIImage] = [
+   // var logoImage: [UIImage] = [
    /* var logoImage: [UIImage] = [
         UIImage(named: "PlazaCastilla.jpg")!,
         UIImage(named: "GranVia.jpg")!,
@@ -28,16 +28,12 @@ class CCPickerWithTextFieldViewController: UIViewController {
         
     ]*/
     
-<<<<<<< HEAD
-   // var imageArray: [UIImage] = [UIImage(named: "facebook@2x.jpg")!,
-    //                             UIImage(named: "icon.twitter@2x.jpg")!,
-    //                             UIImage(named: "linkedin@2x.jpg")!]
+
     
     var fotoArray = ["facebook@2x.jpg","icon.twitter@2x.jpg","linkedin@2x.jpg"]
     
     
-=======
->>>>>>> d1f91874e0b4328ba77d652fb668c2af1781f424
+
     
     @IBOutlet weak var myLocalidadMadrid: UITextField!
     
@@ -78,42 +74,29 @@ class CCPickerWithTextFieldViewController: UIViewController {
         
         myPrioridadTrabajo.inputView = pickerViewPrioridadTrabajo
         myPrioridadTrabajo.text = prioridadArrayData[0]*/
-<<<<<<< HEAD
-        
-     //   myImageCointainer.image = UIImage(named: fotoArray[0])
-=======
+
         
         //Forma mas ordenada de crear los pickerView
         
->>>>>>> d1f91874e0b4328ba77d652fb668c2af1781f424
+
         createPickerView(1, myTextFieldCustom: myLocalidadMadrid, myArray: localidadesArrayData)
         createPickerView(2, myTextFieldCustom: myCodigoPostalDeTuZona, myArray: codigoPostalArrayData)
         createPickerView(3, myTextFieldCustom: myPrioridadTrabajo, myArray: prioridadArrayData)
         
-<<<<<<< HEAD
+
     }
     
     //MARK: - UTILS
-    func createPickerView(myTag : Int, myTextFieldCustom : UITextField, myArray : [String]){
+    func createPickerView(_ myTag : Int, myTextFieldCustom : UITextField, myArray : [String]){
     
-=======
-  
-    }
-    
-    //MARK: - UTILS
-    
-    func createPickerView(myTag : Int, myTextFieldCustom : UITextField, myArray : [String]){
->>>>>>> d1f91874e0b4328ba77d652fb668c2af1781f424
+
         let pickerView = UIPickerView()
         pickerView.delegate = self
         pickerView.dataSource = self
         pickerView.tag = myTag
         myTextFieldCustom.inputView = pickerView
         myTextFieldCustom.text = myArray[0]
-<<<<<<< HEAD
-    
-=======
->>>>>>> d1f91874e0b4328ba77d652fb668c2af1781f424
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -121,7 +104,7 @@ class CCPickerWithTextFieldViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
 
@@ -133,11 +116,11 @@ extension CCPickerWithTextFieldViewController : UIPickerViewDelegate, UIPickerVi
     
     
     
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
         if pickerView.tag == 1{
             return localidadesArrayData.count
@@ -150,7 +133,7 @@ extension CCPickerWithTextFieldViewController : UIPickerViewDelegate, UIPickerVi
         }
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if pickerView.tag == 1{
             return localidadesArrayData[row]
             
@@ -162,7 +145,7 @@ extension CCPickerWithTextFieldViewController : UIPickerViewDelegate, UIPickerVi
         }
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView.tag == 1{
             myLocalidadMadrid.text = localidadesArrayData[row]
         }else if pickerView.tag == 2{
